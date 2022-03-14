@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroArtistaAcessoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_back_cadastro_artista_acesso"
+            style="@style/icon_back"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/titulo_cadastro"
+                android:text="@string/titulo_cadastro_artista" />
+
+            <TextView
+                style="@style/subtitulo_cadastro"
+                android:text="Dados de acesso" />
+
+            <TextView
+                style="@style/text_input_cadastro"
+                android:layout_marginTop="52dp"
+                android:text="E-mail*" />
+
+            <EditText
+                android:id="@+id/et_email_cadastro_artista_acesso"
+                style="@style/edit_text_cadastro"
+                android:background="@drawable/input_shape" />
+
+            <TextView
+                style="@style/text_input_cadastro"
+                android:text="Senha*" />
+
+            <EditText
+                android:id="@+id/et_senha_cadastro_artista_acesso"
+                style="@style/edit_text_cadastro"
+                android:background="@drawable/input_shape"
+                android:inputType="date" />
+
+            <TextView
+                style="@style/text_input_cadastro"
+                android:text="Confirmar senha*" />
+
+            <EditText
+                android:id="@+id/et_confirmar_senha_cadastro_artista_acesso"
+                style="@style/edit_text_cadastro"
+                android:background="@drawable/input_shape" />
+
+
+            <Button
+                android:id="@+id/btn_continuar_cadastro_artista_acesso"
+                style="@style/btn_continuar_cadastro"
+                android:text="Continuar"
+                android:layout_marginTop="52dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

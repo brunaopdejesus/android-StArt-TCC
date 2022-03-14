@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroClientePessoalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_back_cadastro_cliente_pessoal"
+            style="@style/icon_back"
+            />
+
+        <TextView
+            style="@style/titulo_cadastro"
+            android:text="@string/titulo_cadastro_cliente"
+            />
+
+        <TextView
+            style="@style/subtitulo_cadastro"
+            android:text="Dados pessoais"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Nome completo*"
+            android:layout_marginTop="35dp"
+            />
+
+        <EditText
+            android:id="@+id/et_nome_cadastro_cliente"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Data de Nascimento*"
+            />
+
+        <EditText
+            android:id="@+id/et_data_nascimento_cadastro_cliente"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            android:inputType="date"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Telefone*"
+            />
+
+        <EditText
+            android:id="@+id/et_telefone_cadastro_cliente"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="CPF/CNPJ*"
+            />
+
+        <EditText
+            android:id="@+id/et_cpf_cadastro_cliente"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            />
+
+        <TextView
+            android:id="@+id/tv_ja_possui_conta_cadastro_cliente"
+            style="@style/tv_japossuiconta_cadastro"
+            android:text="Já possui uma conta?"
+            />
+
+        <Button
+            android:id="@+id/btn_continuar_cadastro_cliente_pessoal"
+            style="@style/btn_continuar_cadastro"
+            android:text="Continuar"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

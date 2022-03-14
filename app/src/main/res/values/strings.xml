@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StArt</string>
+    <string name="titulo_cadastro_cliente">Cadastro de Cliente</string>
+    <string name="titulo_cadastro_artista">Cadastro de Artista</string>
+</resources>

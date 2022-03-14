@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroClienteEnderecoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_back_cadastro_cliente_endereco"
+            style="@style/icon_back"
+            />
+
+        <TextView
+            style="@style/titulo_cadastro"
+            android:text="@string/titulo_cadastro_cliente"
+            />
+
+        <TextView
+            style="@style/subtitulo_cadastro"
+            android:text="Dados de endereço (opcional)"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="CEP"
+            android:layout_marginTop="35dp"
+            />
+
+        <EditText
+            android:id="@+id/et_cep_cadastro_cliente"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Endereço"
+            />
+
+        <EditText
+            android:id="@+id/et_endereco_cadastro_cliente"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_numero_cadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Número"
+                />
+
+            <TextView
+                android:id="@+id/tv_complemento_cadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Complemento"
+                android:layout_alignLeft="@+id/et_complemento_cadastro_endereco"
+                />
+
+            <EditText
+                android:id="@+id/et_numero_cadastro_endereco"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_numero_cadastro"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                android:background="@drawable/input_shape"
+                />
+
+            <EditText
+                android:id="@+id/et_complemento_cadastro_endereco"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_numero_cadastro"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/input_shape"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Bairro"
+            />
+
+        <EditText
+            android:id="@+id/et_bairro_cadastro_cliente"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_cidade_cadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Cidade"
+                />
+
+            <TextView
+                android:id="@+id/tv_estado_cadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Estado"
+                android:layout_alignLeft="@+id/et_estado_cadastro_endereco"
+                />
+
+            <EditText
+                android:id="@+id/et_cidade_cadastro_endereco"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_cidade_cadastro"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                android:background="@drawable/input_shape"
+                />
+
+            <EditText
+                android:id="@+id/et_estado_cadastro_endereco"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_cidade_cadastro"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_shape"
+                android:paddingStart="8dp"
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:paddingEnd="8dp"/>
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_continuar_cadastro_cliente_endereco"
+            style="@style/btn_continuar_cadastro"
+            android:text="Continuar"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
