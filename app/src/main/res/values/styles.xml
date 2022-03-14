@@ -37,7 +37,7 @@
     <style name="edit_text_cadastro">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">45dp</item>
-<!--        <item name="background">@drawable/input_shape</item>-->
+<!--        <item name="background">@drawa32xpble/input_shape</item>-->
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:paddingStart">8dp</item>
     </style>
@@ -66,6 +66,17 @@
     <style name="iv_card_view">
         <item name="android:layout_width">180dp</item>
         <item name="android:layout_height">180dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="tv_dados_pagamento">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">28dp</item>
         <item name="android:layout_gravity">center</item>
     </style>
 

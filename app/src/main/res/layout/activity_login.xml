@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_back_cadastro_cliente_acesso"
+            style="@style/icon_back"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/titulo_cadastro"
+                android:text="Login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:text="Não possui uma conta?"
+                    android:textColor="#595151"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cadastre_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastre-se"
+                    android:textSize="16sp"
+                    android:textColor="#FF6EDCD0"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_input_cadastro"
+                android:layout_marginTop="52dp"
+                android:text="E-mail" />
+
+            <EditText
+                android:id="@+id/et_email_login"
+                style="@style/edit_text_cadastro"
+                android:background="@drawable/input_shape" />
+
+            <TextView
+                style="@style/text_input_cadastro"
+                android:text="Senha" />
+
+            <EditText
+                android:id="@+id/et_senha_login"
+                style="@style/edit_text_cadastro"
+                android:background="@drawable/input_shape"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:id="@+id/tv_esqueceu_sua_senha_login"
+                style="@style/tv_japossuiconta_cadastro"
+                android:text="Esqueceu sua senha?"
+                />
+
+            <Button
+                android:id="@+id/btn_entrar_login"
+                style="@style/btn_continuar_cadastro"
+                android:text="Entrar"
+                android:layout_marginTop="52dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

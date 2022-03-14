@@ -10,7 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StArt">
         <activity
-            android:name=".CadastroArtistaAcessoActivity"
+            android:name=".ReativarContaActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".EsqueceuSuaSenhaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +27,21 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".CadastroArtistaPagamentoTransferenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroArtistaPagamentoPixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroArtistaAcessoActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".CadastroArtistaPessoalActivity"
             android:exported="false" />
         <activity
             android:name=".CadastroClienteAcessoActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".CadastroClienteEnderecoActivity"
             android:exported="true" />

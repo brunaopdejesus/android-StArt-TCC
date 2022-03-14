@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsqueceuSuaSenhaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_back_esqueceu_sua_senha"
+            style="@style/icon_back"
+            />
+
+        <ImageView
+            android:src="@drawable/img_forgot_password"
+            style="@style/iv_card_view"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            />
+
+        <TextView
+            style="@style/subtitulo_cadastro"
+            android:text="Esqueceu sua senha?"
+            android:textSize="28sp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Enviaremos um e-mail para\nvocê escolher uma nova!"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_email_esqueceu_sua_senha"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            android:hint="Digite seu e-mail..."
+            android:layout_marginTop="36dp"
+            />
+
+        <Button
+            android:id="@+id/btn_enviar_esqueceu_sua_senha"
+            style="@style/btn_continuar_cadastro"
+            android:text="Enviar"
+            android:layout_marginTop="36dp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
