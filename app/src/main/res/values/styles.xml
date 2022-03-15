@@ -76,8 +76,24 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:layout_marginTop">28dp</item>
+    </style>
+
+    <style name="tv_pular_boas_vindas">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#505050</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="tv_descricao_boas_vindas">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">16sp</item>
     </style>
 
 </resources>
