@@ -96,6 +96,33 @@
         <item name="android:layout_marginTop">16sp</item>
     </style>
 
+    <style name="arrow_left_boasvindas">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_baseline_arrow_left_24</item>
+    </style>
+
+    <style name="arrow_right_boasvindas">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_baseline_arrow_right_24</item>
+    </style>
+
+    <style name="selecionado_circulo_boasvindas">
+        <item name="android:src">@drawable/circle_turquoise</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="circulo_preto_boasvindas">
+        <item name="android:src">@drawable/circle_black_24</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+
 </resources>
 
 

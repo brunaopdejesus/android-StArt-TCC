@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoasVindasCliente1Activity">
+    tools:context=".BoasVindasArtista1Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,14 +14,14 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_pular_boasvindas_cliente1"
+            android:id="@+id/tv_pular_boasvindas_artista1"
             style="@style/tv_pular_boas_vindas"
             android:text="Pular"
             />
 
         <TextView
             style="@style/titulo_cadastro"
-            android:text="Facilidade"
+            android:text="Divulgação"
             android:layout_gravity="center"
             android:layout_marginTop="28dp"
             />
@@ -31,11 +31,11 @@
             android:layout_height="240dp"
             android:layout_gravity="center"
             android:layout_marginTop="32dp"
-            android:src="@drawable/boasvindas_cliente1"/>
+            android:src="@drawable/boasvindas_artista1"/>
 
         <TextView
             style="@style/tv_descricao_boas_vindas"
-            android:text="Visualize, salve e compre obras sem sair de casa!"
+            android:text="Publique, edite e exclua suas obras!"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="32dp"
             />
@@ -48,7 +48,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/arrow_voltar_boasvindas_cliente1"
+                android:id="@+id/arrow_voltar_boasvindas_artista1"
                 style="@style/arrow_left_boasvindas"
                 />
 
@@ -69,7 +69,7 @@
                 />
 
             <ImageView
-                android:id="@+id/arrow_continuar_boasvindas_cliente1"
+                android:id="@+id/arrow_continuar_boasvindas_artista1"
                 style="@style/arrow_right_boasvindas"
                 />
 
