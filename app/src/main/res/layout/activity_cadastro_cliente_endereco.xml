@@ -84,9 +84,8 @@
                 android:layout_height="45dp"
                 android:layout_below="@+id/tv_numero_cadastro"
                 android:layout_marginTop="8dp"
-                android:paddingStart="8dp"
                 android:background="@drawable/input_shape"
-                />
+                android:paddingStart="8dp" />
 
             <EditText
                 android:id="@+id/et_complemento_cadastro_endereco"

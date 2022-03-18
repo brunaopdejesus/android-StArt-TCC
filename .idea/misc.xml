@@ -3,15 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_arrow_back.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/ic_arrow_forward.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/ic_baseline_horizontal_rule_24.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable/ic_remove.xml" value="0.2075" />
+        <entry key="app/src/main/res/font/raleway.xml" value="0.32314814814814813" />
+        <entry key="app/src/main/res/layout/activity_cadastro_artista_acesso.xml" value="0.2803951367781155" />
         <entry key="app/src/main/res/layout/activity_cadastro_artista_pagamento_pix.xml" value="0.36018518518518516" />
-        <entry key="app/src/main/res/layout/activity_cadastro_artista_pagamento_transferencia.xml" value="0.5911458333333334" />
-        <entry key="app/src/main/res/layout/activity_cadastro_artista_pessoal.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_cadastro_cliente_acesso.xml" value="0.5911458333333334" />
-        <entry key="app/src/main/res/layout/activity_cadastro_cliente_endereco.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/activity_cadastro_artista_pagamento_transferencia.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_cadastro_artista_pessoal.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_acesso.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_endereco.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_cadastro_cliente_pessoal.xml" value="0.5911458333333334" />
         <entry key="app/src/main/res/layout/activity_esqueceu_sua_senha.xml" value="0.32222222222222224" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.5820512820512821" />
-        <entry key="app/src/main/res/layout/activity_reativar_conta.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/activity_home_cliente.xml" value="0.29465301478953354" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_perfil_cliente.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_reativar_conta.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_tipo_cadastro.xml" value="0.5454545454545454" />
       </map>
     </option>

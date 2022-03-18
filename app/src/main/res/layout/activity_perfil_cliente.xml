@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroClienteAcessoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_back_perfil_cliente"
+                style="@style/icon_back"
+
+                />
+
+            <ImageView
+                android:id="@+id/image_perfil_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_perfil" />
+
+            <ImageView
+                android:id="@+id/icon_setting_cliente"
+                style="@style/icon_settings"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/titulo_nome_perfil"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/titulo_nome_cliente" />
+
+            <ImageView
+                android:id="@+id/image_avaliacao"
+                android:layout_height="90dp"
+                android:layout_width="70dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="-65dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_review"
+                 />
+
+            <TextView
+                style="@style/text_input_cadastro"
+                android:layout_marginTop="52dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="” Amo fotografias da natureza, pois gosto de lindas paisagens.“" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/img_line_perfil_cliente"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Nome:"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Gabriel Gonçalves"
+                    android:textColor="#5C5B5B"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Preferência:"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Fotografia"
+                    android:textColor="#5C5B5B"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Nacionalidade:"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Brasileiro"
+                    android:textColor="#5C5B5B"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="País:"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cadastre_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Brasil"
+                    android:textColor="#5C5B5B"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/img_line_perfil_cliente"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:text="Artistas Parceiros"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/subtitulo_perfil_cliente"
+                    android:layout_marginStart="30dp"
+                    android:text="Obras Favoritas"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

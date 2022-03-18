@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsqueceuSuaSenhaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/subtitulo_cadastro"
+            android:text="Olá! Seja bem-vindo(a)!"
+            android:layout_marginBottom="20dp"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_artista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginBottom="10dp"
+                android:text="Artistas"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tv_obras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="45dp"
+                android:gravity="center"
+                android:text="Obras"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/re" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                style="@style/iv_card_view"
+                android:layout_width="420dp"
+                android:layout_height="230dp"
+                android:src="@drawable/img_graffiti" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="98dp"
+                android:src="@drawable/ic_arrow_back"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="340dp"
+                android:layout_marginTop="98dp"
+                android:src="@drawable/ic_arrow_forward" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            style="@style/subtitulo_cadastro"
+            android:text="Reativar sua conta?"
+            android:textSize="28sp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Parece que sua conta está desativada. Enviaremos um e-mail para você reativá-la!"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="280dp"
+            />
+
+        <EditText
+            android:id="@+id/et_email_reativar_conta"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            android:hint="Digite seu e-mail..."
+            android:layout_marginTop="36dp"
+            />
+
+        <Button
+            android:id="@+id/btn_enviar_reativar_conta"
+            style="@style/btn_continuar_cadastro"
+            android:text="Enviar"
+            android:layout_marginTop="36dp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

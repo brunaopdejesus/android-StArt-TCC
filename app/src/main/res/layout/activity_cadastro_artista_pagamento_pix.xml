@@ -39,10 +39,9 @@
 
             <TextView
                 style="@style/tv_dados_pagamento"
-                android:text="TRANSFERÊNCIA\nBANCÁRIA"
                 android:layout_alignParentRight="true"
                 android:gravity="center"
-                />
+                android:text="TRANSFERÊNCIA\nBANCÁRIA" />
 
         </RelativeLayout>
 

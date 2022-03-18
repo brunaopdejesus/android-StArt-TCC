@@ -8,6 +8,21 @@
         <item name="android:layout_marginBottom">8dp</item>
     </style>
 
+    <style name="icon_settings">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_settings</item>
+        <item name="android:layout_marginBottom">8dp</item>
+
+    </style>
+
+    <style name="icon_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/img_line</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
     <style name="titulo_cadastro">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -17,11 +32,29 @@
 <!--        <item name="android:layout_marginTop">4dp</item>-->
     </style>
 
+    <style name="titulo_nome_perfil">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">28sp</item>
+        <!--        <item name="android:layout_marginTop">4dp</item>-->
+    </style>
+
     <style name="subtitulo_cadastro">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/raleway</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="subtitulo_perfil_cliente">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:textSize">20sp</item>
     </style>
 
