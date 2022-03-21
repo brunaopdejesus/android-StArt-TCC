@@ -30,27 +30,89 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
             <TextView
+                android:id="@+id/pix"
                 style="@style/tv_dados_pagamento"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
                 android:text="PIX"
-                />
+                android:textColor="@color/turquesa_claro"
+                android:textSize="20sp" />
 
             <TextView
+                android:fontFamily="sans-serif"
+                android:id="@+id/transferencia_bancaria"
                 style="@style/tv_dados_pagamento"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="35dp"
                 android:gravity="center"
+<<<<<<< HEAD
                 android:text="TRANSFERÊNCIA\nBANCÁRIA" />
+=======
+                android:text="TRANSFERÊNCIA\nBANCÁRIA"
+                android:textStyle="normal"/>
+>>>>>>> f9ac863e81fd3212303e2fcb045f727152a171c7
 
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="E-mail"
+            android:background="@drawable/input_shape"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:paddingStart="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Digite seu e-mail..."
+            android:background="@drawable/input_shape"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginStart="8dp"
+            />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/btn_continuar_cadastro_artista_pessoal"
             style="@style/btn_continuar_cadastro"
             android:text="Continuar"
+            android:layout_marginTop="28dp"
             />
 
     </LinearLayout>
 
 </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

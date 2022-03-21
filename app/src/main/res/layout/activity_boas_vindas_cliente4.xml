@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoasVindasCliente4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pular_boasvindas_cliente4"
+            style="@style/tv_pular_boas_vindas"
+            android:text="Pular"
+            />
+
+        <TextView
+            style="@style/titulo_cadastro"
+            android:text="Avalie"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/boasvindas_cliente4"/>
+
+        <TextView
+            style="@style/tv_descricao_boas_vindas"
+            android:text="Publique sua avaliação após alguma compra!"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/arrow_voltar_boasvindas_cliente4"
+                style="@style/arrow_left_boasvindas"
+                />
+
+
+
+            <ImageView
+                style="@style/circulo_preto_boasvindas"
+                />
+
+            <ImageView
+                style="@style/circulo_preto_boasvindas"
+                />
+
+            <ImageView
+                style="@style/circulo_preto_boasvindas"
+                />
+
+            <ImageView
+                style="@style/selecionado_circulo_boasvindas"
+                />
+
+            <ImageView
+                android:id="@+id/arrow_continuar_boasvindas_cliente4"
+                style="@style/arrow_right_boasvindas"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

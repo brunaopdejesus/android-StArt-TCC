@@ -10,32 +10,76 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StArt">
         <activity
-            android:name=".ReativarContaActivity"
+            android:name=".BoasVindasArtista4Activity"
             android:exported="true" >
-        </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".EsqueceuSuaSenhaActivity"
-            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".BoasVindasArtista3Activity"
+            android:exported="true" >
+
+
+
+        </activity>
+
+        <activity
+            android:name=".BoasVindasArtista2Activity"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
+            android:name=".BoasVindasArtista1Activity"
+            android:exported="true">
+
+
         </activity>
         <activity
-            android:name=".CadastroArtistaPagamentoTransferenciaActivity"
-            android:exported="false" />
+            android:name=".BoasVindasCliente4Activity"
+            android:exported="true" >
+
+
+        </activity>
+
         <activity
-            android:name=".CadastroArtistaPagamentoPixActivity"
-            android:exported="false" />
+            android:name=".BoasVindasCliente2Activity"
+            android:exported="true">
+
+        </activity>
         <activity
-            android:name=".CadastroArtistaAcessoActivity"
+            android:name=".BoasVindasCliente3Activity"
             android:exported="true">
         </activity>
+
+        <activity
+            android:name=".BoasVindasCliente1Activity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ReativarContaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EsqueceuSuaSenhaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CadastroArtistaPagamentoTransferenciaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CadastroArtistaPagamentoPixActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CadastroArtistaAcessoActivity"
+            android:exported="true" />
         <activity
             android:name=".CadastroArtistaPessoalActivity"
             android:exported="false" />
