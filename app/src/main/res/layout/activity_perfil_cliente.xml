@@ -192,30 +192,151 @@
                 android:layout_marginBottom="5dp"
                 />
 
-            <LinearLayout
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+
+                    <TextView
+                        android:id="@+id/artistas_parceiros_perfil_cliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        style="@style/subtitulo_perfil_cliente"
+                        android:text="Artistas Parceiros"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_mini_line_perfil_cliente"
+                        android:layout_below="@id/artistas_parceiros_perfil_cliente"
+                        android:layout_marginStart="82dp"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                    <TextView
+                        style="@style/subtitulo_perfil_cliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="192dp"
+                        android:layout_marginEnd="30dp"
+                        android:text="Obras Favoritas"
+
+                        />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+
+
+
+                <ImageView
+                    android:id="@+id/photo_van_gogh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_van_gogh"
+                    />
+
+                <TextView
+                    android:id="@+id/name_van_gogh"
+                    style="@style/text_comum_perfil_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/photo_van_gogh"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    android:text="Vincent Van Gogh"
+                    />
+
+                <ImageView
+                    android:id="@+id/photo_joahannes_vermeer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="125dp"
+                    android:src="@drawable/img_johannes_vermeer" />
+
+                <TextView
+                    android:id="@+id/name_johannes_vermeer"
+                    style="@style/text_comum_perfil_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/photo_van_gogh"
+                    android:layout_marginStart="125dp"
+                    android:text="Johannes Vermeer"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/photo_michelangelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_michelangelo"
+                    android:layout_marginStart="250dp"
+                    />
+
+                <TextView
+                    android:id="@+id/name_michelangelo"
+                    style="@style/text_comum_perfil_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/photo_van_gogh"
+                    android:layout_marginStart="260dp"
+                    android:text="Michelangelo"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/avaliacao_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Avaliações"
+                    android:layout_marginTop="20dp"
+                    style="@style/subtitulo_perfil_cliente"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_mini_line_perfil_cliente"
+                    android:layout_below="@id/avaliacao_cliente"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:src="@drawable/img_avaliacao_cliente"
+                android:layout_marginBottom="15dp"
+                />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    style="@style/subtitulo_perfil_cliente"
-                    android:text="Artistas Parceiros"
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_avaliacao_cliente"
+                />
 
-                    />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/subtitulo_perfil_cliente"
-                    android:layout_marginStart="30dp"
-                    android:text="Obras Favoritas"
 
-                    />
-
-            </LinearLayout>
 
 
 
