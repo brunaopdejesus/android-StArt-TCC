@@ -18,11 +18,7 @@
         <activity
             android:name=".BoasVindasArtista4Activity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".BoasVindasArtista3Activity"
@@ -44,7 +40,13 @@
             android:exported="true" />
         <activity
             android:name=".BoasVindasCliente1Activity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ReativarContaActivity"
             android:exported="true" />
