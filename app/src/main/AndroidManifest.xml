@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StArt">
         <activity
+            android:name=".HomeArtistaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcomepager.WelcomePage"
+            android:exported="false" />
+        <activity
             android:name=".PerfilArtistaModalActivity"
             android:exported="false" />
         <activity
@@ -17,9 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".BoasVindasArtista4Activity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BoasVindasArtista3Activity"
             android:exported="true" />

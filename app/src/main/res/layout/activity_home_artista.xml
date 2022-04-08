@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeArtistaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/subtitulo_cadastro"
+            android:text="Olá! Seja bem-vindo(a)!"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_slide_cliente"
+                style="@style/iv_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/slide_img_artista" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginTop="195dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="195dp"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_home"
+            android:elevation="8dp"
+
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                style="@style/text_input_cadastro"
+                android:text="Fique em destaque junto a outros artistas para os clientes!"
+                android:textColor="#3A3838"
+                android:gravity="center"
+                android:layout_width="240dp"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                style="@style/btn_continuar_cadastro"
+                android:text="Saiba mais"
+                android:textColor="#3A3838"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="4dp"
+            style="@style/text_input_cadastro"
+            android:text="Exponha e edite suas obras através do seu perfil!"
+            android:textColor="#3A3838"
+            android:gravity="center"
+            android:layout_width="220dp"
+            android:textSize="23sp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/storyset_home"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/acessar_perfil_home_artista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/turquesa"
+                android:text="Acessar"
+                android:textSize="24sp"
+                android:layout_marginRight="4dp"
+                />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_baseline_person_24"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

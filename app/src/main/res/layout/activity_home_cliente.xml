@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EsqueceuSuaSenhaActivity">
+    tools:context=".HomeClienteActivity">
 
 
     <LinearLayout
@@ -14,53 +14,52 @@
         android:padding="24dp"
         android:orientation="vertical">
 
-
         <TextView
             style="@style/subtitulo_cadastro"
             android:text="Olá! Seja bem-vindo(a)!"
-            android:layout_marginBottom="20dp"
             android:textSize="28sp"
             android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
             />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:layout_marginBottom="3dp">
 
             <TextView
                 android:id="@+id/tv_artista"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="55dp"
                 android:text="Artistas"
                 android:textColor="@color/black"
-                android:textSize="28sp" />
+                android:textSize="26sp" />
 
             <TextView
                 android:id="@+id/tv_obras"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginEnd="45dp"
+                android:layout_marginRight="62dp"
                 android:gravity="center"
                 android:text="Obras"
                 android:textColor="@color/black"
-                android:textSize="28sp"
-
+                android:textSize="26sp"
                 />
 
         </RelativeLayout>
 
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"/>-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_home_cliente"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <ImageView
                 style="@style/iv_card_view"
@@ -73,7 +72,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="98dp"
                 android:src="@drawable/ic_arrow_back"
-
                 />
 
             <ImageView
@@ -83,44 +81,253 @@
                 android:layout_marginTop="98dp"
                 android:src="@drawable/ic_arrow_forward" />
 
-
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_home"
+            android:elevation="8dp"
 
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp">
 
+            <TextView
+                android:layout_marginTop="20dp"
+                style="@style/text_input_cadastro"
+                android:text="Incentive o incrível trabalho de artistas.\nApoie a Arte!"
+                android:textColor="#3A3838"
+                android:gravity="center"
+                android:layout_width="240dp"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                style="@style/btn_continuar_cadastro"
+                android:text="Doar"
+                android:textColor="#3A3838"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
 
         <TextView
-            style="@style/subtitulo_cadastro"
-            android:text="Reativar sua conta?"
-            android:textSize="28sp"
-            android:layout_marginTop="24dp"
-            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            style="@style/titulo_cadastro"
+            android:text="Esculturas"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria1"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria2"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria3"
+                android:layout_marginRight="16dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
 
         <TextView
-            style="@style/text_input_cadastro"
-            android:text="Parece que sua conta está desativada. Enviaremos um e-mail para você reativá-la!"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"
-            android:layout_width="280dp"
+            android:layout_marginTop="12dp"
+            style="@style/titulo_cadastro"
+            android:text="Pinturas"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+
             />
 
-        <EditText
-            android:id="@+id/et_email_reativar_conta"
-            style="@style/edit_text_cadastro"
-            android:background="@drawable/input_shape"
-            android:hint="Digite seu e-mail..."
-            android:layout_marginTop="36dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria1"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria2"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria3"
+                android:layout_marginRight="16dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            style="@style/titulo_cadastro"
+            android:text="Desenhos"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+
             />
 
-        <Button
-            android:id="@+id/btn_enviar_reativar_conta"
-            style="@style/btn_continuar_cadastro"
-            android:text="Enviar"
-            android:layout_marginTop="36dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria1"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria2"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria3"
+                android:layout_marginRight="16dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            style="@style/titulo_cadastro"
+            android:text="Gravuras"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria1"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria2"
+                android:layout_marginRight="16dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_slide_categoria3"
+                android:layout_marginRight="16dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+
+
 
 
     </LinearLayout>
