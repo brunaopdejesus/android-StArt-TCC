@@ -66,9 +66,9 @@
 
 
             <Button
-                android:id="@+id/btn_continuar_cadastro_cliente_acesso"
+                android:id="@+id/btn_cadastrar_cadastro_cliente_acesso"
                 style="@style/btn_continuar_cadastro"
-                android:text="Continuar"
+                android:text="Cadastrar-se"
                 android:layout_marginTop="52dp"/>
 
         </LinearLayout>

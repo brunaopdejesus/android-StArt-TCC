@@ -11,16 +11,13 @@
         android:theme="@style/Theme.StArt">
         <activity
             android:name=".HomeArtistaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".welcomepager.WelcomePage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PerfilArtistaModalActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PerfilArtistaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".BoasVindasArtista4Activity"
             android:exported="true" />
@@ -45,18 +42,19 @@
         <activity
             android:name=".BoasVindasCliente1Activity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ReativarContaActivity"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".EsqueceuSuaSenhaActivity"
             android:exported="true" />
