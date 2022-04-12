@@ -67,6 +67,12 @@
         <item name="android:layout_marginTop">28dp</item>
     </style>
 
+    <style name="text_input_shape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
     <style name="text_comum_perfil_cliente">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
