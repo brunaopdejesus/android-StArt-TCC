@@ -53,16 +53,16 @@
                 android:inputType="textPassword"
                 />
 
-            <TextView
-                style="@style/text_input_cadastro"
-                android:text="Confirmar senha*" />
+<!--            <TextView-->
+<!--                style="@style/text_input_cadastro"-->
+<!--                android:text="Confirmar senha*" />-->
 
-            <EditText
-                android:id="@+id/et_confirmar_senha_cadastro_cliente_acesso"
-                style="@style/edit_text_cadastro"
-                android:background="@drawable/input_shape"
-                android:inputType="textPassword"
-                />
+<!--            <EditText-->
+<!--                android:id="@+id/et_confirmar_senha_cadastro_cliente_acesso"-->
+<!--                style="@style/edit_text_cadastro"-->
+<!--                android:background="@drawable/input_shape"-->
+<!--                android:inputType="textPassword"-->
+<!--                />-->
 
 
             <Button

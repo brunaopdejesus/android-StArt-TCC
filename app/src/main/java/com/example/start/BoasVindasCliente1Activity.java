@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.start.R;
+
 public class BoasVindasCliente1Activity extends AppCompatActivity {
 
     private TextView txtPular;

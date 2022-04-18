@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.start">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,11 +25,6 @@
         <activity
             android:name=".PerfilArtistaActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".BoasVindasArtista4Activity"
@@ -74,13 +73,20 @@
             android:exported="false" />
         <activity
             android:name=".CadastroClienteAcessoActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".CadastroClienteEnderecoActivity"
             android:exported="true" />
         <activity
             android:name=".CadastroClientePessoalActivity"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
         <activity
             android:name=".TipoCadastroActivity"
             android:exported="true" />

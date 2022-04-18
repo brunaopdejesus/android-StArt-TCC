@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.start.R;
+
 public class HomeArtistaActivity extends AppCompatActivity {
 
     @Override

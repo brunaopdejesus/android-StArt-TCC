@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -44,6 +43,7 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
         btnContinuar.setOnClickListener(view -> {
             startActivity(new Intent(CadastroClientePessoalActivity.this, CadastroClienteEnderecoActivity.class));
         });
+
 
 
     }
