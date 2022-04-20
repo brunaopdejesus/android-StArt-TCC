@@ -29,7 +29,7 @@
         <entry key="app/src/main/res/layout/activity_cadastro_artista_pessoal.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_cadastro_cliente_acesso.xml" value="0.44351851851851853" />
         <entry key="app/src/main/res/layout/activity_cadastro_cliente_endereco.xml" value="0.3362541073384447" />
-        <entry key="app/src/main/res/layout/activity_cadastro_cliente_pessoal.xml" value="0.44351851851851853" />
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_pessoal.xml" value="0.33569739952718675" />
         <entry key="app/src/main/res/layout/activity_esqueceu_sua_senha.xml" value="0.44351851851851853" />
         <entry key="app/src/main/res/layout/activity_home_artista.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_home_cliente.xml" value="0.42962962962962964" />
@@ -48,5 +48,8 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>
