@@ -208,14 +208,13 @@
 
                     />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/img_mini_line_perfil_cliente"
-                        android:layout_below="@id/artistas_parceiros_perfil_cliente"
-                        android:layout_marginStart="82dp"
-                        android:layout_marginBottom="20dp"
-                        />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/artistas_parceiros_perfil_cliente"
+                    android:layout_marginStart="82dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/img_mini_line_perfil_cliente" />
 
                 <TextView
                     style="@style/subtitulo_perfil_cliente"

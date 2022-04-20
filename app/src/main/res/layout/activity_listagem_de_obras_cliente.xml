@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeClienteActivity">
+    tools:context=".ListagemDeObrasClienteActivity">
 
 
     <LinearLayout
@@ -19,18 +19,21 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/image_back_cadastro_artista_acesso"
-                style="@style/icon_back"
-                />
+                android:id="@+id/image_back_listagem_obras_cliente"
+                style="@style/icon_back" />
 
             <EditText
-                android:layout_width="200dp"
-                android:layout_height="25dp"
-                android:background="@drawable/input_shape"
+                style="@style/edit_text_cadastro"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:gravity="center"
+                android:layout_marginStart="65dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginStart="85dp"
+                android:background="@drawable/input_shape"
+                android:gravity="center"
+                android:hint="O que você está buscando?"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:paddingStart="5dp"
                 />
 
         </RelativeLayout>
@@ -54,14 +57,21 @@
             <TextView
                 android:id="@+id/tv_obras"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="62dp"
                 android:gravity="center"
                 android:text="Obras"
                 android:textColor="@color/black"
-                android:textSize="26sp"
-                />
+                android:textSize="26sp" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@id/tv_obras"-->
+<!--                android:layout_marginStart="255dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:src="@drawable/img_mini_line_perfil_cliente" />-->
 
         </RelativeLayout>
 
@@ -69,15 +79,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/line_home_cliente"
+            android:layout_marginBottom="8dp"
             />
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="340dp"
-                android:layout_marginTop="9dp"
-                android:src="@drawable/ic_arrow_forward" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -100,11 +103,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="45dp"
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
                 android:gravity="center"
                 android:text="Categorias"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
 
                 />
 

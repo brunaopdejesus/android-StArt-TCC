@@ -2,6 +2,7 @@
     <string name="app_name">StArt</string>
     <string name="titulo_cadastro_cliente">Cadastro de Cliente</string>
     <string name="titulo_cadastro_artista">Cadastro de Artista</string>
+    <string name="titulo_configuracoes_cliente">Configurações</string>
     <string name="titulo_nome_cliente">Gabriel Gonçalves</string>
     <string name="dotted">&#8226;</string>
     <string name="dialog_message">Welcome to Alert Dialog</string>
