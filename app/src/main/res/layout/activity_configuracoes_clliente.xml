@@ -14,20 +14,179 @@
         android:orientation="vertical">
 
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/image_back_cadastro_cliente_pessoal"
+            style="@style/icon_back"
+            />
+
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/config_cliente"
             style="@style/titulo_configuracoes"
             android:text="@string/titulo_configuracoes_cliente"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginTop="10dp"
-
+            android:layout_marginBottom="80dp"
             />
 
-        <ImageView
-            android:id="@+id/image_back_cadastro_cliente_pessoal"
-            style="@style/icon_back"
-            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_edit_icon"
+                />
+
+            <TextView
+                android:id="@+id/editar_perfil_config"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Editar Perfil"
+                android:layout_marginStart="50dp"
+                style="@style/subtitulo_configuracoes"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_line_configuracoes"
+                android:layout_below="@id/editar_perfil_config"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_key_configuracoes"
+                />
+
+            <TextView
+                android:id="@+id/password_perfil_config"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Alterar Senha"
+                android:layout_marginStart="50dp"
+                style="@style/subtitulo_configuracoes"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_line_configuracoes"
+                android:layout_below="@id/password_perfil_config"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_locate_configuracoes"
+                />
+
+            <TextView
+                android:id="@+id/locate_perfil_config"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Endereço"
+                android:layout_marginStart="50dp"
+                style="@style/subtitulo_configuracoes"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_line_configuracoes"
+                android:layout_below="@id/locate_perfil_config"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_logout_configuracoes"
+                />
+
+            <TextView
+                android:id="@+id/logout_perfil_config"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sair"
+                android:layout_marginStart="50dp"
+                style="@style/subtitulo_configuracoes"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_line_configuracoes"
+                android:layout_below="@id/logout_perfil_config"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_person_delete_configuracoes"
+                />
+
+            <TextView
+                android:id="@+id/person_delete_perfil_config"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Desativar Conta"
+                style="@style/tv_desativarConta"
+                android:layout_marginStart="50dp"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_line_configuracoes"
+                android:layout_below="@id/person_delete_perfil_config"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
 
 
 
