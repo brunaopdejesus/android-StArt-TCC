@@ -8,8 +8,8 @@ import retrofit2.http.POST;
 
 public interface RouterInterface {
 
-    // Rota de usuário
-    @POST("/cliente/")
+    // INSERIR CLIENTE
+    @POST("/cadastro/")
     Call<Cliente> addCliente(@Body Cliente cliente);
 
 }
