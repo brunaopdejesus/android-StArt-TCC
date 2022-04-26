@@ -15,7 +15,10 @@
         android:theme="@style/Theme.StArt">
         <activity
             android:name=".AdicionarObraActivity"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".HomeClienteActivity"
+            android:exported="true" />
         <activity
             android:name=".PerfilArtistaModalActivity"
             android:exported="false" />
@@ -70,7 +73,7 @@
             android:exported="true" />
         <activity
             android:name=".CadastroArtistaPessoalActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".CadastroClienteAcessoActivity"
             android:exported="true">

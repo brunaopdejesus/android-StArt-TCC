@@ -10,7 +10,7 @@ public class RetrofitClient {
 
     private static Retrofit retrofit = null;
 
-    /* Método de acesso ao client */
+    /* Método de acesso ao cliente */
     public static Retrofit getClient(String url) {
 
         Gson gson = new GsonBuilder()

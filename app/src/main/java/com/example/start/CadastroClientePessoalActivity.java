@@ -76,16 +76,13 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
 
         });
 
-        btnContinuar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CadastroClienteEnderecoActivity.class);
-                intent.putExtra("nome", etNome.getText().toString());
-                intent.putExtra("dataNascimento", etDataNascimento.getText().toString());
-                intent.putExtra("telefone", etTelefone.getText().toString());
-                intent.putExtra("cpf", etCpfCnpj.getText().toString());
-                startActivity(intent);
-            }
+        btnContinuar.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), CadastroClienteEnderecoActivity.class);
+            intent.putExtra("nome", etNome.getText().toString());
+            intent.putExtra("dataNascimento", etDataNascimento.getText().toString());
+            intent.putExtra("telefone", etTelefone.getText().toString());
+            intent.putExtra("cpf", etCpfCnpj.getText().toString());
+            startActivity(intent);
         });
 
     }

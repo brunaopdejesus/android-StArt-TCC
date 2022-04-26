@@ -1,5 +1,6 @@
 package com.example.start;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -43,31 +44,28 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             super.onBackPressed();
         });
 
-        btnCadastrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CadastroClienteAcessoActivity.class);
+        btnCadastrar.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), CadastroClienteAcessoActivity.class);
 
-                Cliente cliente = new Cliente();
+            Cliente cliente = new Cliente();
 
-                cliente.setNomeCompleto(intent.getStringExtra("nome"));
-                cliente.setDataNascimento(intent.getStringExtra("dataNascimento"));
-                cliente.setTelefoneCelular(intent.getStringExtra("telefone"));
-                cliente.setCpf_cnpj(intent.getStringExtra("cpf"));
-                cliente.setCep(intent.getStringExtra("cep"));
-                cliente.setEndereco(intent.getStringExtra("endereco"));
-                cliente.setNumero(intent.getIntExtra("numero", 0));
-                cliente.setComplemento(intent.getStringExtra("complemento"));
-                cliente.setBairro(intent.getStringExtra("bairro"));
-                cliente.setCidade(intent.getStringExtra("cidade"));
-                cliente.setEstado(intent.getStringExtra("estado"));
-                cliente.setEmail(txtEmail.getText().toString());
-                cliente.setSenha(txtSenha.getText().toString());
+            cliente.setNomeCompleto(intent.getStringExtra("nome"));
+            cliente.setDataNascimento(intent.getStringExtra("dataNascimento"));
+            cliente.setTelefoneCelular(intent.getStringExtra("telefone"));
+            cliente.setCpf_cnpj(intent.getStringExtra("cpf"));
+            cliente.setCep(intent.getStringExtra("cep"));
+            cliente.setEndereco(intent.getStringExtra("endereco"));
+            cliente.setNumero(intent.getIntExtra("numero", 0));
+            cliente.setComplemento(intent.getStringExtra("complemento"));
+            cliente.setBairro(intent.getStringExtra("bairro"));
+            cliente.setCidade(intent.getStringExtra("cidade"));
+            cliente.setEstado(intent.getStringExtra("estado"));
+            cliente.setEmail(txtEmail.getText().toString());
+            cliente.setSenha(txtSenha.getText().toString());
 
-                routerInterface = APIUtil.getUsuarioInterface();
-                addCliente(cliente);
+            routerInterface = APIUtil.getUsuarioInterface();
+            addCliente(cliente);
 
-            }
         });
 
     }

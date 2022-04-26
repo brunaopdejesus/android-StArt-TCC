@@ -48,25 +48,22 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
             super.onBackPressed();
         });
 
-        btnContinuar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CadastroClienteEnderecoActivity.class);
-                intent.putExtra("nome", intent.getStringExtra("nome"));
-                intent.putExtra("dataNascimento", intent.getStringExtra("dataNascimento"));
-                intent.putExtra("telefone", intent.getStringExtra("telefone"));
-                intent.putExtra("cpf", intent.getStringExtra("cpf"));
+        btnContinuar.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), CadastroClienteAcessoActivity.class);
+            intent.putExtra("nome", intent.getStringExtra("nome"));
+            intent.putExtra("dataNascimento", intent.getStringExtra("dataNascimento"));
+            intent.putExtra("telefone", intent.getStringExtra("telefone"));
+            intent.putExtra("cpf", intent.getStringExtra("cpf"));
 
-                intent.putExtra("cep", txtCep.getText().toString());
-                intent.putExtra("endereco", txtEndereco.getText().toString());
+            intent.putExtra("cep", txtCep.getText().toString());
+            intent.putExtra("endereco", txtEndereco.getText().toString());
 //                intent.putExtra("numero", txtNumero.getText().toString());
-                intent.putExtra("numero", txtNumero.getText().toString());
-                intent.putExtra("complemento", txtComplemento.getText().toString());
-                intent.putExtra("bairro", txtBairro.getText().toString());
-                intent.putExtra("cidade", txtCidade.getText().toString());
-                intent.putExtra("estado", txtEstado.getText().toString());
-                startActivity(intent);
-            }
+            intent.putExtra("numero", txtNumero.getText().toString());
+            intent.putExtra("complemento", txtComplemento.getText().toString());
+            intent.putExtra("bairro", txtBairro.getText().toString());
+            intent.putExtra("cidade", txtCidade.getText().toString());
+            intent.putExtra("estado", txtEstado.getText().toString());
+            startActivity(intent);
         });
 
     }

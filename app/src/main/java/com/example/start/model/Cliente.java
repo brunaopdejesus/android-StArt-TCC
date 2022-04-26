@@ -31,7 +31,7 @@ public class Cliente {
     @Expose
     private String cep;
 
-    @SerializedName("endereco")
+    @SerializedName("rua")
     @Expose
     private String endereco;
 
@@ -47,7 +47,7 @@ public class Cliente {
     @Expose
     private String bairro;
 
-    @SerializedName("cidade")
+    @SerializedName("idCidade")
     @Expose
     private String cidade;
 

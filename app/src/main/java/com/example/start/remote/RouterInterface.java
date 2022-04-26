@@ -9,7 +9,11 @@ import retrofit2.http.POST;
 public interface RouterInterface {
 
     // INSERIR CLIENTE
-    @POST("/cadastro/")
+    @POST("/cadastro")
     Call<Cliente> addCliente(@Body Cliente cliente);
+
+    // LOGIN
+    @POST("/login")
+    Call<Cliente> loginCliente(@Body Cliente loginCliente);
 
 }
