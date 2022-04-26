@@ -23,8 +23,8 @@
         <entry key="app/src/main/res/layout/activity_cadastro_artista_pagamento_transferencia.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_cadastro_artista_pessoal.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_cadastro_cliente_acesso.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/activity_cadastro_cliente_endereco.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_cadastro_cliente_pessoal.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_endereco.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_pessoal.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_configuracoes_clliente.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_editar_perfil_cliente.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_esqueceu_sua_senha.xml" value="0.32222222222222224" />

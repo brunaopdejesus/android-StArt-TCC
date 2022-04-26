@@ -59,6 +59,7 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
 
                 intent.putExtra("cep", txtCep.getText().toString());
                 intent.putExtra("endereco", txtEndereco.getText().toString());
+//                intent.putExtra("numero", txtNumero.getText().toString());
                 intent.putExtra("numero", txtNumero.getText().toString());
                 intent.putExtra("complemento", txtComplemento.getText().toString());
                 intent.putExtra("bairro", txtBairro.getText().toString());

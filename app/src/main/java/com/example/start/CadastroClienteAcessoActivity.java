@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.start.model.Cliente;
+import com.example.start.remote.APIUtil;
 import com.example.start.remote.RouterInterface;
 
 import retrofit2.Call;
@@ -46,48 +47,28 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CadastroClienteAcessoActivity.class);
-//                intent.putExtra("nome", intent.getStringExtra("nome"));
-                intent.putExtra("dataNascimento", intent.getStringExtra("dataNascimento"));
-//                intent.putExtra("telefone", intent.getStringExtra("telefone"));
-//                intent.putExtra("cpf", intent.getStringExtra("cpf"));
-//                intent.putExtra("cep", intent.getStringExtra("cep"));
-//                intent.putExtra("endereco", intent.getStringExtra("endereco"));
-//                intent.putExtra("numero", intent.getStringExtra("numero"));
-//                intent.putExtra("complemento", intent.getStringExtra("complemento"));
-//                intent.putExtra("bairro", intent.getStringExtra("bairro"));
-//                intent.putExtra("cidade", intent.getStringExtra("cidade"));
-//                intent.putExtra("estado", intent.getStringExtra("estado"));
-
-//                intent.putExtra("email", txtEmail.getText().toString());
-//                intent.putExtra("senha", txtSenha.getText().toString());
 
                 Cliente cliente = new Cliente();
 
                 cliente.setNomeCompleto(intent.getStringExtra("nome"));
                 cliente.setDataNascimento(intent.getStringExtra("dataNascimento"));
                 cliente.setTelefoneCelular(intent.getStringExtra("telefone"));
-                cliente.setCpf_cnpj(intent.getStringExtra(""));
-                cliente.setCep(intent.getStringExtra(""));
-                cliente.setEndereco(intent.getStringExtra(""));
-                cliente.setNumero(intent.getStringExtra("numero"));
+                cliente.setCpf_cnpj(intent.getStringExtra("cpf"));
+                cliente.setCep(intent.getStringExtra("cep"));
+                cliente.setEndereco(intent.getStringExtra("endereco"));
+                cliente.setNumero(intent.getIntExtra("numero", 0));
+                cliente.setComplemento(intent.getStringExtra("complemento"));
+                cliente.setBairro(intent.getStringExtra("bairro"));
+                cliente.setCidade(intent.getStringExtra("cidade"));
+                cliente.setEstado(intent.getStringExtra("estado"));
+                cliente.setEmail(txtEmail.getText().toString());
+                cliente.setSenha(txtSenha.getText().toString());
+
+                routerInterface = APIUtil.getUsuarioInterface();
+                addCliente(cliente);
 
             }
         });
-
-//        btnCadastrar.setOnClickListener(view -> {
-//
-//            Cliente cliente = new Cliente();
-//
-//
-//
-//            cliente.setNomeCompleto(txtEmail.getText().toString());
-//            cliente.setSenha(txtSenha.getText().toString());
-//
-//            routerInterface = APIUtil.getUsuarioInterface();
-//
-//            addCliente(cliente);
-//
-//        });
 
     }
 
@@ -104,6 +85,8 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Cliente> call, Throwable t) {
+                Toast.makeText(CadastroClienteAcessoActivity.this, "Erro ao cadastrar usuário",
+                        Toast.LENGTH_SHORT).show();
                 Log.d("Erro-API", t.getMessage());
             }
         });
