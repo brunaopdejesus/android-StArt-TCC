@@ -207,4 +207,7 @@ public class Cliente {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    public void setDataNascimento(String dataNascimento) {
+    }
 }

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -35,12 +36,36 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
         txtEstado = findViewById(R.id.et_estado_cadastro_endereco);
         btnContinuar = findViewById(R.id.btn_continuar_cadastro_cliente_endereco);
 
+        // RECEBENDO DADOS DA ACTIVITY ANTERIOR
+//        Intent intent = getIntent();
+//        String nome = intent.getStringExtra("nome");
+//        String dataNascimento = intent.getStringExtra("dataNascimento");
+//        String telefone = intent.getStringExtra("telefone");
+//        String cpf = intent.getStringExtra("cpf");
+
         arrowBack.setOnClickListener(view -> {
-            startActivity(new Intent(CadastroClienteEnderecoActivity.this, CadastroClientePessoalActivity.class));
+            finish();
+            super.onBackPressed();
         });
 
-        btnContinuar.setOnClickListener(view -> {
-            startActivity(new Intent(CadastroClienteEnderecoActivity.this, CadastroClienteAcessoActivity.class));
+        btnContinuar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CadastroClienteEnderecoActivity.class);
+                intent.putExtra("nome", intent.getStringExtra("nome"));
+                intent.putExtra("dataNascimento", intent.getStringExtra("dataNascimento"));
+                intent.putExtra("telefone", intent.getStringExtra("telefone"));
+                intent.putExtra("cpf", intent.getStringExtra("cpf"));
+
+                intent.putExtra("cep", txtCep.getText().toString());
+                intent.putExtra("endereco", txtEndereco.getText().toString());
+                intent.putExtra("numero", txtNumero.getText().toString());
+                intent.putExtra("complemento", txtComplemento.getText().toString());
+                intent.putExtra("bairro", txtBairro.getText().toString());
+                intent.putExtra("cidade", txtCidade.getText().toString());
+                intent.putExtra("estado", txtEstado.getText().toString());
+                startActivity(intent);
+            }
         });
 
     }

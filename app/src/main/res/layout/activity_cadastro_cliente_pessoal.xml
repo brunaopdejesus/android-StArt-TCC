@@ -45,11 +45,13 @@
             android:text="Data de Nascimento*"
             />
 
-        <DatePicker
+        <EditText
             android:id="@+id/et_data_nascimento_cadastro_cliente"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
+            android:hint="DD/MM/YYYY"
             android:inputType="date"
+            android:focusable="false"
             />
 
         <TextView
