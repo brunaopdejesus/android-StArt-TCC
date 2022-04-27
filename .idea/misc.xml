@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/rectangle_modal.xml" value="0.3675" />
         <entry key="app/src/main/res/font/raleway.xml" value="0.32314814814814813" />
         <entry key="app/src/main/res/layout/activity_adicionar_obra.xml" value="0.42625053441641725" />
+        <entry key="app/src/main/res/layout/activity_alterar_senha_perfil_cliente.xml" value="0.4551223934723481" />
         <entry key="app/src/main/res/layout/activity_boas_vindas_artista2.xml" value="0.42625053441641725" />
         <entry key="app/src/main/res/layout/activity_boas_vindas_artista3.xml" value="0.42625053441641725" />
         <entry key="app/src/main/res/layout/activity_boas_vindas_artista4.xml" value="0.42625053441641725" />
@@ -22,18 +23,31 @@
         <entry key="app/src/main/res/layout/activity_cadastro_artista_pagamento_pix.xml" value="0.36018518518518516" />
         <entry key="app/src/main/res/layout/activity_cadastro_artista_pagamento_transferencia.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_cadastro_artista_pessoal.xml" value="0.375" />
+<<<<<<< HEAD
         <entry key="app/src/main/res/layout/activity_cadastro_cliente_acesso.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_cadastro_cliente_endereco.xml" value="0.5192708333333333" />
         <entry key="app/src/main/res/layout/activity_cadastro_cliente_pessoal.xml" value="0.1" />
+=======
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_acesso.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_endereco.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_cadastro_cliente_pessoal.xml" value="0.25" />
+>>>>>>> telas de configurações finalizadas, inicio de telas de pagamento e finalização de modais
         <entry key="app/src/main/res/layout/activity_configuracoes_clliente.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_desativar_conta_perfil_cliente.xml" value="0.4551223934723481" />
         <entry key="app/src/main/res/layout/activity_editar_perfil_cliente.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_endereco_perfil_cliente.xml" value="0.4551223934723481" />
         <entry key="app/src/main/res/layout/activity_esqueceu_sua_senha.xml" value="0.32222222222222224" />
         <entry key="app/src/main/res/layout/activity_home_artista.xml" value="0.42625053441641725" />
-        <entry key="app/src/main/res/layout/activity_home_cliente.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_home_cliente.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_home_cliente_modal.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_informacoes_pessoais_perfil_cliente.xml" value="0.4551223934723481" />
         <entry key="app/src/main/res/layout/activity_listagem_de_obras.xml" value="0.4142796066695169" />
         <entry key="app/src/main/res/layout/activity_listagem_de_obras_cliente.xml" value="0.46600181323662737" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_pagamento_credito_perfil.xml" value="0.4551223934723481" />
+        <entry key="app/src/main/res/layout/activity_pagamento_credito_realizado_cliente.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/activity_pagamento_debito_cliente.xml" value="0.4551223934723481" />
+        <entry key="app/src/main/res/layout/activity_pagamento_debito_realizado_cliente.xml" value="0.4551223934723481" />
         <entry key="app/src/main/res/layout/activity_perfil_artista.xml" value="0.4728014505893019" />
         <entry key="app/src/main/res/layout/activity_perfil_artista_modal.xml" value="0.4728014505893019" />
         <entry key="app/src/main/res/layout/activity_perfil_cliente.xml" value="0.335" />

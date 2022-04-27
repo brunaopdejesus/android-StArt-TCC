@@ -28,20 +28,14 @@
                 />
 
 
-            <ImageView
-                android:id="@+id/image_perfil_cliente"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/img_perfil"
-                android:layout_marginTop="40dp"/>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Editar Perfil"
+                android:text="Endereço"
                 android:layout_gravity="center"
                 android:gravity="center"
                 style="@style/titulo_nome_perfil"
+                android:layout_marginBottom="20dp"
                 />
 
         </RelativeLayout>
@@ -53,46 +47,45 @@
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/text_input_cadastro"
-                android:layout_marginTop="12dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Alterar foto de perfil"
-                android:textColor="#FF6EDCD0"
-                android:fontFamily="sans-serif-light"
-
-                />
 
             <TextView
                 style="@style/text_input_cadastro"
                 android:layout_marginTop="42dp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-light"
-                android:text="Nome Artístico" />
+                android:text="Cep" />
 
             <EditText
                 style="@style/edit_text_configuracoes"
-                android:text="@string/titulo_nome_cliente"
+                android:text="06634-000"
                 android:fontFamily="sans-serif-light"
                 android:background="@drawable/input_shape" />
 
+            <TextView
+                style="@style/text_input_cadastro"
+                android:layout_marginTop="42dp"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:text="Endereço" />
 
+            <EditText
+                style="@style/edit_text_configuracoes"
+                android:text="R. Silvestre"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/input_shape" />
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="28dp"
-                android:layout_marginBottom="28dp"
-                >
+                android:layout_marginTop="28dp">
 
                 <TextView
                     android:id="@+id/tv_preferencia_editar_perfil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Preferência"
+                    android:text="Número"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -103,7 +96,7 @@
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    android:text="Nacionalidade"
+                    android:text="Complemento"
                     android:layout_alignLeft="@+id/et_preferencia_editar_perfil"
                     />
 
@@ -111,26 +104,24 @@
                     android:id="@+id/et_nacionalidade_editar_perfil"
                     android:layout_width="170dp"
                     android:layout_height="45dp"
-                    android:text="Brasileiro"
+                    android:text="849"
                     android:fontFamily="sans-serif-light"
                     android:layout_below="@+id/tv_preferencia_editar_perfil"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/input_shape"
-                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
                     android:paddingStart="8dp"
-                     />
+                    />
 
                 <EditText
                     android:id="@+id/et_preferencia_editar_perfil"
                     android:layout_width="170dp"
                     android:layout_height="45dp"
-                    android:text="Fotografia"
+                    android:text="40-B"
                     android:fontFamily="sans-serif-light"
                     android:layout_below="@+id/tv_nacionalidade_editar_perfil"
                     android:layout_marginTop="8dp"
                     android:paddingStart="8dp"
                     android:layout_alignParentRight="true"
-                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
                     android:background="@drawable/input_shape"
 
                     />
@@ -144,66 +135,84 @@
                 android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/tv_pais_editar_perfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:text="País"
-                />
+                <TextView
+                    style="@style/text_input_cadastro"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Bairro" />
 
-            <EditText
-                android:id="@+id/et_banco_transferencia_bancaria"
-                android:layout_width="170dp"
-                android:layout_height="45dp"
-                android:layout_below="@+id/tv_pais_editar_perfil"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/input_shape"
-                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-                android:paddingStart="8dp"
-                android:text="Brasil"
-                android:fontFamily="sans-serif-light"
-                android:layout_marginBottom="28dp"/>
+                <EditText
+                    style="@style/edit_text_configuracoes"
+                    android:text="Jardim São João"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/input_shape"
+                    android:layout_marginBottom="28dp"
+                    />
 
-            <TextView
-                android:id="@+id/tv_biografia_editar_perfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:text="Biografia"
-                android:layout_alignLeft="@+id/et_cpf_titular_transferencia_bancaria"
-                />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp">
 
-            <EditText
-                android:id="@+id/et_biografia_transferencia_bancaria"
-                android:paddingEnd="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="85dp"
-                android:layout_below="@+id/tv_banco_transferencia"
-                android:text="Amo fotografias da natureza, pois gosto de lindas paisagens"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="8dp"
-                android:fontFamily="sans-serif-light"
-                android:background="@drawable/input_shape"
-                android:paddingStart="8dp"
-                style="@style/edit_text_configuracoes"
-                />
+                    <TextView
+                        android:id="@+id/tv_cidade_editar_perfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Cidade"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Salvar Alterações"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:fontFamily="sans-serif"
-                android:layout_marginTop="30dp"
-                />
+                    <TextView
+                        android:id="@+id/tv_estado_editar_perfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/et_cidade_editar_perfil"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Estado"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_estado_editar_perfil"
+                        android:layout_width="170dp"
+                        android:layout_height="45dp"
+                        android:text="Jandira"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_below="@+id/tv_cidade_editar_perfil"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/input_shape"
+                        android:paddingStart="8dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_cidade_editar_perfil"
+                        android:layout_width="170dp"
+                        android:layout_height="45dp"
+                        android:text="São Paulo"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_below="@+id/tv_estado_editar_perfil"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="8dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/input_shape"
+
+                        />
+
+                </RelativeLayout>
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salvar"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="30dp"
+                    />
 
             </LinearLayout>
 
