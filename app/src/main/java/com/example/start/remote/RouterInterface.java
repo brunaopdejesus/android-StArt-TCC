@@ -16,4 +16,7 @@ public interface RouterInterface {
     @POST("/login")
     Call<Cliente> loginCliente(@Body Cliente loginCliente);
 
+    // DADOS DE ENDEREÇO
+
+
 }

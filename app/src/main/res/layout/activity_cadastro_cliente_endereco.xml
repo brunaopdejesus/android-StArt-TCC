@@ -35,9 +35,11 @@
             />
 
         <EditText
-            android:id="@+id/et_cep_cadastro_cliente"
+            android:id="@+id/et_zip_code"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
+            android:inputType="number"
+            android:maxLength="8"
             />
 
         <TextView
@@ -135,7 +137,7 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:text="Estado"
-                android:layout_alignLeft="@+id/et_estado_cadastro_endereco"
+                android:layout_alignLeft="@+id/sp_estado_cadastro_cliente"
                 />
 
             <EditText
@@ -148,17 +150,31 @@
                 android:background="@drawable/input_shape"
                 />
 
-            <EditText
-                android:id="@+id/et_estado_cadastro_endereco"
+            <Spinner
+                android:id="@+id/sp_estado_cadastro_cliente"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
                 android:layout_below="@+id/tv_cidade_cadastro"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
-                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:dropDownSelector="@drawable/input_shape"
+                android:dropDownWidth="170dp"
                 android:paddingStart="8dp"
-                android:paddingEnd="8dp" />
+                android:paddingEnd="8dp"
+                />
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_estado_cadastro_endereco"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_below="@+id/tv_cidade_cadastro"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@drawable/input_shape"-->
+<!--                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:paddingEnd="8dp" />-->
 
         </RelativeLayout>
 

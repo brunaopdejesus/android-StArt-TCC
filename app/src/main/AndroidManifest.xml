@@ -13,6 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StArt">
+
+<!--        <activity android:name=".ZipCodeSearchActivity"></activity>-->
+
         <activity
             android:name=".AdicionarObraActivity"
             android:exported="true" />
