@@ -38,21 +38,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="60dp"
-            android:background="@color/turquesa_clarinho"
-            >
+            android:background="@color/turquesa_clarinho">
 
             <TextView
 
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Agradecemos por comprar na StArt . Sua compra é de grande importancia para ajudarmos o mundo da arte a crescer, aproveite sua mais nova obra."
-                android:gravity="center"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:fontFamily="sans-serif-light"
-                android:textSize="20sp"
                 android:layout_marginTop="70dp"
                 android:layout_marginBottom="80dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Agradecemos por comprar na StArt . Sua compra é de grande importancia para ajudarmos o mundo da arte a crescer, aproveite sua mais nova obra."
+                android:textColor="@color/black"
+                android:textSize="20sp"
 
                 />
 
