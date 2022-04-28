@@ -6,6 +6,16 @@
     <string name="titulo_nome_cliente">Gabriel Gonçalves</string>
     <string name="dotted">&#8226;</string>
 
+    <string name="conta_prompt">Selecione</string>
+    <string-array name="tipo_conta">
+        <item>"Selecione"</item>
+        <item>"Conta corrente"</item>
+        <item>"Conta poupança"</item>
+        <item>"Conta salário"</item>
+        <item>"Conta digital"</item>
+        <item>"Conta universitária"</item>
+    </string-array>
+
     <string name="pix_prompt">Selecione</string>
     <string-array name="pix">
         <item>"Selecione"</item>

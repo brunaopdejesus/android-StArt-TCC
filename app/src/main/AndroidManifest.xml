@@ -65,7 +65,13 @@
             android:exported="true" />
         <activity
             android:name=".CadastroArtistaPagamentoTransferenciaActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".CadastroArtistaPagamentoPixActivity"
             android:exported="true" />
@@ -86,11 +92,6 @@
         <activity
             android:name=".CadastroClientePessoalActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".TipoCadastroActivity"

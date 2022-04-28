@@ -223,12 +223,23 @@
             android:layout_marginTop="16dp"
             />
 
-        <EditText
-            android:id="@+id/et_tipo_de_conta_transferencia_bancaria"
-            style="@style/edit_text_cadastro"
-            android:maxLength="25"
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:background="@drawable/input_shape"
+            android:entries="@array/tipo_conta"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:prompt="@string/conta_prompt"
             />
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_tipo_de_conta_transferencia_bancaria"-->
+<!--            style="@style/edit_text_cadastro"-->
+<!--            android:maxLength="25"-->
+<!--            android:background="@drawable/input_shape"-->
+<!--            />-->
 
         <Button
             android:id="@+id/btn_continuar_cadastro_artista_pessoal"
