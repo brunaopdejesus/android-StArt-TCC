@@ -39,8 +39,7 @@
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
             android:inputType="number"
-            android:maxLength="8"
-            android:hint="Ex.: 12345678"
+            android:maxLength="10"
             />
 
         <TextView
@@ -52,6 +51,7 @@
             android:id="@+id/et_endereco_cadastro_cliente"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
+            android:maxLength="100"
             />
 
         <RelativeLayout
@@ -88,18 +88,19 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
                 android:inputType="number"
-                android:paddingStart="8dp"/>
+                android:maxLength="30"
+                android:paddingStart="8dp" />
 
             <EditText
                 android:id="@+id/et_complemento_cadastro_endereco"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
                 android:layout_below="@+id/tv_numero_cadastro"
-                android:layout_marginTop="8dp"
-                android:paddingStart="8dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
-                />
+                android:maxLength="30"
+                android:paddingStart="8dp" />
 
         </RelativeLayout>
 
@@ -111,6 +112,7 @@
         <EditText
             android:id="@+id/et_bairro_cadastro_cliente"
             style="@style/edit_text_cadastro"
+            android:maxLength="100"
             android:background="@drawable/input_shape"
             />
 
@@ -163,20 +165,7 @@
                 android:paddingEnd="8dp"
                 android:prompt="@string/state_prompt" />
 
-            <!--            <EditText-->
-            <!--                android:id="@+id/et_estado_cadastro_endereco"-->
-            <!--                android:layout_width="170dp"-->
-            <!--                android:layout_height="45dp"-->
-            <!--                android:layout_below="@+id/tv_cidade_cadastro"-->
-            <!--                android:layout_alignParentRight="true"-->
-            <!--                android:layout_marginTop="8dp"-->
-            <!--                android:background="@drawable/input_shape"-->
-            <!--                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"-->
-            <!--                android:paddingStart="8dp"-->
-            <!--                android:paddingEnd="8dp" />-->
-
         </RelativeLayout>
-
 
 
         <Button

@@ -6,8 +6,18 @@
     <string name="titulo_nome_cliente">Gabriel Gonçalves</string>
     <string name="dotted">&#8226;</string>
 
+    <string name="pix_prompt">Selecione</string>
+    <string-array name="pix">
+        <item>"Selecione"</item>
+        <item>"E-mail"</item>
+        <item>"CPF/CNPJ"</item>
+        <item>"Número de telefone"</item>
+        <item>"Chave aleatória"</item>
+    </string-array>
+
+    <string name="state_prompt">Estado</string>
     <string-array name="states">
-        <item>"*Estado"</item>
+        <item>"Estado"</item>
         <item>"Acre (AC)"</item>
         <item>"Alagoas (AL)"</item>
         <item>"Amapá (AP)"</item>

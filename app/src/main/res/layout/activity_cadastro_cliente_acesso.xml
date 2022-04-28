@@ -40,6 +40,7 @@
             <EditText
                 android:id="@+id/et_email_cadastro_cliente_acesso"
                 style="@style/edit_text_cadastro"
+                android:maxLength="256"
                 android:background="@drawable/input_shape" />
 
             <TextView
