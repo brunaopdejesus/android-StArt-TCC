@@ -63,6 +63,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             cliente.setComplemento(intent.getStringExtra("complemento"));
             cliente.setBairro(intent.getStringExtra("bairro"));
             cliente.setCidade(intent.getStringExtra("cidade"));
+            cliente.setEstado(intent.getStringExtra("estado"));
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);
