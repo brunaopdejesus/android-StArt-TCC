@@ -88,20 +88,20 @@
                 android:layout_below="@+id/tv_banco_transferencia"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
-                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
                 android:paddingStart="8dp"
+                android:maxLength="50"
                 android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/et_cpf_titular_transferencia_bancaria"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
+                android:maxLength="20"
                 android:layout_below="@+id/tv_banco_transferencia"
-                android:layout_marginTop="8dp"
-                android:paddingStart="8dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
-                />
+                android:paddingStart="8dp" />
 
         </RelativeLayout>
 
@@ -114,6 +114,7 @@
         <EditText
             android:id="@+id/et_titular_transferencia_bancaria"
             style="@style/edit_text_cadastro"
+            android:maxLength="100"
             android:background="@drawable/input_shape"
             />
 
@@ -151,6 +152,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
                 android:paddingStart="8dp"
+                android:maxLength="10"
                 android:textSize="16sp" />
 
             <EditText
@@ -158,11 +160,11 @@
                 android:layout_width="170dp"
                 android:layout_height="45dp"
                 android:layout_below="@+id/tv_digito_transferencia"
-                android:layout_marginTop="8dp"
-                android:paddingStart="8dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:maxLength="5"
                 android:background="@drawable/input_shape"
-                />
+                android:paddingStart="8dp" />
 
         </RelativeLayout>
 
@@ -197,6 +199,7 @@
                 android:layout_height="45dp"
                 android:layout_below="@+id/tv_digito_verificador_transferencia"
                 android:layout_marginTop="8dp"
+                android:maxLength="15"
                 android:background="@drawable/input_shape"
                 android:paddingStart="8dp"
                 android:textSize="16sp" />
@@ -206,11 +209,11 @@
                 android:layout_width="170dp"
                 android:layout_height="45dp"
                 android:layout_below="@+id/tv_digito_verificador_transferencia"
-                android:layout_marginTop="8dp"
-                android:paddingStart="8dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:maxLength="5"
                 android:background="@drawable/input_shape"
-                />
+                android:paddingStart="8dp" />
 
         </RelativeLayout>
 
@@ -223,8 +226,8 @@
         <EditText
             android:id="@+id/et_tipo_de_conta_transferencia_bancaria"
             style="@style/edit_text_cadastro"
+            android:maxLength="25"
             android:background="@drawable/input_shape"
-            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
             />
 
         <Button

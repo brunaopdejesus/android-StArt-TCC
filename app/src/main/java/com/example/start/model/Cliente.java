@@ -7,6 +7,7 @@ import java.util.Date;
 
 public class Cliente {
 
+    // SERIALIZED GERENCIADO PELO GSON
     @SerializedName("idCliente")
     @Expose
     private int idCliente;
