@@ -27,13 +27,25 @@ public class Cliente {
     @Expose
     private String cpf_cnpj;
 
-    @SerializedName("cep")
+    @SerializedName("email")
     @Expose
-    private String cep;
+    private String email;
+
+    @SerializedName("senha")
+    @Expose
+    private String senha;
+
+    @SerializedName("idCidade")
+    @Expose
+    private String cidade;
 
     @SerializedName("rua")
     @Expose
     private String endereco;
+
+    @SerializedName("cep")
+    @Expose
+    private String cep;
 
     @SerializedName("numero")
     @Expose
@@ -47,21 +59,10 @@ public class Cliente {
     @Expose
     private String bairro;
 
-    @SerializedName("idCidade")
-    @Expose
-    private String cidade;
-
     @SerializedName("estado")
     @Expose
     private String estado;
 
-    @SerializedName("email")
-    @Expose
-    private String email;
-
-    @SerializedName("senha")
-    @Expose
-    private String senha;
 
     public Cliente() {
     }

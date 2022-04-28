@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+
+import java.util.List;
 
 public class CadastroClienteEnderecoActivity extends AppCompatActivity {
 
@@ -18,7 +21,7 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
     private EditText txtComplemento;
     private EditText txtBairro;
     private EditText txtCidade;
-    private EditText txtEstado;
+    private Spinner spinner;
     private Button btnContinuar;
 
     @Override
@@ -33,15 +36,8 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
         txtComplemento = findViewById(R.id.et_complemento_cadastro_endereco);
         txtBairro = findViewById(R.id.et_bairro_cadastro_cliente);
         txtCidade = findViewById(R.id.et_cidade_cadastro_endereco);
-        txtEstado = findViewById(R.id.et_estado_cadastro_endereco);
+        spinner = findViewById(R.id.sp_estado_cadastro_cliente);
         btnContinuar = findViewById(R.id.btn_continuar_cadastro_cliente_endereco);
-
-        // RECEBENDO DADOS DA ACTIVITY ANTERIOR
-//        Intent intent = getIntent();
-//        String nome = intent.getStringExtra("nome");
-//        String dataNascimento = intent.getStringExtra("dataNascimento");
-//        String telefone = intent.getStringExtra("telefone");
-//        String cpf = intent.getStringExtra("cpf");
 
         arrowBack.setOnClickListener(view -> {
             finish();
@@ -62,9 +58,11 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
             intent.putExtra("complemento", txtComplemento.getText().toString());
             intent.putExtra("bairro", txtBairro.getText().toString());
             intent.putExtra("cidade", txtCidade.getText().toString());
-            intent.putExtra("estado", txtEstado.getText().toString());
+            intent.putExtra("estado", spinner.getSelectedItem().toString());
             startActivity(intent);
         });
 
     }
+
+
 }

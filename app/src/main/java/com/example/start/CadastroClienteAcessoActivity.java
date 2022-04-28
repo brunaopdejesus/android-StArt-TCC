@@ -53,15 +53,16 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             cliente.setDataNascimento(intent.getStringExtra("dataNascimento"));
             cliente.setTelefoneCelular(intent.getStringExtra("telefone"));
             cliente.setCpf_cnpj(intent.getStringExtra("cpf"));
-            cliente.setCep(intent.getStringExtra("cep"));
+            cliente.setEmail(txtEmail.getText().toString());
+            cliente.setSenha(txtSenha.getText().toString());
+//            cliente.setContaEstaAtiva
+
             cliente.setEndereco(intent.getStringExtra("endereco"));
+            cliente.setCep(intent.getStringExtra("cep"));
             cliente.setNumero(intent.getIntExtra("numero", 0));
             cliente.setComplemento(intent.getStringExtra("complemento"));
             cliente.setBairro(intent.getStringExtra("bairro"));
             cliente.setCidade(intent.getStringExtra("cidade"));
-            cliente.setEstado(intent.getStringExtra("estado"));
-            cliente.setEmail(txtEmail.getText().toString());
-            cliente.setSenha(txtSenha.getText().toString());
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);

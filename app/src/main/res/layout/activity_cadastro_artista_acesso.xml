@@ -52,16 +52,6 @@
                 android:background="@drawable/input_shape"
                 android:inputType="date" />
 
-            <TextView
-                style="@style/text_input_cadastro"
-                android:text="Confirmar senha*" />
-
-            <EditText
-                android:id="@+id/et_confirmar_senha_cadastro_artista_acesso"
-                style="@style/edit_text_cadastro"
-                android:background="@drawable/input_shape" />
-
-
             <Button
                 android:id="@+id/btn_continuar_cadastro_artista_acesso"
                 style="@style/btn_continuar_cadastro"

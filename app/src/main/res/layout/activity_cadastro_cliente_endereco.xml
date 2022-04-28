@@ -35,11 +35,12 @@
             />
 
         <EditText
-            android:id="@+id/et_zip_code"
+            android:id="@+id/et_cep_cadastro_cliente"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
             android:inputType="number"
             android:maxLength="8"
+            android:hint="Ex.: 12345678"
             />
 
         <TextView
@@ -86,8 +87,8 @@
                 android:layout_below="@+id/tv_numero_cadastro"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
-                android:paddingStart="8dp"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:paddingStart="8dp"/>
 
             <EditText
                 android:id="@+id/et_complemento_cadastro_endereco"
@@ -133,12 +134,11 @@
                 android:id="@+id/tv_estado_cadastro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:text="Estado"
                 android:layout_alignLeft="@+id/sp_estado_cadastro_cliente"
-                />
+                android:fontFamily="@font/raleway"
+                android:text="Estado"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/et_cidade_cadastro_endereco"
@@ -158,23 +158,22 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
-                android:dropDownSelector="@drawable/input_shape"
-                android:dropDownWidth="170dp"
+                android:entries="@array/states"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
-                />
+                android:prompt="@string/state_prompt" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/et_estado_cadastro_endereco"-->
-<!--                android:layout_width="170dp"-->
-<!--                android:layout_height="45dp"-->
-<!--                android:layout_below="@+id/tv_cidade_cadastro"-->
-<!--                android:layout_alignParentRight="true"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:background="@drawable/input_shape"-->
-<!--                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"-->
-<!--                android:paddingStart="8dp"-->
-<!--                android:paddingEnd="8dp" />-->
+            <!--            <EditText-->
+            <!--                android:id="@+id/et_estado_cadastro_endereco"-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_below="@+id/tv_cidade_cadastro"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:background="@drawable/input_shape"-->
+            <!--                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"-->
+            <!--                android:paddingStart="8dp"-->
+            <!--                android:paddingEnd="8dp" />-->
 
         </RelativeLayout>
 

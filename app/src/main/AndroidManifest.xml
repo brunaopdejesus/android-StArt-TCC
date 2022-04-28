@@ -14,8 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StArt">
 
-<!--        <activity android:name=".ZipCodeSearchActivity"></activity>-->
-
         <activity
             android:name=".AdicionarObraActivity"
             android:exported="true" />
@@ -76,7 +74,8 @@
             android:exported="true" />
         <activity
             android:name=".CadastroArtistaPessoalActivity"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
         <activity
             android:name=".CadastroClienteAcessoActivity"
             android:exported="true">

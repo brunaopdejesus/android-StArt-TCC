@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroArtistaPessoalActivity">
+    tools:context=".CadastroClientePessoalActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,13 +14,13 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/image_back_cadastro_artista_pessoal"
+            android:id="@+id/image_back_cadastro_cliente_pessoal"
             style="@style/icon_back"
             />
 
         <TextView
             style="@style/titulo_cadastro"
-            android:text="@string/titulo_cadastro_artista"
+            android:text="@string/titulo_cadastro_cliente"
             />
 
         <TextView
@@ -35,7 +35,7 @@
             />
 
         <EditText
-            android:id="@+id/et_nome_cadastro_artista"
+            android:id="@+id/et_nome_cadastro_cliente"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
             />
@@ -46,10 +46,12 @@
             />
 
         <EditText
-            android:id="@+id/et_data_nascimento_cadastro_artista"
+            android:id="@+id/et_data_nascimento_cadastro_cliente"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
+            android:hint="DD/MM/YYYY"
             android:inputType="date"
+            android:focusable="false"
             />
 
         <TextView
@@ -58,7 +60,7 @@
             />
 
         <EditText
-            android:id="@+id/et_telefone_cadastro_artista"
+            android:id="@+id/et_telefone_cadastro_cliente"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
             />
@@ -69,19 +71,19 @@
             />
 
         <EditText
-            android:id="@+id/et_cpf_cadastro_artista"
+            android:id="@+id/et_cpf_cadastro_cliente"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
             />
 
         <TextView
-            android:id="@+id/tv_ja_possui_conta_cadastro_artista"
+            android:id="@+id/tv_ja_possui_conta_cadastro_cliente"
             style="@style/tv_japossuiconta_cadastro"
             android:text="Já possui uma conta?"
             />
 
         <Button
-            android:id="@+id/btn_continuar_cadastro_artista_pessoal"
+            android:id="@+id/btn_continuar_cadastro_cliente_pessoal"
             style="@style/btn_continuar_cadastro"
             android:text="Continuar"
             />
