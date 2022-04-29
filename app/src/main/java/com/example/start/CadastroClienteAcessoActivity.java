@@ -45,7 +45,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
         });
 
         btnCadastrar.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), CadastroClienteAcessoActivity.class);
+            Intent intent = new Intent(getApplicationContext(), HomeClienteActivity.class);
 
             Cliente cliente = new Cliente();
 
@@ -81,6 +81,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             public void onResponse(Call<Cliente> call, Response<Cliente> response) {
                 Toast.makeText(CadastroClienteAcessoActivity.this, "Usuário cadastrado com sucesso",
                         Toast.LENGTH_SHORT).show();
+
             }
 
             @Override

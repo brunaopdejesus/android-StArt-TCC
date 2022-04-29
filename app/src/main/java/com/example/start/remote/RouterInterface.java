@@ -5,21 +5,24 @@ import com.example.start.model.Cliente;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface RouterInterface {
 
     // INSERIR CLIENTE
-    @POST("/cadastro")
+    @POST("/cliente/cadastro")
     Call<Cliente> addCliente(@Body Cliente cliente);
 
-    // LOGIN
-    @POST("/login")
-    Call<Cliente> loginCliente(@Body Cliente loginCliente);
-
     // INSERIR ARTISTA
-    @POST("/cadastro")
-    Call<Artista> addArtista(@Body Artista artista);
+//    @POST("/artista/cadastro")
+//    Call<Artista> addArtista(@Body Artista artista);
+
+    // LOGIN
+//    @POST("/login")
+//    Call<Cliente> loginCliente(@Body Cliente loginCliente);
+
+    // RECEBER ESTADOS/CIDADES
 
 
 }

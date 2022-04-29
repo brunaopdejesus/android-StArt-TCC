@@ -70,7 +70,7 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
                                 etDataNascimento.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
 
                             }
-                        }, mYear, mMonth, mDay);
+                        }, mDay, mMonth, mYear);
                 datePickerDialog.show();
             }
 

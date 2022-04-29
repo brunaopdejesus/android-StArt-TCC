@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     // RETROFIT É O RESPONSÁVEL POR FAZER A CONEXÃO COM A API
-    // STATIC PORQUE SERÁ USADA EM VÁRIOS MOMENTOS
+    // STATIC PORQUE É USADO DESDE O PRIMEIRO MOMENTO
     private static Retrofit retrofit = null;
 
     /* Método de acesso ao cliente */
