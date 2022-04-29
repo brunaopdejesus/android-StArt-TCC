@@ -10,14 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="24dp"
+        android:padding="20dp"
         android:orientation="vertical"
         >
 
 
         <ImageView
             android:id="@+id/img_obra_detalhada"
-            android:layout_width="350dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/foto_obra"
             android:layout_gravity="center"
@@ -32,36 +32,29 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/img_mini_foto"
-                />
+                android:layout_height="match_parent"
+                android:src="@drawable/img_mini_foto" />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@drawable/img_mini_foto"
                 android:layout_marginStart="100dp"
                 />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@drawable/img_mini_foto"
                 android:layout_marginStart="200dp"
                 />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@drawable/img_mini_foto"
                 android:layout_marginStart="300dp"
                 />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
         </RelativeLayout>
 
@@ -113,148 +106,256 @@
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif"
             android:textColor="@color/black"
-            android:layout_alignLeft="@+id/et_cpf_titular_transferencia_bancaria"
 
             />
 
-            <EditText
-                style="@style/edit_text_configuracoes"
-                android:text="1"
+        <EditText
+            android:id="@+id/et_nacionalidade_editar_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="1"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@+id/tv_preferencia_editar_perfil"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_shape"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:paddingStart="8dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar agora"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="30dp"
+           android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar ao carrinho"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:backgroundTint="@color/white"
+            android:textAllCaps="false"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_line_configuracoes"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição da obra"
+           style="@style/tv_descricaoDaObra"
+
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_foto_van_gogh"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vincent Van Gogh"
+                android:textSize="20dp"
+                android:layout_marginStart="70dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="30dp"
+                android:text="5.0"
+                style="@style/titulo_avaliacao"
+                android:layout_marginBottom="10dp"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Largura:"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92 cm."
                 android:fontFamily="sans-serif-light"
-                android:background="@drawable/input_shape" />
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="80dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Largura:"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92 cm."
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="80dp"
+                />
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="28dp"
-                android:layout_marginBottom="28dp"
-                >
+        </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/tv_preferencia_editar_perfil"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Preferê"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
 
-                <TextView
-                    android:id="@+id/tv_nacionalidade_editar_perfil"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:text="Nacionalidade"
-                    android:layout_alignLeft="@+id/et_preferencia_editar_perfil"
-                    />
-
-                <EditText
-                    android:id="@+id/et_nacionalidade_editar_perfil"
-                    android:layout_width="170dp"
-                    android:layout_height="45dp"
-                    android:text="Brasileiro"
-                    android:fontFamily="sans-serif-light"
-                    android:layout_below="@+id/tv_preferencia_editar_perfil"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/input_shape"
-                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-                    android:paddingStart="8dp"
-                    />
-
-                <EditText
-                    android:id="@+id/et_preferencia_editar_perfil"
-                    android:layout_width="170dp"
-                    android:layout_height="45dp"
-                    android:text="Fotografia"
-                    android:fontFamily="sans-serif-light"
-                    android:layout_below="@+id/tv_nacionalidade_editar_perfil"
-                    android:layout_marginTop="8dp"
-                    android:paddingStart="8dp"
-                    android:layout_alignParentRight="true"
-                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-                    android:background="@drawable/input_shape"
-
-                    />
-
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Largura:"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
 
 
-                <TextView
-                    android:id="@+id/tv_pais_editar_perfil"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:text="País"
-                    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92 cm."
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="80dp"
+                />
 
-                <EditText
-                    android:id="@+id/et_banco_transferencia_bancaria"
-                    android:layout_width="170dp"
-                    android:layout_height="45dp"
-                    android:layout_below="@+id/tv_pais_editar_perfil"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/input_shape"
-                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-                    android:paddingStart="8dp"
-                    android:text="Brasil"
-                    android:fontFamily="sans-serif-light"
-                    android:layout_marginBottom="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Largura:"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
 
-                <TextView
-                    android:id="@+id/tv_biografia_editar_perfil"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:text="Biografia"
-                    android:layout_alignLeft="@+id/et_cpf_titular_transferencia_bancaria"
-                    />
 
-                <EditText
-                    android:id="@+id/et_biografia_transferencia_bancaria"
-                    android:paddingEnd="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="85dp"
-                    android:layout_below="@+id/tv_banco_transferencia"
-                    android:text="Amo fotografias da natureza, pois gosto de lindas paisagens"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="sans-serif-light"
-                    android:background="@drawable/input_shape"
-                    android:paddingStart="8dp"
-                    style="@style/edit_text_configuracoes"
-                    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92 cm."
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="80dp"
+                />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Salvar Alterações"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:layout_marginTop="30dp"
-                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Largura:"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92 cm."
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="80dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Largura:"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92 cm."
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="80dp"
+                />
+
+
+        </RelativeLayout>
+
+
 
             </LinearLayout>
 
 
-        </LinearLayout>
+
 
 
 </ScrollView>
