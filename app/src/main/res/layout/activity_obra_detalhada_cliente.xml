@@ -17,7 +17,7 @@
 
         <ImageView
             android:id="@+id/img_obra_detalhada"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:src="@drawable/foto_obra"
             android:layout_gravity="center"
@@ -34,41 +34,58 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/img_mini_foto"
-                android:layout_marginStart="30dp"
                 />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/img_mini_foto"
-                android:layout_marginStart="110dp"
+                android:layout_marginStart="100dp"
                 />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/img_mini_foto"
-                android:layout_marginStart="190dp"
+                android:layout_marginStart="200dp"
                 />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/img_mini_foto"
-                android:layout_marginStart="265dp"
+                android:layout_marginStart="300dp"
                 />
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
 
 
-            <TextView
-                style="@style/text_input_cadastro"
-                android:layout_marginTop="22dp"
-                android:textSize="30sp"
-                android:layout_marginStart="30dp"
-                android:fontFamily="sans-serif"
-                android:text="Noite Estrelada" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/text_input_cadastro"
+                    android:layout_marginTop="22dp"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif"
+                    android:text="Noite Estrelada" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_favorite"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="30dp"
+                    />
+
+            </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -76,12 +93,33 @@
             android:text="Pintura - Óleo sobre tela"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/black"
-            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$477,90"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantidade"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:layout_alignLeft="@+id/et_cpf_titular_transferencia_bancaria"
+
             />
 
             <EditText
                 style="@style/edit_text_configuracoes"
-                android:text="@string/titulo_nome_cliente"
+                android:text="1"
                 android:fontFamily="sans-serif-light"
                 android:background="@drawable/input_shape" />
 

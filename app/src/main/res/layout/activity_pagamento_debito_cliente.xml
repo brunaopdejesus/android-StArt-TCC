@@ -225,6 +225,19 @@
                 android:fontFamily="sans-serif-light"
                 android:background="@drawable/input_shape" />
 
+            <TextView
+                style="@style/text_input_cadastro"
+                android:layout_marginTop="42dp"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:text="Parcela" />
+
+            <EditText
+                style="@style/edit_text_configuracoes"
+                android:text="2x R$72 sem juros"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/input_shape" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
