@@ -163,7 +163,8 @@
                 android:paddingStart="8dp"
                 android:entries="@array/states"
                 android:paddingEnd="8dp"
-                android:prompt="@string/state_prompt" />
+                android:prompt="@string/state_prompt"
+                />
 
         </RelativeLayout>
 
