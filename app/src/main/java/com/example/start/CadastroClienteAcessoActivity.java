@@ -81,13 +81,9 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             public void onResponse(Call<Cliente> call, Response<Cliente> response) {
                 Toast.makeText(CadastroClienteAcessoActivity.this, "Usuário cadastrado com sucesso",
                         Toast.LENGTH_SHORT).show();
-
             }
-
             @Override
             public void onFailure(Call<Cliente> call, Throwable t) {
-                Toast.makeText(CadastroClienteAcessoActivity.this, "Erro ao cadastrar usuário",
-                        Toast.LENGTH_SHORT).show();
                 Log.d("Erro-API", t.getMessage());
             }
         });

@@ -4,16 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
-import java.util.List;
+import com.example.start.remote.APIUtil;
+import com.example.start.remote.RouterInterface;
 
 public class CadastroClienteEnderecoActivity extends AppCompatActivity {
 
+    RouterInterface routerInterface;
     private ImageView arrowBack;
     private EditText txtCep;
     private EditText txtEndereco;
@@ -28,6 +29,8 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_cliente_endereco);
+
+        routerInterface = APIUtil.getUsuarioInterface();
 
         arrowBack = findViewById(R.id.image_back_cadastro_cliente_endereco);
         txtCep = findViewById(R.id.et_cep_cadastro_cliente);
@@ -62,9 +65,6 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-
     }
-
 
 }

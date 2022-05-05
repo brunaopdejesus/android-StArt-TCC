@@ -1,7 +1,8 @@
 package com.example.start.remote;
 
-import com.example.start.model.Artista;
 import com.example.start.model.Cliente;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -14,6 +15,7 @@ public interface RouterInterface {
     @POST("/cliente/cadastro")
     Call<Cliente> addCliente(@Body Cliente cliente);
 
+
     // INSERIR ARTISTA
 //    @POST("/artista/cadastro")
 //    Call<Artista> addArtista(@Body Artista artista);
@@ -21,8 +23,6 @@ public interface RouterInterface {
     // LOGIN
 //    @POST("/login")
 //    Call<Cliente> loginCliente(@Body Cliente loginCliente);
-
-    // RECEBER ESTADOS/CIDADES
 
 
 }
