@@ -172,18 +172,16 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_foto_van_gogh"
-                />
+                android:src="@drawable/img_foto_van_gogh" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vincent Van Gogh"
-                android:textSize="20dp"
                 android:layout_marginStart="70dp"
                 android:fontFamily="sans-serif"
+                android:text="Vincent Van Gogh"
                 android:textColor="@color/black"
-                />
+                android:textSize="20dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -214,11 +212,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Largura:"
                 android:fontFamily="sans-serif"
+                android:text="Largura:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
 
 
             <TextView
@@ -228,27 +225,8 @@
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                android:layout_marginStart="80dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Largura:"
-                android:fontFamily="sans-serif"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="92 cm."
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginStart="80dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="78dp"
                 />
 
 
@@ -262,7 +240,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Largura:"
+                android:text="Altura:"
                 android:fontFamily="sans-serif"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -272,32 +250,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="92 cm."
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="3dp"
                 android:fontFamily="sans-serif-light"
+                android:text="74 cm."
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginStart="80dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Largura:"
-                android:fontFamily="sans-serif"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                />
+                android:textSize="18sp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="92 cm."
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginStart="80dp"
-                />
 
 
         </RelativeLayout>
@@ -305,12 +265,13 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Largura:"
+                android:text="Peso:"
                 android:fontFamily="sans-serif"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -320,35 +281,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="92 cm."
+                android:text="0,36 kg."
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                android:layout_marginStart="80dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="55dp"
                 />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Largura:"
-                android:fontFamily="sans-serif"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="92 cm."
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginStart="80dp"
-                />
-
 
         </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A Noite Estrelada é uma pintura de Vincent van Gogh de 1889. A obra retrata a vista da janela de um quarto do hospício de Saint-Rémy-de-Provence, pouco antes do nascer do sol, com a adição de um vilarejo idealizado pelo artista. A tela faz parte da coleção permanente do Museu de Arte Moderna de Nova Iorque desde 1941."
+            />
 
 
 
