@@ -257,6 +257,7 @@
                 style="@style/edit_text_configuracoes"
                 android:text="R$144,00  "
                 android:fontFamily="sans-serif-light"
+                android:backgroundTint="#E1E1E1"
                 android:background="@drawable/input_parcela_rigth"
                 android:layout_below="@+id/parcela_debito_cliente"
                 android:layout_marginStart="240dp"

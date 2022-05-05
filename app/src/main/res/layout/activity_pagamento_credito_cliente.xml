@@ -259,6 +259,7 @@
                 android:background="@drawable/input_parcela_rigth"
                 android:layout_below="@+id/parcela_debito_cliente"
                 android:layout_marginStart="240dp"
+                android:backgroundTint="#E1E1E1"
                 android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
 
 
