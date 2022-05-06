@@ -20,7 +20,7 @@
 
         <TextView
             style="@style/titulo_nome_perfil"
-            android:text="Adicionar obra"
+            android:text="Editar obra"
             android:layout_gravity="center"
             />
 
@@ -34,6 +34,8 @@
         <EditText
             android:id="@+id/et_titulo_adicionar_obra"
             style="@style/edit_text_cadastro"
+            android:text="Noite estrelada"
+            android:textSize="16sp"
             android:background="@drawable/input_shape"
             />
 
@@ -47,6 +49,8 @@
         <EditText
             android:id="@+id/descricao_adicionar_obra"
             style="@style/edit_text_cadastro"
+            android:text="A Noite Estrelada é uma pintura de Vincent van Gogh de 1889. A obra retrata a vista da janela de um quarto do hospício de Saint-Rémy-de-Provence, pouco antes do nascer do sol."
+            android:textSize="16sp"
             android:background="@drawable/input_shape"
             android:layout_height="100dp"
             />
@@ -95,6 +99,7 @@
                 android:id="@+id/et_quantidade_adicionar_obra"
                 android:layout_width="100dp"
                 android:layout_height="45dp"
+                android:text="1"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
                 android:paddingStart="8dp"
@@ -105,24 +110,25 @@
                 android:id="@+id/et_preco_adicionar_obra"
                 android:layout_width="100dp"
                 android:layout_height="45dp"
+                android:text="$10.000,00"
+                android:textSize="16sp"
                 android:layout_below="@id/tv_preco"
                 android:layout_marginLeft="132dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
                 android:gravity="center"
-                android:paddingStart="8dp" />
+                android:paddingStart="2dp" />
 
             <EditText
                 android:id="@+id/et_desconto_adicionar_obra"
                 android:layout_width="100dp"
                 android:layout_height="45dp"
+                android:text="0"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
                 android:paddingStart="8dp"
-
                 android:layout_below="@id/tv_desconto"
                 android:layout_alignParentRight="true"
-                android:gravity="center"
                 />
 
         </RelativeLayout>
@@ -158,6 +164,8 @@
                 android:id="@+id/et_exclusividade_adicionar_obra"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
+                android:text="Exclusivo"
+                android:textSize="16sp"
                 android:layout_below="@+id/tv_exclusividade"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
@@ -168,6 +176,8 @@
                 android:id="@+id/et_tecnica_adicionar_obra"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
+                android:text="Pintura sobre óleo"
+                android:textSize="16sp"
                 android:layout_below="@+id/tv_exclusividade"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
@@ -209,6 +219,8 @@
                 android:id="@+id/et_categoria_adicionar_obra"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
+                android:text="Pintura"
+                android:textSize="16sp"
                 android:layout_below="@+id/tv_categoria"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_shape"
@@ -219,6 +231,8 @@
                 android:id="@+id/et_subcategoria_adicionar_obra"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
+                android:text="Paisagem"
+                android:textSize="16sp"
                 android:layout_below="@+id/tv_categoria"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
@@ -240,13 +254,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/input_add_obra">
+            >
 
             <ImageView
                 android:id="@+id/image_add_adicionar_obra"
                 android:layout_width="match_parent"
                 android:layout_height="320dp"
-                android:src="@drawable/ic_baseline_add_24"
+                android:src="@drawable/img_adicionar_obra"
                 />
 
         </LinearLayout>

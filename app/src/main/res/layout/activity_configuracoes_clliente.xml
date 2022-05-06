@@ -100,6 +100,37 @@
 
             <ImageView
                 android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_person_configuracoes"
+                />
+
+            <TextView
+                android:id="@+id/person_perfil_config"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Informações Pessoais"
+                android:layout_marginStart="50dp"
+                style="@style/subtitulo_configuracoes"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_line_configuracoes"
+                android:layout_below="@id/person_perfil_config"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
                 android:layout_height="40dp"
                 android:src="@drawable/img_locate_configuracoes"
                 />
@@ -178,13 +209,7 @@
                 android:layout_marginBottom="30dp"
                 />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/img_line_configuracoes"
-                android:layout_below="@id/person_delete_perfil_config"
-                android:layout_marginBottom="40dp"
-                />
+
 
         </RelativeLayout>
 
