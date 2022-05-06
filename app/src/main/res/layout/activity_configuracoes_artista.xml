@@ -132,19 +132,18 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="40dp"
-                android:src="@drawable/img_locate_configuracoes"
+                android:src="@drawable/img_recebimento"
                 />
 
             <TextView
                 android:id="@+id/locate_perfil_config"
+                style="@style/subtitulo_configuracoes"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Endereço"
                 android:layout_marginStart="50dp"
-                style="@style/subtitulo_configuracoes"
-                android:fontFamily="sans-serif-light"
                 android:layout_marginBottom="30dp"
-                />
+                android:fontFamily="sans-serif-light"
+                android:text="Formas De Recebimrnto" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -163,17 +162,19 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="40dp"
-                android:src="@drawable/img_logout_configuracoes" />
+                android:src="@drawable/img_logout_configuracoes"
+                />
 
             <TextView
                 android:id="@+id/logout_perfil_config"
-                style="@style/subtitulo_configuracoes"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:text="Sair"
                 android:layout_marginStart="50dp"
-                android:layout_marginBottom="30dp"
+                style="@style/subtitulo_configuracoes"
                 android:fontFamily="sans-serif-light"
-                android:text="Sair" />
+                android:layout_marginBottom="30dp"
+                />
 
             <ImageView
                 android:layout_width="wrap_content"

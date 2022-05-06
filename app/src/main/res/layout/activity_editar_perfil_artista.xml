@@ -32,8 +32,8 @@
                 android:id="@+id/image_perfil_cliente"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/img_perfil"
-                android:layout_marginTop="40dp"/>
+                android:layout_marginTop="40dp"
+                android:src="@drawable/img_artista" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -73,7 +73,7 @@
 
             <EditText
                 style="@style/edit_text_configuracoes"
-                android:text="@string/titulo_nome_cliente"
+                android:text="Vincent Van Gogh"
                 android:fontFamily="sans-serif-light"
                 android:background="@drawable/input_shape" />
 
@@ -84,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="28dp"
-                android:layout_marginBottom="28dp"
+                android:layout_marginBottom="20dp"
                 >
 
                 <TextView
@@ -92,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Preferência"
+                    android:text="Especialidade"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -111,20 +111,20 @@
                     android:id="@+id/et_nacionalidade_editar_perfil"
                     android:layout_width="170dp"
                     android:layout_height="45dp"
-                    android:text="Fotografia"
+                    android:text="Pintor"
                     android:fontFamily="sans-serif-light"
                     android:layout_below="@+id/tv_preferencia_editar_perfil"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/input_shape"
                     android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
                     android:paddingStart="8dp"
-                     />
+                    />
 
                 <EditText
                     android:id="@+id/et_preferencia_editar_perfil"
                     android:layout_width="170dp"
                     android:layout_height="45dp"
-                    android:text="Brasileiro"
+                    android:text="Holandês"
                     android:fontFamily="sans-serif-light"
                     android:layout_below="@+id/tv_nacionalidade_editar_perfil"
                     android:layout_marginTop="8dp"
@@ -144,66 +144,66 @@
                 android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/tv_pais_editar_perfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:text="País"
-                />
+                <TextView
+                    android:id="@+id/tv_pais_editar_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="País"
+                    />
 
-            <EditText
-                android:id="@+id/et_banco_transferencia_bancaria"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_below="@+id/tv_pais_editar_perfil"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/input_shape"
-                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-                android:paddingStart="8dp"
-                android:text="Brasil"
-                android:fontFamily="sans-serif-light"
-                android:layout_marginBottom="28dp"/>
+                <EditText
+                    android:id="@+id/et_banco_transferencia_bancaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/tv_pais_editar_perfil"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_shape"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:paddingStart="8dp"
+                    android:text="Holanda"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="28dp"/>
 
-            <TextView
-                android:id="@+id/tv_biografia_editar_perfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:text="Biografia"
-                android:layout_alignLeft="@+id/et_cpf_titular_transferencia_bancaria"
-                />
+                <TextView
+                    android:id="@+id/tv_biografia_editar_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Biografia"
+                    android:layout_alignLeft="@+id/et_cpf_titular_transferencia_bancaria"
+                    />
 
-            <EditText
-                android:id="@+id/et_biografia_transferencia_bancaria"
-                android:paddingEnd="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="85dp"
-                android:layout_below="@+id/tv_banco_transferencia"
-                android:text="Amo fotografias da natureza, pois gosto de lindas paisagens"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="8dp"
-                android:fontFamily="sans-serif-light"
-                android:background="@drawable/input_shape"
-                android:paddingStart="8dp"
-                style="@style/edit_text_configuracoes"
-                />
+                <EditText
+                    android:id="@+id/et_biografia_transferencia_bancaria"
+                    android:paddingEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/tv_banco_transferencia"
+                    android:text="“Amar muitas coisas, por aí que reside a verdadeira força, e quem ama muito executa muito, e pode realizar muito mais, e aquilo que é feito com amor é bem feito.”"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/input_shape"
+                    android:paddingStart="8dp"
+                    style="@style/edit_text_configuracoes"
+                    />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Alterar Perfil"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:fontFamily="sans-serif"
-                android:layout_marginTop="30dp"
-                />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alterar Perfil"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="30dp"
+                    />
 
             </LinearLayout>
 

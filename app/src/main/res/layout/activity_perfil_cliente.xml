@@ -45,6 +45,38 @@
 
         </RelativeLayout>
 
+        <TextView
+            style="@style/titulo_nome_perfil"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/titulo_nome_cliente" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/image_avaliacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/ic_baseline_star_24" />
+
+            <TextView
+                style="@style/titulo_avaliacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:textStyle="bold"
+                android:text="5.0"
+
+                />
+
+        </RelativeLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,25 +85,8 @@
             android:orientation="vertical">
 
             <TextView
-                style="@style/titulo_nome_perfil"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/titulo_nome_cliente" />
-
-            <ImageView
-                android:id="@+id/image_avaliacao"
-                android:layout_height="90dp"
-                android:layout_width="70dp"
-                android:layout_marginTop="-30dp"
-                android:layout_marginBottom="-65dp"
-                android:layout_gravity="center"
-                android:src="@drawable/img_review"
-                 />
-
-            <TextView
                 style="@style/text_input_cadastro"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="” Amo fotografias da natureza, pois gosto de lindas paisagens.“" />

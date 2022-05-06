@@ -185,19 +185,19 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_star_24"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="30dp"
-                />
+                android:src="@drawable/ic_baseline_star_24" />
 
             <TextView
+                style="@style/titulo_avaliacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="98dp"
                 android:layout_marginTop="30dp"
-                android:text="5.0"
-                style="@style/titulo_avaliacao"
                 android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="5.0"
 
                 />
 
