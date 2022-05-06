@@ -10,8 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="24dp"
-        android:layout_marginTop="20dp"
+        android:padding="18dp"
         android:orientation="vertical"
         >
 
@@ -30,18 +29,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Alterar Senha"
+                android:text="Informações\nPessoais"
                 android:layout_gravity="center"
                 android:gravity="center"
                 style="@style/titulo_nome_perfil"
                 />
 
+
             <ImageView
                 android:id="@+id/image_perfil_cliente"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/img_perfil" />
+                android:layout_marginTop="80dp"
+                android:src="@drawable/img_artista" />
 
         </RelativeLayout>
 
@@ -56,7 +56,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Gabriel Gonçalves"
+                android:text="Vincent Van Gogh"
                 android:fontFamily="sans-serif-light"
                 style="@style/subtitulo_configuracoes"
                 android:textColor="@color/black"
@@ -69,11 +69,11 @@
                 android:layout_marginTop="42dp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-light"
-                android:text="Senha atual" />
+                android:text="Nome Completo" />
 
             <EditText
                 style="@style/edit_text_configuracoes"
-                android:text=""
+                android:text="Vincent Willem van Gogh"
                 android:fontFamily="sans-serif-light"
                 android:background="@drawable/input_shape" />
 
@@ -82,11 +82,11 @@
                 android:layout_marginTop="42dp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-light"
-                android:text="Nova senha" />
+                android:text="E-mail" />
 
             <EditText
                 style="@style/edit_text_configuracoes"
-                android:text=""
+                android:text="vincentvangogh@gmail.com"
                 android:fontFamily="sans-serif-light"
                 android:background="@drawable/input_shape" />
 
@@ -95,18 +95,31 @@
                 android:layout_marginTop="42dp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-light"
-                android:text="Confirmar senha" />
+                android:text="Telefone" />
 
             <EditText
                 style="@style/edit_text_configuracoes"
-                android:text=""
+                android:text="+55 (11) 99999-9999"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/input_shape" />
+
+            <TextView
+                style="@style/text_input_cadastro"
+                android:layout_marginTop="42dp"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:text="Data De Nascimento" />
+
+            <EditText
+                style="@style/edit_text_configuracoes"
+                android:text="30/03/1853"
                 android:fontFamily="sans-serif-light"
                 android:background="@drawable/input_shape" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alterar Senha"
+                android:text="Salvar"
                 android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:gravity="center"
