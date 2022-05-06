@@ -7,6 +7,19 @@ import java.util.Date;
 
 public class Cliente {
 
+
+    private String message;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+
+
     @SerializedName("idCliente")
     @Expose
     private int idCliente;
@@ -37,7 +50,7 @@ public class Cliente {
 
     @SerializedName("numero")
     @Expose
-    private int numero;
+    private String numero;
 
     @SerializedName("complemento")
     @Expose
@@ -63,10 +76,12 @@ public class Cliente {
     @Expose
     private String senha;
 
+
+
     public Cliente() {
     }
 
-    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String endereco, String cep, int numero, String complemento, String bairro, String cidade, String estado, String email, String senha) {
+    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String endereco, String cep, String numero, String complemento, String bairro, String cidade, String estado, String email, String senha) {
         this.idCliente = idCliente;
         this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
@@ -139,11 +154,11 @@ public class Cliente {
         this.cep = cep;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 

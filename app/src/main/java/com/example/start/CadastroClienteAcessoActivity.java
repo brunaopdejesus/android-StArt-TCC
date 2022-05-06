@@ -45,25 +45,24 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
         });
 
         btnCadastrar.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), HomeClienteActivity.class);
 
             Cliente cliente = new Cliente();
 
-            cliente.setNomeCompleto(intent.getStringExtra("nome"));
-            cliente.setDataNascimento(intent.getStringExtra("dataNascimento"));
-            cliente.setTelefoneCelular(intent.getStringExtra("telefone"));
-            cliente.setCpf_cnpj(intent.getStringExtra("cpf"));
+            cliente.setNomeCompleto(getIntent().getExtras().getString("nome"));
+            cliente.setDataNascimento(getIntent().getExtras().getString("dataNascimento"));
+            cliente.setTelefoneCelular(getIntent().getExtras().getString("telefone"));
+            cliente.setCpf_cnpj(getIntent().getExtras().getString("cpf"));
             cliente.setEmail(txtEmail.getText().toString());
             cliente.setSenha(txtSenha.getText().toString());
 //            cliente.setContaEstaAtiva
 
-            cliente.setEndereco(intent.getStringExtra("endereco"));
-            cliente.setCep(intent.getStringExtra("cep"));
-            cliente.setNumero(intent.getIntExtra("numero", 0));
-            cliente.setComplemento(intent.getStringExtra("complemento"));
-            cliente.setBairro(intent.getStringExtra("bairro"));
-            cliente.setCidade(intent.getStringExtra("cidade"));
-            cliente.setEstado(intent.getStringExtra("estado"));
+            cliente.setEndereco(getIntent().getExtras().getString("endereco"));
+            cliente.setCep(getIntent().getExtras().getString("cep"));
+            cliente.setNumero(getIntent().getExtras().getString("numero"));
+            cliente.setComplemento(getIntent().getExtras().getString("complemento"));
+            cliente.setBairro(getIntent().getExtras().getString("bairro"));
+            cliente.setCidade(getIntent().getExtras().getString("cidade"));
+            cliente.setEstado(getIntent().getExtras().getString("estado"));
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);
@@ -74,16 +73,21 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
 
     public void addCliente(Cliente cliente) {
 
+        Log.d("TESTE-", "TESTE1");
+
         Call<Cliente> call = routerInterface.addCliente(cliente);
 
         call.enqueue(new Callback<Cliente>() {
             @Override
             public void onResponse(Call<Cliente> call, Response<Cliente> response) {
+                Log.d("TESTE-", "TESTE2");
+                Log.d("TESTE-", String.valueOf(response.isSuccessful()));
                 Toast.makeText(CadastroClienteAcessoActivity.this, "Usuário cadastrado com sucesso",
                         Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onFailure(Call<Cliente> call, Throwable t) {
+                Log.d("TESTE-", "TESTE3");
                 Log.d("Erro-API", t.getMessage());
             }
         });

@@ -132,19 +132,17 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="40dp"
-                android:src="@drawable/img_logout_configuracoes"
-                />
+                android:src="@drawable/img_logout_configuracoes" />
 
             <TextView
                 android:id="@+id/logout_perfil_config"
+                style="@style/subtitulo_configuracoes"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Sair"
                 android:layout_marginStart="50dp"
-                style="@style/subtitulo_configuracoes"
-                android:fontFamily="sans-serif-light"
                 android:layout_marginBottom="30dp"
-                />
+                android:fontFamily="sans-serif-light"
+                android:text="Sair" />
 
             <ImageView
                 android:layout_width="wrap_content"

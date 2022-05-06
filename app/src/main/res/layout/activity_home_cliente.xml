@@ -23,6 +23,13 @@
             android:layout_marginBottom="24dp"
             />
 
+        <TextView
+            android:id="@+id/tv_home_cliente_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
