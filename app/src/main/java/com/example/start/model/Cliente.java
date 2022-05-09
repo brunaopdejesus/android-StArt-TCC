@@ -40,9 +40,9 @@ public class Cliente {
     @Expose
     private String cpf_cnpj;
 
-    @SerializedName("endereco")
+    @SerializedName("rua")
     @Expose
-    private String endereco;
+    private String rua;
 
     @SerializedName("cep")
     @Expose
@@ -81,13 +81,13 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String endereco, String cep, String numero, String complemento, String bairro, String cidade, String estado, String email, String senha) {
+    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String rua, String cep, String numero, String complemento, String bairro, String cidade, String estado, String email, String senha) {
         this.idCliente = idCliente;
         this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
         this.telefoneCelular = telefoneCelular;
         this.cpf_cnpj = cpf_cnpj;
-        this.endereco = endereco;
+        this.rua = rua;
         this.cep = cep;
         this.numero = numero;
         this.complemento = complemento;
@@ -138,12 +138,12 @@ public class Cliente {
         this.cpf_cnpj = cpf_cnpj;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getRua() {
+        return rua;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setRua(String rua) {
+        this.rua = rua;
     }
 
     public String getCep() {

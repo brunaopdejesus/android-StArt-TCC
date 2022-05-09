@@ -56,7 +56,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             cliente.setSenha(txtSenha.getText().toString());
 //            cliente.setContaEstaAtiva
 
-            cliente.setEndereco(getIntent().getExtras().getString("endereco"));
+            cliente.setRua(getIntent().getExtras().getString("endereco"));
             cliente.setCep(getIntent().getExtras().getString("cep"));
             cliente.setNumero(getIntent().getExtras().getString("numero"));
             cliente.setComplemento(getIntent().getExtras().getString("complemento"));
