@@ -111,14 +111,13 @@
                     android:id="@+id/et_nacionalidade_editar_perfil"
                     android:layout_width="170dp"
                     android:layout_height="45dp"
-                    android:text="Fotografia"
-                    android:fontFamily="sans-serif-light"
                     android:layout_below="@+id/tv_preferencia_editar_perfil"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/input_shape"
                     android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:fontFamily="sans-serif-light"
                     android:paddingStart="8dp"
-                     />
+                    android:text="Fotografia" />
 
                 <EditText
                     android:id="@+id/et_preferencia_editar_perfil"

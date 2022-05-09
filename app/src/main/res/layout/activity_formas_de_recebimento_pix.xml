@@ -22,13 +22,10 @@
 
         <TextView
             style="@style/titulo_cadastro"
-            android:text="@string/titulo_cadastro_artista"
+            android:text="Formas de Recebimento"
+            android:layout_gravity="center"
             />
 
-        <TextView
-            style="@style/subtitulo_cadastro"
-            android:text="Dados de pagamento"
-            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,8 +38,15 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="16dp"
                 android:text="PIX"
-                android:textColor="@color/turquesa_claro"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pix"
+                android:layout_marginEnd="258dp"
+                android:src="@drawable/img_line_pix" />
 
             <TextView
                 android:fontFamily="sans-serif"
@@ -123,24 +127,3 @@
     </LinearLayout>
 
 </ScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
