@@ -19,7 +19,6 @@ public class Cliente {
     }
 
 
-
     @SerializedName("idCliente")
     @Expose
     private int idCliente;
@@ -76,12 +75,14 @@ public class Cliente {
     @Expose
     private String senha;
 
-
+//    @SerializedName("idCidade")
+//    @Expose
+//    private int idCidade = 1;
 
     public Cliente() {
     }
 
-    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String rua, String cep, String numero, String complemento, String bairro, String cidade, String estado, String email, String senha) {
+    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String rua, String cep, String numero, String complemento, String bairro, String cidade, String estado, String email, String senha, int idCidade) {
         this.idCliente = idCliente;
         this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
@@ -96,6 +97,7 @@ public class Cliente {
         this.estado = estado;
         this.email = email;
         this.senha = senha;
+//        this.idCidade = idCidade;
     }
 
     public int getIdCliente() {
@@ -209,6 +211,14 @@ public class Cliente {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+//    public int getIdCidade() {
+//        return idCidade;
+//    }
+//
+//    public void setIdCidade(int idCidade) {
+//        this.idCidade = idCidade;
+//    }
 
     //    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String endereco, String cep, int numero, String complemento, String bairro, String cidade, String estado, String biografia, String pais, String nacionalidade, String preferencia, String email, String senha, int contaEstaAtiva, int idEnderecoCliente, String fotoPerfilCliente) {
 //        this.idCliente = idCliente;
