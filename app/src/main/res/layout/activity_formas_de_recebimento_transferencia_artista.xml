@@ -1,6 +1,290 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    tools:context=".CadastroArtistaPagamentoTransferenciaActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_back_cadastro_artista_pessoal"
+            style="@style/icon_back"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            style="@style/titulo_cadastro"
+            android:text="Formas de Recebimento"
+            android:layout_gravity="center"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/pix"
+                style="@style/tv_dados_pagamento"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:text="PIX"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/transferencia_bancaria"
+                style="@style/tv_dados_pagamento"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="35dp"
+                android:gravity="center"
+                android:text="TRANSFERÊNCIA\nBANCÁRIA"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_line_transferencia"
+                android:layout_below="@+id/transferencia_bancaria"
+                android:layout_marginStart="155"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_banco_transferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:text="Banco"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_cpf_transferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="CPF do Titular"
+                android:layout_alignLeft="@+id/et_cpf_titular_transferencia_bancaria"
+                />
+
+            <EditText
+                android:id="@+id/et_banco_transferencia_bancaria"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_banco_transferencia"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_shape"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:maxLength="50"
+                android:paddingStart="8dp"
+                android:text="Santander"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_cpf_titular_transferencia_bancaria"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:maxLength="20"
+                android:text="000.000.000-00"
+                android:layout_below="@+id/tv_banco_transferencia"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_shape"
+                android:paddingStart="8dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Titular"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:id="@+id/et_titular_transferencia_bancaria"
+            style="@style/edit_text_cadastro"
+            android:maxLength="100"
+            android:text="Paulo César Ribeiro Rodrigues Pontes"
+            android:background="@drawable/input_shape"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_agencia_transferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:text="Agência"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_digito_transferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Dígito (se houver)"
+                android:layout_alignLeft="@+id/et_digito_se_houver_transferencia_bancaria"
+                />
+
+            <EditText
+                android:id="@+id/et_agencia_transferencia_bancaria"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_digito_transferencia"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_shape"
+                android:paddingStart="8dp"
+                android:text="4517"
+                android:maxLength="10"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_digito_se_houver_transferencia_bancaria"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_digito_transferencia"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:maxLength="5"
+                android:text="0"
+                android:background="@drawable/input_shape"
+                android:paddingStart="8dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_conta_transferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:text="Conta"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_digito_verificador_transferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/et_digito_verificador_transferencia_bancaria"
+                android:fontFamily="@font/raleway"
+                android:text="Dígito verificador"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_conta_transferencia_bancaria"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_digito_verificador_transferencia"
+                android:layout_marginTop="8dp"
+                android:maxLength="15"
+                android:text="01034576"
+                android:background="@drawable/input_shape"
+                android:paddingStart="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_digito_verificador_transferencia_bancaria"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_digito_verificador_transferencia"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:maxLength="5"
+                android:text="4"
+                android:background="@drawable/input_shape"
+                android:paddingStart="8dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Tipo de conta"
+            android:layout_marginTop="16dp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_shape"
+            android:entries="@array/tipo_conta"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:prompt="@string/conta_prompt"
+
+            />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/et_tipo_de_conta_transferencia_bancaria"-->
+        <!--            style="@style/edit_text_cadastro"-->
+        <!--            android:maxLength="25"-->
+        <!--            android:background="@drawable/input_shape"-->
+        <!--            />-->
+
+        <Button
+            android:id="@+id/btn_continuar_cadastro_artista_pessoal"
+            style="@style/btn_continuar_cadastro"
+            android:text="Salvar"
+            android:layout_marginTop="28dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

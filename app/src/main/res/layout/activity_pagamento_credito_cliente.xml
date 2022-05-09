@@ -240,13 +240,13 @@
                 android:textSize="20sp" />
 
             <EditText
+                style="@style/edit_text_configuracoes"
                 android:layout_width="240dp"
                 android:layout_height="45dp"
-                style="@style/edit_text_configuracoes"
-                android:text="2x R$72 sem juros"
-                android:fontFamily="sans-serif-light"
-                android:background="@drawable/input_parcela_left"
                 android:layout_below="@+id/parcela_debito_cliente"
+                android:background="@drawable/input_parcela_left"
+                android:fontFamily="sans-serif-light"
+                android:text="2x R$72 sem juros"
 
                 />
 

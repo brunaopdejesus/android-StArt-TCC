@@ -39,7 +39,7 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="16dp"
                 android:text="PIX"
-                android:textStyle="normal"/>
+                android:textStyle="normal" />
 
             <TextView
                 android:id="@+id/transferencia_bancaria"
