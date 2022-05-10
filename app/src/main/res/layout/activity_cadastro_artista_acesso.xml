@@ -56,7 +56,7 @@
             <Button
                 android:id="@+id/btn_continuar_cadastro_artista_acesso"
                 style="@style/btn_continuar_cadastro"
-                android:text="Continuar"
+                android:text="Cadastrar-se"
                 android:layout_marginTop="52dp"/>
 
         </LinearLayout>
