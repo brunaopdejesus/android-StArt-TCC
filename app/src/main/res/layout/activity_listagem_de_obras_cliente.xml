@@ -117,93 +117,493 @@
 
         </RelativeLayout>
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             >
 
-            <ImageView
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                >
+
+                <ImageView
+                    android:id="@+id/obra_moça"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_obra_moca" />
+
+                <ImageView
+                    android:layout_width="138dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/obra_moça"
+                    android:src="@drawable/rectangle_card_view" />
+
+                <TextView
+                    android:id="@+id/pintor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="125dp"
+                    android:paddingStart="5dp"
+                    android:text="MOÇA COM BRINCO DE PÉROLA"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="8.5sp" />
+
+                <TextView
+                    android:id="@+id/pintor_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="138dp"
+                    android:text="JOHANNES VERMEER"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/pintor_specialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="150dp"
+                    android:text="Pintura - Óleo sobre tela "
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/image_avaliacao"-->
+<!--                    android:layout_width="15dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="105dp"-->
+<!--                    android:paddingTop="150dp"-->
+<!--                    android:src="@drawable/ic_baseline_star_24" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="93dp"
+                    android:paddingTop="150dp"
+                    android:textSize="8.5sp"
+                    android:textColor="@color/black"
+                    android:text="R$ 345,00"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/img_obra_moca"
-                android:layout_marginStart="15dp"
+                android:padding="15dp"
+                android:paddingStart="200dp"
+                >
 
-                />
+                <ImageView
+                    android:id="@+id/obra_noite_estrelada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_obra_noite_estrelada" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/img_obra_noite_estrelada"
-                />
+                <ImageView
+                    android:layout_width="138dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/obra_noite_estrelada"
+                    android:src="@drawable/rectangle_card_view" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/obra_noiteEstrelada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="125dp"
+                    android:paddingStart="5dp"
+                    android:text="NOITE ESTRELADA"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="8.5sp" />
 
-        <LinearLayout
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="138dp"
+                    android:text="VINCENT VAN GOGH"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="150dp"
+                    android:text="Pintura - Óleo sobre tela "
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/image_avaliacao"-->
+                <!--                    android:layout_width="15dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="105dp"-->
+                <!--                    android:paddingTop="150dp"-->
+                <!--                    android:src="@drawable/ic_baseline_star_24" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="93dp"
+                    android:paddingTop="150dp"
+                    android:textSize="8.5sp"
+                    android:textColor="@color/black"
+                    android:text="R$ 477,90"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             >
 
-            <ImageView
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                >
+
+                <ImageView
+                    android:id="@+id/artesao_RockSanteiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_artesao" />
+
+                <ImageView
+                    android:layout_width="151dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/artesao_RockSanteiro"
+                    android:src="@drawable/rectangle_card_view"
+
+                    />
+
+                <TextView
+                    android:id="@+id/artesao_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="133dp"
+                    android:paddingStart="5dp"
+                    android:text="Rock Santeiro"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/artesao_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="148dp"
+                    android:text="Artesão"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/artesao_specialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="161dp"
+                    android:text="Especialidades: Cerâmica \nMadeira, Argila"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:paddingTop="150dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:paddingTop="153dp"
+                    android:textSize="12sp"
+                    android:text="5.0"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/img_garota_estelar"
-                android:layout_marginStart="15dp"
+                android:padding="15dp"
+                android:paddingStart="200dp"
+                >
 
-                />
+                <ImageView
+                    android:id="@+id/fotografa_vanessa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_fotografa" />
 
-            <ImageView
-                android:layout_width="220dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/img_escultura_touro"
-                />
+                <ImageView
+                    android:layout_width="149dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/fotografa_vanessa"
+                    android:src="@drawable/rectangle_card_view"
 
-        </LinearLayout>
+                    />
 
-        <LinearLayout
+                <TextView
+                    android:id="@+id/fotografa_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="5dp"
+                    android:paddingTop="133dp"
+                    android:text="Vanessa Durazzo"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fotografa_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="148dp"
+                    android:text="Fotografa"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/fotogrofa_specialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="161dp"
+                    android:text="Especialidades: Retrato, \nFotografia Artística, Paisagem"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+
+                <ImageView
+                    android:id="@+id/image_avaliacao_artistas"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:paddingTop="150dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:paddingTop="153dp"
+                    android:text="5.0"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             >
 
-            <ImageView
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                >
+
+                <ImageView
+                    android:id="@+id/pintor_VanGogh2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_pintor" />
+
+                <ImageView
+                    android:layout_width="151dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/pintor_VanGogh2"
+                    android:src="@drawable/rectangle_card_view" />
+
+                <TextView
+                    android:id="@+id/pintor_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="133dp"
+                    android:paddingStart="5dp"
+                    android:text="Vincent Van Gogh"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/pintor_category2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="148dp"
+                    android:text="Pintor"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/pintor_specialty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="161dp"
+                    android:text="Especialidades: Realismo, \nModernismo, Impressionismo"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+
+
+                <ImageView
+                    android:id="@+id/image_avaliacao2"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:paddingTop="150dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:paddingTop="153dp"
+                    android:textSize="12sp"
+                    android:text="5.0"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/img_obra_moca"
-                android:layout_marginStart="15dp"
+                android:padding="15dp"
+                android:paddingStart="200dp"
+                >
 
-                />
+                <ImageView
+                    android:id="@+id/ilustrador_rogerio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_ilustrador" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/img_obra_noite_estrelada"
-                />
+                <ImageView
+                    android:layout_width="149dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/ilustrador_rogerio2"
+                    android:src="@drawable/rectangle_card_view"
 
-        </LinearLayout>
+                    />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            >
+                <TextView
+                    android:id="@+id/ilustrador_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="5dp"
+                    android:paddingTop="133dp"
+                    android:text="Rogério Borges"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/img_obra_moca"
-                android:layout_marginStart="15dp"
+                <TextView
+                    android:id="@+id/ilustrador_category2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="148dp"
+                    android:text="Ilustrador"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
 
-                />
+                <TextView
+                    android:id="@+id/ilustrador_specialty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="161dp"
+                    android:text="Especialidades: Desenhado,\nCartoon, Digitalizado"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/img_obra_noite_estrelada"
-                />
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:paddingTop="150dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:paddingTop="153dp"
+                    android:text="5.0"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
 
 
 
