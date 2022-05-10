@@ -24,6 +24,7 @@ public class CadastroArtistaPessoalActivity extends AppCompatActivity {
 
         final ImageView arrowBack = findViewById(R.id.image_back_cadastro_artista_pessoal);
         final EditText etNome = findViewById(R.id.et_nome_cadastro_artista);
+        final EditText etNomeArtistico = findViewById(R.id.et_nome_artistico_cadastro);
         final EditText etDataNascimento = findViewById(R.id.et_data_nascimento_cadastro_artista);
         final EditText etTelefone = findViewById(R.id.et_telefone_cadastro_artista);
         final EditText etCpfCnpj = findViewById(R.id.et_cpf_cadastro_artista);
@@ -55,6 +56,7 @@ public class CadastroArtistaPessoalActivity extends AppCompatActivity {
         btnContinuar.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), CadastroArtistaPagamentoPixActivity.class);
             intent.putExtra("nome", etNome.getText().toString());
+            intent.putExtra("nomeArtistico", etNomeArtistico.getText().toString());
             intent.putExtra("dataNascimento", etDataNascimento.getText().toString());
             intent.putExtra("telefone", etTelefone.getText().toString());
             intent.putExtra("cpf", etCpfCnpj.getText().toString());

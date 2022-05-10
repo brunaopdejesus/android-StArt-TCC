@@ -2,6 +2,7 @@ package com.example.start;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,7 +23,8 @@ public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
 
         final ImageView arrowBack = findViewById(R.id.image_back_cadastro_cliente_pessoal);
         final TextView tvTransferencia = findViewById(R.id.transferencia_bancaria);
-        final Spinner spinner = findViewById(R.id.sp_pix);
+        final Spinner spinnerOpcaoPix = findViewById(R.id.sp_pix);
+        final EditText etOpcaoPix = findViewById(R.id.et_pix);
         final Button btnContinuar = findViewById(R.id.btn_continuar_cadastro_artista_pix);
 
         arrowBack.setOnClickListener(view -> {
@@ -30,6 +32,20 @@ public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
             super.onBackPressed();
         });
 
+        btnContinuar.setOnClickListener(view -> {
+
+            Intent intent = new Intent(getApplicationContext(), CadastroArtistaAcessoActivity.class);
+            intent.putExtra("nome", intent.getStringExtra("nome"));
+            intent.putExtra("nomeArtistico", intent.getStringExtra("nomeArtistico"));
+            intent.putExtra("dataNascimento", intent.getStringExtra("dataNascimento"));
+            intent.putExtra("telefone", intent.getStringExtra("telefone"));
+            intent.putExtra("cpf", intent.getStringExtra("cpf"));
+
+            intent.putExtra("spinner_pix", spinnerOpcaoPix.getSelectedItem().toString());
+            intent.putExtra("opcao_pix", etOpcaoPix.getText().toString());
+            startActivity(intent);
+
+        });
 
     }
 }

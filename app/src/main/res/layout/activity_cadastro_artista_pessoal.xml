@@ -42,7 +42,18 @@
 
         <TextView
             style="@style/text_input_cadastro"
-            android:text="Data de Nascimento*"
+            android:text="Nome artístico*"
+            />
+
+        <EditText
+            android:id="@+id/et_nome_artistico_cadastro"
+            style="@style/edit_text_cadastro"
+            android:background="@drawable/input_shape"
+            />
+
+        <TextView
+            style="@style/text_input_cadastro"
+            android:text="Data de nascimento*"
             />
 
         <EditText

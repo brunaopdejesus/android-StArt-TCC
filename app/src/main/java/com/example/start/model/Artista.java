@@ -15,6 +15,10 @@ public class Artista {
     @Expose
     private String nomeCompleto;
 
+    @SerializedName("nomeArtistico")
+    @Expose
+    private String nomeArtistico;
+
     @SerializedName("dataNascimento")
     @Expose
     private Date dataNascimento;
@@ -44,6 +48,7 @@ public class Artista {
 
     public Artista(int idArtista,
                    String nomeCompleto,
+                   String nomeArtistico,
                    Date dataNascimento,
                    String telefoneCelular,
                    String cpf_cnpj,
@@ -52,6 +57,7 @@ public class Artista {
                    String senha) {
         this.idArtista = idArtista;
         this.nomeCompleto = nomeCompleto;
+        this.nomeArtistico = nomeArtistico;
         this.dataNascimento = dataNascimento;
         this.telefoneCelular = telefoneCelular;
         this.cpf_cnpj = cpf_cnpj;
@@ -74,6 +80,14 @@ public class Artista {
 
     public void setNomeCompleto(String nomeCompleto) {
         this.nomeCompleto = nomeCompleto;
+    }
+
+    public String getNomeArtistico() {
+        return nomeArtistico;
+    }
+
+    public void setNomeArtistico(String nomeArtistico) {
+        this.nomeArtistico = nomeArtistico;
     }
 
     public Date getDataNascimento() {
