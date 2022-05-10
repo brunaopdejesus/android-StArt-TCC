@@ -1,9 +1,6 @@
 package com.example.start.remote;
 
 import com.example.start.model.Cliente;
-import com.example.start.model.Estado;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -13,18 +10,26 @@ import retrofit2.http.Path;
 
 public interface RouterInterface {
 
+    /** CADASTRO CLIENTE **/
     // INSERIR CLIENTE
     @POST("/cliente/cadastro")
     Call<Cliente> addCliente(@Body Cliente cliente);
 
+    // RECEBER ESTADOS
+    @GET("/diversas/estados")
+    Call<String> getState();
+
+    // RECEBER CIDADES
+    @GET("/diversas/cidades/{idEstado}")
+    Call<String> getDistrict(@Path("id") int id);
+
+
+
+
+
     // LOGIN CLIENTE
     @GET("/cliente/login{email}{senha}")
     Call<Cliente> loginCliente(@Path("email") String email, @Path("senha") String senha);
-
-    // RECEBER ESTADOS
-    @GET("/diversas/estados")
-    Call<List<Estado>> getEstados();
-
 
 //    // LOGIN CLIENTE
 //    @POST("/cliente/login")

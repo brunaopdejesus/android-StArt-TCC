@@ -3,7 +3,7 @@ package com.example.start.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Cidade {
+public class District {
 
     @SerializedName("idCidade")
     @Expose
@@ -17,10 +17,10 @@ public class Cidade {
     @Expose
     private String nomeCidade;
 
-    public Cidade() {
+    public District() {
     }
 
-    public Cidade(int idCidade, int idEstado, String nomeCidade) {
+    public District(int idCidade, int idEstado, String nomeCidade) {
         this.idCidade = idCidade;
         this.idEstado = idEstado;
         this.nomeCidade = nomeCidade;

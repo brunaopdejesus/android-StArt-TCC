@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class Estado {
+public class States {
 
     @SerializedName("idEstado")
     @Expose
@@ -15,10 +15,10 @@ public class Estado {
     @Expose
     private String nomeEstado;
 
-    public Estado() {
+    public States() {
     }
 
-    public Estado(int idEstado, String nomeEstado) {
+    public States(int idEstado, String nomeEstado) {
         this.idEstado = idEstado;
         this.nomeEstado = nomeEstado;
     }

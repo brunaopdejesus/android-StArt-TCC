@@ -56,7 +56,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/img_line_transferencia"
                 android:layout_below="@+id/transferencia_bancaria"
-                android:layout_marginStart="155"
+                android:layout_marginStart="155dp"
                 />
 
         </RelativeLayout>

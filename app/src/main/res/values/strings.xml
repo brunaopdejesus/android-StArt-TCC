@@ -26,6 +26,7 @@
     </string-array>
 
     <string name="state_prompt">Estado</string>
+    <string name="city_prompt">Cidade</string>
     <string-array name="states">
         <item>"Estado"</item>
         <item>"Acre (AC)"</item>
