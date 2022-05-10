@@ -15,6 +15,7 @@ import android.widget.Spinner;
 
 import com.example.start.model.States;
 import com.example.start.remote.APIUtil;
+import com.example.start.remote.RetrofitClient;
 import com.example.start.remote.RouterInterface;
 
 import org.json.JSONArray;
@@ -27,6 +28,8 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class CadastroClienteEnderecoActivity extends AppCompatActivity {
 
@@ -49,6 +52,7 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro_cliente_endereco);
 
         routerInterface = APIUtil.getUsuarioInterface();
+        getStates();
 
         spinnerEstado=(Spinner)findViewById(R.id.sp_estado_cadastro_cliente_1);
         spinnerCidade=(Spinner)findViewById(R.id.sp_cidade_cadastro_endereco_2);
@@ -66,18 +70,6 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
         arrowBack.setOnClickListener(view -> {
             finish();
             super.onBackPressed();
-        });
-
-        spinnerEstado.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                getState();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                getState();
-            }
         });
 
         btnContinuar.setOnClickListener(view -> {
@@ -101,9 +93,9 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
 
     }
 
-    private void getState() {
+    private void getStates() {
 
-        Call<String> call = routerInterface.getState();
+        Call<String> call = routerInterface.getStates();
         call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {

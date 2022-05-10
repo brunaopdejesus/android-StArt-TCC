@@ -17,7 +17,7 @@ public interface RouterInterface {
 
     // RECEBER ESTADOS
     @GET("/diversas/estados")
-    Call<String> getState();
+    Call<String> getStates();
 
     // RECEBER CIDADES
     @GET("/diversas/cidades/{idEstado}")

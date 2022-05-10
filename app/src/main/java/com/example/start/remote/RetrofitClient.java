@@ -10,7 +10,7 @@ public class RetrofitClient {
 
     // RETROFIT É O RESPONSÁVEL POR FAZER A CONEXÃO COM A API
     // STATIC PORQUE É USADO DESDE O PRIMEIRO MOMENTO
-    private static Retrofit retrofit = null;
+    public static Retrofit retrofit = null;
 
     /* Método de acesso ao cliente */
     public static Retrofit getClient(String url) {
@@ -28,4 +28,5 @@ public class RetrofitClient {
 
         return retrofit;
     }
+
 }
