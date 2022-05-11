@@ -3,6 +3,7 @@ package com.example.start;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,7 +18,10 @@ import com.example.start.remote.RouterInterface;
 
 public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
 
-    RouterInterface routerInterface;
+    SharedPreferences sharedPreferences;
+
+    private static final String SHARED_PREF_NAME = "mypref_artista";
+    private static final String PIX = "pix";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,7 @@ public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
 //        final Spinner spinnerOpcaoPix = findViewById(R.id.sp_pix);
         final EditText etOpcaoPix = findViewById(R.id.et_pix);
         final Button btnContinuar = findViewById(R.id.btn_continuar_cadastro_artista_pix);
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
         arrowBack.setOnClickListener(view -> {
             finish();
@@ -37,17 +42,15 @@ public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
 
         btnContinuar.setOnClickListener(view -> {
 
-            Intent intent = new Intent(getApplicationContext(), CadastroArtistaAcessoActivity.class);
-            intent.putExtra("nomeCompleto", intent.getStringExtra("nomeCompleto"));
-            intent.putExtra("nomeArtistico", intent.getStringExtra("nomeArtistico"));
-            intent.putExtra("dataNascimento", intent.getStringExtra("dataNascimento"));
-            intent.putExtra("telefone", intent.getStringExtra("telefone"));
-            intent.putExtra("cpf", intent.getStringExtra("cpf"));
+            // when click a button put data on SharedPreferences
+            SharedPreferences.Editor editor = sharedPreferences.edit();
 
-//            intent.putExtra("spinner_pix", spinnerOpcaoPix.getSelectedItem().toString());
+            // putting data
+            editor.putString(PIX,etOpcaoPix.getText().toString());
+            editor.apply();
 
-            intent.putExtra("pix", etOpcaoPix.getText().toString());
-            startActivity(intent);
+            // start next activity
+            startActivity(new Intent(CadastroArtistaPagamentoPixActivity.this, CadastroArtistaAcessoActivity.class));
 
         });
 

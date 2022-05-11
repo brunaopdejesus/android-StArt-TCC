@@ -20,7 +20,7 @@
 
         <TextView
             style="@style/titulo_cadastro"
-            android:text="@string/titulo_cadastro_cliente"
+            android:text="@string/titulo_cadastro_artista"
             />
 
         <TextView

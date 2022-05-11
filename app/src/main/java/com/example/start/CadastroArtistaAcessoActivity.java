@@ -2,6 +2,7 @@ package com.example.start;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -21,6 +22,15 @@ import retrofit2.Response;
 public class CadastroArtistaAcessoActivity extends AppCompatActivity {
 
     RouterInterface routerInterface;
+    SharedPreferences sharedPreferences;
+
+    private static final String SHARED_PREF_NAME = "mypref_artista";
+    private static final String NOME_COMPLETO_ARTISTA = "nomeCompleto";
+    private static final String NOME_ARTISTICO_ARTISTA = "nomeArtistico";
+    private static final String DATA_NASCIMENTO_ARTISTA = "dataNascimento";
+    private static final String TELEFONE_ARTISTA = "telefone";
+    private static final String CPF_CNPJ_ARTISTA = "cpfCnpj";
+    private static final String PIX = "pix";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +41,14 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
         final EditText etEmail = findViewById(R.id.et_email_cadastro_artista_acesso);
         final EditText etSenha = findViewById(R.id.et_senha_cadastro_artista_acesso);
         final Button btnCadastrar = findViewById(R.id.btn_continuar_cadastro_artista_acesso);
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+
+//        String nomeCompletoShared = sharedPreferences.getString(NOME_COMPLETO_ARTISTA, null);
+//        String nomeArtisticoShared = sharedPreferences.getString(NOME_ARTISTICO_ARTISTA, null);
+//        String dataNascimentoShared = sharedPreferences.getString(DATA_NASCIMENTO_ARTISTA, null);
+//        String telefoneShared = sharedPreferences.getString(TELEFONE_ARTISTA, null);
+//        String cpfShared = sharedPreferences.getString(CPF_CNPJ_ARTISTA, null);
+//        String pixShared = sharedPreferences.getString(PIX, null);
 
         arrowBack.setOnClickListener(view -> {
             finish();
@@ -41,19 +59,20 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
 
             Artista artista = new Artista();
 
-            artista.setNomeCompleto(getIntent().getExtras().getString("nomeCompleto"));
-            artista.setNomeArtistico(getIntent().getExtras().getString("nomeArtistico"));
-            artista.setDataNascimento(getIntent().getExtras().getString("dataNascimento"));
-            artista.setTelefoneCelular(getIntent().getExtras().getString("telefone"));
-            artista.setCpf_cnpj(getIntent().getExtras().getString("cpf"));
-
-            artista.setPix(getIntent().getExtras().getString("pix"));
+            artista.setNomeCompleto(sharedPreferences.getString(NOME_COMPLETO_ARTISTA, null));
+            artista.setNomeArtistico(sharedPreferences.getString(NOME_ARTISTICO_ARTISTA, null));
+            artista.setCpf_cnpj(sharedPreferences.getString(CPF_CNPJ_ARTISTA, null));
+            artista.setTelefoneCelular(sharedPreferences.getString(TELEFONE_ARTISTA, null));
+            artista.setDataNascimento(sharedPreferences.getString(DATA_NASCIMENTO_ARTISTA, null));
+            artista.setPix(sharedPreferences.getString(PIX, null));
 
             artista.setEmail(etEmail.getText().toString());
             artista.setSenha(etSenha.getText().toString());
 
-//            intent.putExtra("spinner_pix", spinnerOpcaoPix.getSelectedItem().toString());
-//            intent.putExtra("opcao_pix", etOpcaoPix.getText().toString());
+            artista.setContaEstaAtiva(1);
+            artista.seteDestacado(1);
+            artista.setIdEspecialidadeArtista(1);
+            artista.setIdEspecialidade(1);
 
             routerInterface = APIUtil.getUsuarioInterface();
             addArtista(artista);

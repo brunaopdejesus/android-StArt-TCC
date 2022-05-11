@@ -43,6 +43,23 @@ public class Artista {
     @Expose
     private String senha;
 
+    @SerializedName("contaEstaAtiva")
+    @Expose
+    private int contaEstaAtiva;
+
+    @SerializedName("eDestacado")
+    @Expose
+    private int eDestacado;
+
+    @SerializedName("idEspecialidadeArtista")
+    @Expose
+    private int idEspecialidadeArtista;
+
+    @SerializedName("idEspecialidade")
+    @Expose
+    private int idEspecialidade;
+
+
     public Artista() {
     }
 
@@ -54,7 +71,11 @@ public class Artista {
                    String cpf_cnpj,
                    String pix,
                    String email,
-                   String senha) {
+                   String senha,
+                   int contaEstaAtiva,
+                   int eDestacado,
+                   int idEspecialidadeArtista,
+                   int idEspecialidade) {
         this.idArtista = idArtista;
         this.nomeCompleto = nomeCompleto;
         this.nomeArtistico = nomeArtistico;
@@ -64,6 +85,10 @@ public class Artista {
         this.pix = pix;
         this.email = email;
         this.senha = senha;
+        this.contaEstaAtiva = contaEstaAtiva;
+        this.eDestacado = eDestacado;
+        this.idEspecialidadeArtista = idEspecialidadeArtista;
+        this.idEspecialidade = idEspecialidade;
     }
 
     public int getIdArtista() {
@@ -136,5 +161,37 @@ public class Artista {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public int getContaEstaAtiva() {
+        return contaEstaAtiva;
+    }
+
+    public void setContaEstaAtiva(int contaEstaAtiva) {
+        this.contaEstaAtiva = contaEstaAtiva;
+    }
+
+    public int geteDestacado() {
+        return eDestacado;
+    }
+
+    public void seteDestacado(int eDestacado) {
+        this.eDestacado = eDestacado;
+    }
+
+    public int getIdEspecialidadeArtista() {
+        return idEspecialidadeArtista;
+    }
+
+    public void setIdEspecialidadeArtista(int idEspecialidadeArtista) {
+        this.idEspecialidadeArtista = idEspecialidadeArtista;
+    }
+
+    public int getIdEspecialidade() {
+        return idEspecialidade;
+    }
+
+    public void setIdEspecialidade(int idEspecialidade) {
+        this.idEspecialidade = idEspecialidade;
     }
 }
