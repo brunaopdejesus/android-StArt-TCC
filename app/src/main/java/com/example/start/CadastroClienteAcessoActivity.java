@@ -4,6 +4,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -22,12 +23,28 @@ import retrofit2.Response;
 
 public class CadastroClienteAcessoActivity extends AppCompatActivity {
 
+    RouterInterface routerInterface;
+    SharedPreferences sharedPreferences;
+
     private ImageView arrowBack;
     private EditText txtEmail;
     private EditText txtSenha;
     private Button btnCadastrar;
 
-    RouterInterface routerInterface;
+    private static final String SHARED_PREF_NAME = "mypref_cliente";
+    private static final String NOME_COMPLETO_CLIENTE = "nomeCompleto";
+    private static final String DATA_NASCIMENTO_CLIENTE = "dataNascimento";
+    private static final String TELEFONE_CLIENTE = "telefone";
+    private static final String CPF_CNPJ_ARTISTA = "cpfCnpj";
+
+    private static final String CEP = "cep";
+    private static final String ENDERECO = "endereco";
+    private static final String NUMERO = "numero";
+    private static final String COMPLEMENTO = "complemento";
+    private static final String BAIRRO = "bairro";
+    private static final String ESTADO = "estado";
+    private static final String CIDADE = "cidade";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,21 +65,21 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
 
             Cliente cliente = new Cliente();
 
-            cliente.setNomeCompleto(getIntent().getExtras().getString("nome"));
-            cliente.setDataNascimento(getIntent().getExtras().getString("dataNascimento"));
-            cliente.setTelefoneCelular(getIntent().getExtras().getString("telefone"));
-            cliente.setCpf_cnpj(getIntent().getExtras().getString("cpf"));
-
-            cliente.setRua(getIntent().getExtras().getString("endereco"));
-            cliente.setCep(getIntent().getExtras().getString("cep"));
-            cliente.setNumero(getIntent().getExtras().getString("numero"));
-            cliente.setComplemento(getIntent().getExtras().getString("complemento"));
-            cliente.setBairro(getIntent().getExtras().getString("bairro"));
-            cliente.setCidade(getIntent().getExtras().getString("cidade"));
-            cliente.setEstado(getIntent().getExtras().getString("estado"));
-
-            cliente.setEmail(txtEmail.getText().toString());
-            cliente.setSenha(txtSenha.getText().toString());
+//            cliente.setNomeCompleto(getIntent().getExtras().getString("nome"));
+//            cliente.setDataNascimento(getIntent().getExtras().getString("dataNascimento"));
+//            cliente.setTelefoneCelular(getIntent().getExtras().getString("telefone"));
+//            cliente.setCpf_cnpj(getIntent().getExtras().getString("cpf"));
+//
+//            cliente.setRua(getIntent().getExtras().getString("endereco"));
+//            cliente.setCep(getIntent().getExtras().getString("cep"));
+//            cliente.setNumero(getIntent().getExtras().getString("numero"));
+//            cliente.setComplemento(getIntent().getExtras().getString("complemento"));
+//            cliente.setBairro(getIntent().getExtras().getString("bairro"));
+//            cliente.setCidade(getIntent().getExtras().getString("cidade"));
+//            cliente.setEstado(getIntent().getExtras().getString("estado"));
+//
+//            cliente.setEmail(txtEmail.getText().toString());
+//            cliente.setSenha(txtSenha.getText().toString());
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);

@@ -25,8 +25,16 @@
         <item>"Chave aleatória"</item>
     </string-array>
 
-    <string name="state_prompt">Estado</string>
     <string name="city_prompt">Cidade</string>
+    <string-array name="cities">
+        <item>"Selecione"</item>
+        <item>"Jandira"</item>
+        <item>"Barueri"</item>
+        <item>"Itapevi"</item>
+        <item>"Osasco"</item>
+    </string-array>
+
+    <string name="state_prompt">Estado</string>
     <string-array name="states">
         <item>"Estado"</item>
         <item>"Acre (AC)"</item>

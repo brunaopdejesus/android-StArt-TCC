@@ -43,13 +43,6 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
         final Button btnCadastrar = findViewById(R.id.btn_continuar_cadastro_artista_acesso);
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
-//        String nomeCompletoShared = sharedPreferences.getString(NOME_COMPLETO_ARTISTA, null);
-//        String nomeArtisticoShared = sharedPreferences.getString(NOME_ARTISTICO_ARTISTA, null);
-//        String dataNascimentoShared = sharedPreferences.getString(DATA_NASCIMENTO_ARTISTA, null);
-//        String telefoneShared = sharedPreferences.getString(TELEFONE_ARTISTA, null);
-//        String cpfShared = sharedPreferences.getString(CPF_CNPJ_ARTISTA, null);
-//        String pixShared = sharedPreferences.getString(PIX, null);
-
         arrowBack.setOnClickListener(view -> {
             finish();
             super.onBackPressed();
@@ -71,8 +64,8 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
 
             artista.setContaEstaAtiva(1);
             artista.seteDestacado(1);
-            artista.setIdEspecialidadeArtista(1);
-            artista.setIdEspecialidade(1);
+            artista.setIdEspecialidadeArtista(2);
+            artista.setIdEspecialidade(2);
 
             routerInterface = APIUtil.getUsuarioInterface();
             addArtista(artista);

@@ -7,7 +7,6 @@ import java.util.Date;
 
 public class Cliente {
 
-
     private String message;
 
     public String getMessage() {
@@ -17,7 +16,6 @@ public class Cliente {
     public void setMessage(String message) {
         this.message = message;
     }
-
 
     @SerializedName("idCliente")
     @Expose
@@ -75,9 +73,14 @@ public class Cliente {
     @Expose
     private String senha;
 
-//    @SerializedName("idCidade")
-//    @Expose
-//    private int idCidade = 1;
+    @SerializedName("contaEstaAtiva")
+    @Expose
+    private int contaEstaAtiva;
+
+    @SerializedName("idEnderecoCliente")
+    @Expose
+    private int idEnderecoCliente;
+
 
     public Cliente() {
     }
@@ -97,6 +100,8 @@ public class Cliente {
         this.estado = estado;
         this.email = email;
         this.senha = senha;
+        this.contaEstaAtiva = contaEstaAtiva;
+        this.idEnderecoCliente = idEnderecoCliente;
 //        this.idCidade = idCidade;
     }
 
@@ -212,7 +217,23 @@ public class Cliente {
         this.senha = senha;
     }
 
-//    public int getIdCidade() {
+    public int getContaEstaAtiva() {
+        return contaEstaAtiva;
+    }
+
+    public void setContaEstaAtiva(int contaEstaAtiva) {
+        this.contaEstaAtiva = contaEstaAtiva;
+    }
+
+    public int getIdEnderecoCliente() {
+        return idEnderecoCliente;
+    }
+
+    public void setIdEnderecoCliente(int idEnderecoCliente) {
+        this.idEnderecoCliente = idEnderecoCliente;
+    }
+
+    //    public int getIdCidade() {
 //        return idCidade;
 //    }
 //
