@@ -146,9 +146,9 @@
                     android:id="@+id/pintor_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="125dp"
+                    android:paddingTop="130dp"
                     android:paddingStart="5dp"
-                    android:text="MOÇA COM BRINCO DE PÉROLA"
+                    android:text="MOÇA COM BRINCO \nDE PÉROLA"
                     android:fontFamily="sans-serif"
                     android:textColor="@color/black"
                     android:textSize="8.5sp" />
@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="138dp"
+                    android:paddingTop="150dp"
                     android:text="JOHANNES VERMEER"
                     android:textColor="@color/black"
                     android:textSize="8sp" />
@@ -170,29 +170,28 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="150dp"
+                    android:paddingTop="160dp"
                     android:text="Pintura - Óleo sobre tela "
                     android:textColor="@color/black"
                     android:textSize="8sp" />
 
 
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp"
+                    android:paddingTop="132dp"
+                    android:src="@drawable/img_favoritado" />
 
-<!--                <ImageView-->
-<!--                    android:id="@+id/image_avaliacao"-->
-<!--                    android:layout_width="15dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="105dp"-->
-<!--                    android:paddingTop="150dp"-->
-<!--                    android:src="@drawable/ic_baseline_star_24" />-->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="93dp"
                     android:paddingTop="150dp"
-                    android:textSize="8.5sp"
+                    android:text="R$345,00"
                     android:textColor="@color/black"
-                    android:text="R$ 345,00"
+                    android:textSize="9sp"
                     android:textStyle="bold"
 
                     />
@@ -214,7 +213,7 @@
                     android:src="@drawable/img_obra_noite_estrelada" />
 
                 <ImageView
-                    android:layout_width="138dp"
+                    android:layout_width="139dp"
                     android:layout_height="48dp"
                     android:layout_below="@+id/obra_noite_estrelada"
                     android:src="@drawable/rectangle_card_view" />
@@ -223,10 +222,20 @@
                     android:id="@+id/obra_noiteEstrelada"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="125dp"
+                    android:paddingTop="128dp"
                     android:paddingStart="5dp"
                     android:text="NOITE ESTRELADA"
                     android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="144dp"
+                    android:text="VINCENT VAN GOGH"
                     android:textColor="@color/black"
                     android:textSize="8.5sp" />
 
@@ -235,39 +244,27 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="138dp"
-                    android:text="VINCENT VAN GOGH"
-                    android:textColor="@color/black"
-                    android:textSize="8sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:paddingStart="5dp"
-                    android:paddingTop="150dp"
+                    android:paddingTop="158dp"
                     android:text="Pintura - Óleo sobre tela "
                     android:textColor="@color/black"
-                    android:textSize="8sp" />
+                    android:textSize="8.5sp" />
 
 
-
-                <!--                <ImageView-->
-                <!--                    android:id="@+id/image_avaliacao"-->
-                <!--                    android:layout_width="15dp"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginStart="105dp"-->
-                <!--                    android:paddingTop="150dp"-->
-                <!--                    android:src="@drawable/ic_baseline_star_24" />-->
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp"
+                    android:paddingTop="134dp"
+                    android:src="@drawable/img_favoritado" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="93dp"
-                    android:paddingTop="150dp"
-                    android:textSize="8.5sp"
+                    android:paddingTop="148dp"
+                    android:text="R$477,90"
                     android:textColor="@color/black"
-                    android:text="R$ 477,90"
+                    android:textSize="9sp"
                     android:textStyle="bold"
 
                     />
@@ -292,69 +289,66 @@
                 >
 
                 <ImageView
-                    android:id="@+id/artesao_RockSanteiro"
+                    android:id="@+id/escultura_touro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_artesao" />
+                    android:src="@drawable/img_escultura_touro" />
 
                 <ImageView
-                    android:layout_width="151dp"
-                    android:layout_height="55dp"
-                    android:layout_below="@+id/artesao_RockSanteiro"
+                    android:layout_width="138dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/escultura_touro"
                     android:src="@drawable/rectangle_card_view"
 
                     />
 
                 <TextView
-                    android:id="@+id/artesao_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="133dp"
+                    android:paddingTop="126dp"
                     android:paddingStart="5dp"
-                    android:text="Rock Santeiro"
+                    android:text="Escultura de touro"
                     android:fontFamily="sans-serif"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/artesao_category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="148dp"
-                    android:text="Artesão"
-                    android:textColor="@color/black"
-                    android:textSize="10sp" />
-
-                <TextView
-                    android:id="@+id/artesao_specialty"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:paddingStart="5dp"
-                    android:paddingTop="161dp"
-                    android:text="Especialidades: Cerâmica \nMadeira, Argila"
+                    android:paddingTop="143dp"
+                    android:text="ELYSELÉTRICO"
                     android:textColor="@color/black"
                     android:textSize="8sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="5dp"
+                    android:paddingTop="154dp"
+                    android:text="Escultura - Cerâmica"
+                    android:textColor="@color/black"
+                    android:textSize="8.5sp" />
 
 
 
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="105dp"
-                    android:paddingTop="150dp"
-                    android:src="@drawable/ic_baseline_star_24" />
+                    android:layout_marginStart="115dp"
+                    android:paddingTop="133dp"
+                    android:src="@drawable/img_favoritado" />
 
                 <TextView
-                    style="@style/titulo_avaliacao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
+                    android:layout_marginStart="93dp"
                     android:paddingTop="153dp"
-                    android:textSize="12sp"
-                    android:text="5.0"
+                    android:textSize="9sp"
+                    android:textColor="@color/black"
+                    android:text="R$293,00"
                     android:textStyle="bold"
 
                     />
@@ -370,69 +364,65 @@
                 >
 
                 <ImageView
-                    android:id="@+id/fotografa_vanessa"
+                    android:id="@+id/ilustracao_garota_estelar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_fotografa" />
+                    android:src="@drawable/img_garota_estelar" />
 
                 <ImageView
-                    android:layout_width="149dp"
-                    android:layout_height="55dp"
-                    android:layout_below="@+id/fotografa_vanessa"
+                    android:layout_width="139dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/ilustracao_garota_estelar"
                     android:src="@drawable/rectangle_card_view"
 
                     />
 
                 <TextView
-                    android:id="@+id/fotografa_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:paddingStart="5dp"
-                    android:paddingTop="133dp"
-                    android:text="Vanessa Durazzo"
+                    android:paddingTop="125dp"
+                    android:text="Garota Estelar"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/fotografa_category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="148dp"
-                    android:text="Fotografa"
+                    android:paddingTop="141dp"
+                    android:text="QUINNI"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="9sp" />
 
                 <TextView
-                    android:id="@+id/fotogrofa_specialty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="161dp"
-                    android:text="Especialidades: Retrato, \nFotografia Artística, Paisagem"
+                    android:paddingTop="153dp"
+                    android:text="Ilustração - Digital"
                     android:textColor="@color/black"
-                    android:textSize="8sp" />
+                    android:textSize="9sp" />
 
 
                 <ImageView
-                    android:id="@+id/image_avaliacao_artistas"
                     android:layout_width="15dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="105dp"
-                    android:paddingTop="150dp"
-                    android:src="@drawable/ic_baseline_star_24" />
+                    android:layout_marginStart="115dp"
+                    android:paddingTop="132dp"
+                    android:src="@drawable/img_favoritado" />
 
                 <TextView
-                    style="@style/titulo_avaliacao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:paddingTop="153dp"
-                    android:text="5.0"
-                    android:textSize="12sp"
+                    android:layout_marginStart="85dp"
+                    android:paddingTop="147dp"
+                    android:text="R$2010,90"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
                     android:textStyle="bold"
 
                     />
@@ -456,71 +446,66 @@
                 >
 
                 <ImageView
-                    android:id="@+id/pintor_VanGogh2"
+                    android:id="@+id/quadro_ilustracao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_pintor" />
+                    android:src="@drawable/img_quadro" />
 
                 <ImageView
-                    android:layout_width="151dp"
-                    android:layout_height="55dp"
-                    android:layout_below="@+id/pintor_VanGogh2"
+                    android:layout_width="141dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/quadro_ilustracao"
                     android:src="@drawable/rectangle_card_view" />
 
                 <TextView
-                    android:id="@+id/pintor_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="133dp"
-                    android:paddingStart="5dp"
-                    android:text="Vincent Van Gogh"
                     android:fontFamily="sans-serif"
+                    android:paddingStart="5dp"
+                    android:paddingTop="130dp"
+                    android:text="HOLLOW KNIGHT \nDREAM NAIL"
                     android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textSize="9sp" />
 
                 <TextView
-                    android:id="@+id/pintor_category2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="148dp"
-                    android:text="Pintor"
+                    android:paddingTop="153dp"
+                    android:text="TEAM CHERRY"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="8sp" />
 
                 <TextView
-                    android:id="@+id/pintor_specialty2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="161dp"
-                    android:text="Especialidades: Realismo, \nModernismo, Impressionismo"
+                    android:paddingTop="162dp"
+                    android:text="Ilustração - Quadro Impresso "
                     android:textColor="@color/black"
                     android:textSize="8sp" />
 
 
 
                 <ImageView
-                    android:id="@+id/image_avaliacao2"
                     android:layout_width="15dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="105dp"
-                    android:paddingTop="150dp"
-                    android:src="@drawable/ic_baseline_star_24" />
+                    android:layout_marginStart="118dp"
+                    android:paddingTop="144dp"
+                    android:src="@drawable/img_favoritado" />
 
-                <TextView
-                    style="@style/titulo_avaliacao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:paddingTop="153dp"
-                    android:textSize="12sp"
-                    android:text="5.0"
-                    android:textStyle="bold"
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="116dp"-->
+<!--                    android:paddingTop="150dp"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:text="****"-->
+<!--                    android:textStyle="bold"-->
 
-                    />
+<!--                    />-->
 
 
             </RelativeLayout>
@@ -533,49 +518,46 @@
                 >
 
                 <ImageView
-                    android:id="@+id/ilustrador_rogerio2"
+                    android:id="@+id/ilustracao_anne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_ilustrador" />
+                    android:src="@drawable/img_anne" />
 
                 <ImageView
-                    android:layout_width="149dp"
-                    android:layout_height="55dp"
-                    android:layout_below="@+id/ilustrador_rogerio2"
+                    android:layout_width="139dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/ilustracao_anne"
                     android:src="@drawable/rectangle_card_view"
 
                     />
 
                 <TextView
-                    android:id="@+id/ilustrador_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:paddingStart="5dp"
-                    android:paddingTop="133dp"
-                    android:text="Rogério Borges"
+                    android:paddingTop="126dp"
+                    android:text="ANNE WITH AN ”E”"
                     android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
                 <TextView
-                    android:id="@+id/ilustrador_category2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="148dp"
-                    android:text="Ilustrador"
+                    android:paddingTop="143dp"
+                    android:text="CECILIA S."
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="9sp" />
 
                 <TextView
-                    android:id="@+id/ilustrador_specialty2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingStart="5dp"
-                    android:paddingTop="161dp"
-                    android:text="Especialidades: Desenhado,\nCartoon, Digitalizado"
+                    android:paddingTop="157dp"
+                    android:text="Ilustração - Desenho a mão"
                     android:textColor="@color/black"
                     android:textSize="8sp" />
 
@@ -583,18 +565,18 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="105dp"
-                    android:paddingTop="150dp"
-                    android:src="@drawable/ic_baseline_star_24" />
+                    android:layout_marginStart="115dp"
+                    android:paddingTop="134dp"
+                    android:src="@drawable/img_favoritado" />
 
                 <TextView
-                    style="@style/titulo_avaliacao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:paddingTop="153dp"
-                    android:text="5.0"
-                    android:textSize="12sp"
+                    android:layout_marginStart="92dp"
+                    android:paddingTop="146dp"
+                    android:text="R$209,99"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
                     android:textStyle="bold"
 
                     />
