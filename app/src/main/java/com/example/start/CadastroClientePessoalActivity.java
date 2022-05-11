@@ -61,16 +61,7 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
                 mYear = c.get(Calendar.YEAR);
 
                 DatePickerDialog datePickerDialog = new DatePickerDialog(this,
-                        new DatePickerDialog.OnDateSetListener() {
-
-                            @Override
-                            public void onDateSet(DatePicker view, int year,
-                                                  int monthOfYear, int dayOfMonth) {
-
-                                etDataNascimento.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
-
-                            }
-                        }, mDay, mMonth, mYear);
+                        (view1, year, monthOfYear, dayOfMonth) -> etDataNascimento.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year), mDay, mMonth, mYear);
                 datePickerDialog.show();
             }
 

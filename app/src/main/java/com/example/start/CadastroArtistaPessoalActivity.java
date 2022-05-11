@@ -55,7 +55,7 @@ public class CadastroArtistaPessoalActivity extends AppCompatActivity {
 
         btnContinuar.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), CadastroArtistaPagamentoPixActivity.class);
-            intent.putExtra("nome", etNome.getText().toString());
+            intent.putExtra("nomeCompleto", etNome.getText().toString());
             intent.putExtra("nomeArtistico", etNomeArtistico.getText().toString());
             intent.putExtra("dataNascimento", etDataNascimento.getText().toString());
             intent.putExtra("telefone", etTelefone.getText().toString());

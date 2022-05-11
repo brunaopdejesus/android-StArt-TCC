@@ -13,17 +13,20 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.start.R;
+import com.example.start.remote.RouterInterface;
 
 public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
+
+    RouterInterface routerInterface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_artista_pagamento_pix);
 
-        final ImageView arrowBack = findViewById(R.id.image_back_cadastro_cliente_pessoal);
+        final ImageView arrowBack = findViewById(R.id.image_back_cadastro_artista_pagamento_pix);
         final TextView tvTransferencia = findViewById(R.id.transferencia_bancaria);
-        final Spinner spinnerOpcaoPix = findViewById(R.id.sp_pix);
+//        final Spinner spinnerOpcaoPix = findViewById(R.id.sp_pix);
         final EditText etOpcaoPix = findViewById(R.id.et_pix);
         final Button btnContinuar = findViewById(R.id.btn_continuar_cadastro_artista_pix);
 
@@ -35,14 +38,15 @@ public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
         btnContinuar.setOnClickListener(view -> {
 
             Intent intent = new Intent(getApplicationContext(), CadastroArtistaAcessoActivity.class);
-            intent.putExtra("nome", intent.getStringExtra("nome"));
+            intent.putExtra("nomeCompleto", intent.getStringExtra("nomeCompleto"));
             intent.putExtra("nomeArtistico", intent.getStringExtra("nomeArtistico"));
             intent.putExtra("dataNascimento", intent.getStringExtra("dataNascimento"));
             intent.putExtra("telefone", intent.getStringExtra("telefone"));
             intent.putExtra("cpf", intent.getStringExtra("cpf"));
 
-            intent.putExtra("spinner_pix", spinnerOpcaoPix.getSelectedItem().toString());
-            intent.putExtra("opcao_pix", etOpcaoPix.getText().toString());
+//            intent.putExtra("spinner_pix", spinnerOpcaoPix.getSelectedItem().toString());
+
+            intent.putExtra("pix", etOpcaoPix.getText().toString());
             startActivity(intent);
 
         });

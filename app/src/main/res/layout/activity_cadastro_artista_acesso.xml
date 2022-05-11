@@ -51,7 +51,7 @@
                 android:id="@+id/et_senha_cadastro_artista_acesso"
                 style="@style/edit_text_cadastro"
                 android:background="@drawable/input_shape"
-                android:inputType="date" />
+                android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/btn_continuar_cadastro_artista_acesso"

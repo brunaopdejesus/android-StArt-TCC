@@ -21,7 +21,7 @@ public class Artista {
 
     @SerializedName("dataNascimento")
     @Expose
-    private Date dataNascimento;
+    private String dataNascimento;
 
     @SerializedName("telefoneCelular")
     @Expose
@@ -58,7 +58,7 @@ public class Artista {
         this.idArtista = idArtista;
         this.nomeCompleto = nomeCompleto;
         this.nomeArtistico = nomeArtistico;
-        this.dataNascimento = dataNascimento;
+        this.dataNascimento = String.valueOf(dataNascimento);
         this.telefoneCelular = telefoneCelular;
         this.cpf_cnpj = cpf_cnpj;
         this.pix = pix;
@@ -90,7 +90,7 @@ public class Artista {
         this.nomeArtistico = nomeArtistico;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 

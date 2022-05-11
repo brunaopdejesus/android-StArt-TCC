@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/image_back_cadastro_artista_pessoal"
+            android:id="@+id/image_back_cadastro_artista_pagamento_pix"
             style="@style/icon_back"
             android:layout_marginBottom="20dp"
             />
@@ -36,7 +36,7 @@
             android:layout_marginTop="20dp">
 
             <TextView
-                android:id="@+id/pix"
+                android:id="@+id/pix_trocar_forma_pagamento"
                 style="@style/tv_dados_pagamento"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="16dp"
@@ -45,15 +45,15 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:fontFamily="sans-serif"
                 android:id="@+id/transferencia_bancaria"
                 style="@style/tv_dados_pagamento"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="35dp"
+                android:fontFamily="sans-serif"
                 android:gravity="center"
-                android:textStyle="normal"
-                android:text="TRANSFERÊNCIA\nBANCÁRIA" />
+                android:text="TRANSFERÊNCIA\nBANCÁRIA"
+                android:textStyle="normal" />
 
         </RelativeLayout>
 
@@ -72,10 +72,9 @@
                 android:layout_marginEnd="180dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/input_parcela_left"
+                android:entries="@array/pix"
                 android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                android:entries="@string/pix_prompt"
-                />
+                android:paddingEnd="8dp" />
 
             <EditText
                 android:id="@+id/et_pix"
@@ -89,27 +88,6 @@
                 android:paddingEnd="8dp" />
 
 
-
-            <!--            <Spinner-->
-            <!--                android:id="@+id/sp_pix"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="45dp"-->
-            <!--                android:background="@drawable/input_shape"-->
-            <!--                android:entries="@array/pix"-->
-            <!--                android:paddingStart="8dp"-->
-            <!--                android:paddingEnd="8dp"-->
-            <!--                android:layout_marginTop="12dp"-->
-            <!--                android:prompt="@string/pix_prompt"-->
-            <!--                android:layout_marginBottom="16dp"/>-->
-
-            <!--            <EditText-->
-            <!--                android:id="@+id/et_pix"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="45dp"-->
-            <!--                android:background="@drawable/input_shape"-->
-            <!--                android:paddingStart="12dp"-->
-            <!--                android:paddingEnd="12dp"-->
-            <!--                />-->
 
 
 
