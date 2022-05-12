@@ -28,7 +28,7 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
     private static final String NOME_COMPLETO_CLIENTE = "nomeCompleto";
     private static final String DATA_NASCIMENTO_CLIENTE = "dataNascimento";
     private static final String TELEFONE_CLIENTE = "telefone";
-    private static final String CPF_CNPJ_ARTISTA = "cpfCnpj";
+    private static final String CPF_CNPJ_CLIENTE = "cpfCnpj";
 
 
     @Override
@@ -79,8 +79,8 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
                 // putting data
                 editor.putString(NOME_COMPLETO_CLIENTE,etNome.getText().toString());
                 editor.putString(DATA_NASCIMENTO_CLIENTE,etDataNascimento.getText().toString());
-                editor.putString(TELEFONE_CLIENTE,etDataNascimento.getText().toString());
-                editor.putString(CPF_CNPJ_ARTISTA,etCpfCnpj.getText().toString());
+                editor.putString(TELEFONE_CLIENTE,etTelefone.getText().toString());
+                editor.putString(CPF_CNPJ_CLIENTE,etCpfCnpj.getText().toString());
                 editor.apply();
 
                 // start next activity

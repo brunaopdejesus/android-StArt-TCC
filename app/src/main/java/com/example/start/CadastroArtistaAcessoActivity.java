@@ -57,6 +57,7 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
             artista.setCpf_cnpj(sharedPreferences.getString(CPF_CNPJ_ARTISTA, null));
             artista.setTelefoneCelular(sharedPreferences.getString(TELEFONE_ARTISTA, null));
             artista.setDataNascimento(sharedPreferences.getString(DATA_NASCIMENTO_ARTISTA, null));
+
             artista.setPix(sharedPreferences.getString(PIX, null));
 
             artista.setEmail(etEmail.getText().toString());

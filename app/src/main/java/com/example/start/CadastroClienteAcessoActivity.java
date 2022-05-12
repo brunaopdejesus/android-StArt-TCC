@@ -35,7 +35,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
     private static final String NOME_COMPLETO_CLIENTE = "nomeCompleto";
     private static final String DATA_NASCIMENTO_CLIENTE = "dataNascimento";
     private static final String TELEFONE_CLIENTE = "telefone";
-    private static final String CPF_CNPJ_ARTISTA = "cpfCnpj";
+    private static final String CPF_CNPJ_CLIENTE = "cpfCnpj";
 
     private static final String CEP = "cep";
     private static final String ENDERECO = "endereco";
@@ -65,21 +65,24 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
 
             Cliente cliente = new Cliente();
 
-//            cliente.setNomeCompleto(getIntent().getExtras().getString("nome"));
-//            cliente.setDataNascimento(getIntent().getExtras().getString("dataNascimento"));
-//            cliente.setTelefoneCelular(getIntent().getExtras().getString("telefone"));
-//            cliente.setCpf_cnpj(getIntent().getExtras().getString("cpf"));
-//
-//            cliente.setRua(getIntent().getExtras().getString("endereco"));
-//            cliente.setCep(getIntent().getExtras().getString("cep"));
-//            cliente.setNumero(getIntent().getExtras().getString("numero"));
-//            cliente.setComplemento(getIntent().getExtras().getString("complemento"));
-//            cliente.setBairro(getIntent().getExtras().getString("bairro"));
-//            cliente.setCidade(getIntent().getExtras().getString("cidade"));
-//            cliente.setEstado(getIntent().getExtras().getString("estado"));
-//
-//            cliente.setEmail(txtEmail.getText().toString());
-//            cliente.setSenha(txtSenha.getText().toString());
+            cliente.setNomeCompleto(sharedPreferences.getString(NOME_COMPLETO_CLIENTE, null));
+            cliente.setDataNascimento(sharedPreferences.getString(DATA_NASCIMENTO_CLIENTE, null));
+            cliente.setTelefoneCelular(sharedPreferences.getString(TELEFONE_CLIENTE, null));
+            cliente.setCpf_cnpj(sharedPreferences.getString(CPF_CNPJ_CLIENTE, null));
+
+            cliente.setCep(sharedPreferences.getString(CEP, null));
+            cliente.setRua(sharedPreferences.getString(ENDERECO, null));
+            cliente.setNumero(sharedPreferences.getString(NUMERO, null));
+            cliente.setComplemento(sharedPreferences.getString(COMPLEMENTO, null));
+            cliente.setBairro(sharedPreferences.getString(BAIRRO, null));
+            cliente.setEstado(sharedPreferences.getString(ESTADO, null));
+            cliente.setCidade(sharedPreferences.getString(CIDADE, null));
+
+            cliente.setEmail(txtEmail.getText().toString());
+            cliente.setSenha(txtSenha.getText().toString());
+
+            cliente.setContaEstaAtiva(1);
+            cliente.setIdEnderecoCliente(1);
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);
