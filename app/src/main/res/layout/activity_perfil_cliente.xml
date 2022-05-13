@@ -246,63 +246,107 @@
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 >
 
-
-                <ImageView
-                    android:id="@+id/photo_van_gogh"
+                <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/img_van_gogh" />
+                    android:layout_height="wrap_content"
+                    >
 
-                <TextView
-                    android:id="@+id/name_van_gogh"
-                    style="@style/text_comum_perfil_cliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@+id/photo_van_gogh"
-                    android:layout_marginStart="8dp"
-                    android:textStyle="bold"
-                    android:text="Vincent Van Gogh"
-                    />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
 
-                <ImageView
-                    android:id="@+id/photo_joahannes_vermeer"
+                        <ImageView
+                            android:id="@+id/photo_van_gogh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_van_gogh" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/name_van_gogh"
+                            style="@style/text_comum_perfil_cliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/photo_van_gogh"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:text="Vincent Van Gogh"
+                            />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="115dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="125dp"
-                    android:src="@drawable/img_johannes_vermeer" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/name_johannes_vermeer"
-                    style="@style/text_comum_perfil_cliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@+id/photo_van_gogh"
-                    android:layout_marginStart="125dp"
-                    android:text="Johannes Vermeer"
-                    android:textStyle="bold" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
 
-                <ImageView
-                    android:id="@+id/photo_michelangelo"
+                        <ImageView
+                            android:id="@+id/photo_joahannes_vermeer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_johannes_vermeer" />
+
+                        <TextView
+                            android:id="@+id/name_johannes_vermeer"
+                            style="@style/text_comum_perfil_cliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/photo_joahannes_vermeer"
+                            android:text="Johannes Vermeer"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold" />
+
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="230dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/img_michelangelo"
-                    android:layout_marginStart="250dp"
-                    />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/name_michelangelo"
-                    style="@style/text_comum_perfil_cliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@+id/photo_van_gogh"
-                    android:layout_marginStart="260dp"
-                    android:text="Michelangelo"
-                    android:textStyle="bold" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo_michelangelo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_michelangelo" />
+
+                        <TextView
+                            android:id="@+id/name_michelangelo"
+                            style="@style/text_comum_perfil_cliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/photo_michelangelo"
+                            android:text="Michelangelo"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
 
 
 
@@ -329,26 +373,145 @@
                     android:src="@drawable/img_mini_line_perfil_cliente"
                     android:layout_below="@id/avaliacao_cliente"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="20dp"/>
+                    android:layout_marginBottom="15dp"
+                  />
 
 
             </RelativeLayout>
 
-            <ImageView
+            <androidx.cardview.widget.CardView
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/img_avaliacao_cliente"
-                android:layout_marginBottom="15dp"
-                />
+                android:layout_marginBottom="10dp"
+                >
 
-            <ImageView
+              <ImageView
+                  android:layout_width="60dp"
+                  android:layout_height="60dp"
+                  android:paddingStart="10dp"
+                  android:src="@drawable/img_michelangelo"
+                  />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="5.0"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ótimo Cliente, paciente e profissional"
+                    android:paddingStart="70dp"
+                    android:paddingTop="30dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:padding="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/img_avaliacao_cliente"
-                />
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingStart="10dp"
+                    android:src="@drawable/img_michelangelo"
+                    />
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="5.0"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ótimo Cliente, paciente e profissional"
+                    android:paddingStart="70dp"
+                    android:paddingTop="30dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
 
 
 

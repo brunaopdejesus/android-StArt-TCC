@@ -258,7 +258,6 @@
                 android:layout_below="@+id/parcela_debito_cliente"
                 android:layout_marginStart="240dp"
                 android:background="@drawable/input_parcela_rigth"
-                android:backgroundTint="#E1E1E1"
                 android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
                 android:fontFamily="sans-serif-light"
                 android:text="R$144,00  "
