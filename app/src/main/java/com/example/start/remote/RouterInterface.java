@@ -32,12 +32,6 @@ public interface RouterInterface {
     @POST("/artista/cadastro")
     Call<Artista> addArtista(@Body Artista artista);
 
-
-
-
-
-
-
 }
 
 // LOGIN CLIENTE E ARTISTA
