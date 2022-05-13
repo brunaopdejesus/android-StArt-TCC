@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 //import com.example.start.util.setDate;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -71,31 +72,38 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
         });
 
         btnContinuar.setOnClickListener(view -> {
-//
-//            if (TextUtils.isEmpty(etNome.getText().toString())) {
-//                etNome.setError("Insira seu nome");
-//                return;
-//            }
-//
+
+            if (TextUtils.isEmpty(etNome.getText().toString())) {
+                etNome.setError("Insira seu nome");
+                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+                return;
+
+            }
+
 //            if (TextUtils.isEmpty(etDataNascimento.getText().toString())) {
 //                etDataNascimento.setError("Insira sua data de nascimento");
 //                return;
 //            }
-//
-//            if (TextUtils.isEmpty(etTelefone.getText().toString())) {
-//                etTelefone.setError("Insira seu telefone");
-//                return;
-//            }
-//
-//            if (TextUtils.isEmpty(etCpfCnpj.getText().toString())) {
-//                etCpfCnpj.setError("Insira seu CPF ou CPNJ");
-//                return;
-//            }
-//
-//            Toast.makeText(this, "Todos os campos são obrigatórios", Toast.LENGTH_SHORT).show();
+
+            if (TextUtils.isEmpty(etTelefone.getText().toString())) {
+                etTelefone.setError("Insira seu telefone");
+                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+
+                return;
+            }
+
+            if (TextUtils.isEmpty(etCpfCnpj.getText().toString())) {
+                etCpfCnpj.setError("Insira seu CPF ou CPNJ");
+                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+
+                return;
+            }
+
 
             // when click a button put data on SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
+
+
 
             // putting data
             editor.putString(NOME_COMPLETO_CLIENTE,etNome.getText().toString());
@@ -114,3 +122,17 @@ public class CadastroClientePessoalActivity extends AppCompatActivity {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

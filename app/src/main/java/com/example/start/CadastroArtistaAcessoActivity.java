@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
@@ -49,6 +50,20 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
         });
 
         btnCadastrar.setOnClickListener(view -> {
+
+            if (TextUtils.isEmpty(etEmail.getText().toString())) {
+                etEmail.setError("Insira seu e-mail");
+                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+
+                return;
+            }
+
+            if (TextUtils.isEmpty(etSenha.getText().toString())) {
+                etSenha.setError("Insira sua senha");
+                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+
+                return;
+            }
 
             Artista artista = new Artista();
 
