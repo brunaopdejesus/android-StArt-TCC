@@ -43,8 +43,8 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
     private static final String NUMERO = "numero";
     private static final String COMPLEMENTO = "complemento";
     private static final String BAIRRO = "bairro";
-    private static final String ESTADO = "estado";
-    private static final String CIDADE = "cidade";
+//    private static final String ESTADO = "estado";
+//    private static final String CIDADE = "cidade";
 
 //    private Spinner spinnerEstado, spinnerCidade;
 //    private ArrayList<String> getstateName=new ArrayList<String>();
@@ -97,8 +97,8 @@ public class CadastroClienteEnderecoActivity extends AppCompatActivity {
             editor.putString(NUMERO,txtNumero.getText().toString());
             editor.putString(COMPLEMENTO,txtComplemento.getText().toString());
             editor.putString(BAIRRO,txtBairro.getText().toString());
-            editor.putString(ESTADO,spEstados.getSelectedItem().toString());
-            editor.putString(CIDADE,spCidades.getSelectedItem().toString());
+//            editor.putString(ESTADO,spEstados.getSelectedItem().toString());
+//            editor.putString(CIDADE,spCidades.getSelectedItem().toString());
             editor.apply();
 
             // start next activity

@@ -42,8 +42,8 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
     private static final String NUMERO = "numero";
     private static final String COMPLEMENTO = "complemento";
     private static final String BAIRRO = "bairro";
-    private static final String ESTADO = "estado";
-    private static final String CIDADE = "cidade";
+//    private static final String ESTADO = "estado";
+//    private static final String CIDADE = "cidade";
 
 
     @Override
@@ -56,6 +56,8 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
         txtSenha = findViewById(R.id.et_senha_cadastro_cliente_acesso);
         btnCadastrar = findViewById(R.id.btn_cadastrar_cadastro_cliente_acesso);
 
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+
         arrowBack.setOnClickListener(view -> {
             finish();
             super.onBackPressed();
@@ -66,7 +68,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             Cliente cliente = new Cliente();
 
             cliente.setNomeCompleto(sharedPreferences.getString(NOME_COMPLETO_CLIENTE, ""));
-            cliente.setDataNascimento(sharedPreferences.getString(DATA_NASCIMENTO_CLIENTE, ""));
+            cliente.setDataNascimento(sharedPreferences.getString(DATA_NASCIMENTO_CLIENTE, null));
             cliente.setTelefoneCelular(sharedPreferences.getString(TELEFONE_CLIENTE, ""));
             cliente.setCpf_cnpj(sharedPreferences.getString(CPF_CNPJ_CLIENTE, ""));
 
@@ -75,14 +77,15 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             cliente.setNumero(sharedPreferences.getString(NUMERO, ""));
             cliente.setComplemento(sharedPreferences.getString(COMPLEMENTO, ""));
             cliente.setBairro(sharedPreferences.getString(BAIRRO, ""));
-            cliente.setEstado(sharedPreferences.getString(ESTADO, ""));
-            cliente.setCidade(sharedPreferences.getString(CIDADE, ""));
+//            cliente.setEstado(sharedPreferences.getString(ESTADO, ""));
+//            cliente.setCidade(sharedPreferences.getString(CIDADE, ""));
 
             cliente.setEmail(txtEmail.getText().toString());
             cliente.setSenha(txtSenha.getText().toString());
 
             cliente.setContaEstaAtiva(1);
-            cliente.setIdEnderecoCliente(1);
+            cliente.setIdCidade(4770);
+//            cliente.setIdEnderecoCliente(9);
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);

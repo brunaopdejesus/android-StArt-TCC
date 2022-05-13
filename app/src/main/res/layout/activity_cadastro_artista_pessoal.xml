@@ -65,15 +65,21 @@
             android:focusable="false"
             />
 
+
+
         <TextView
             style="@style/text_input_cadastro"
             android:text="Telefone*"
             />
 
-        <EditText
+        <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/et_telefone_cadastro_artista"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
+            android:inputType="number"
+            app:mask="(__) _____-____"
+            app:maskCharacter="_"
+            app:maskStyle="completable"
             />
 
         <TextView
@@ -81,10 +87,14 @@
             android:text="CPF/CNPJ*"
             />
 
-        <EditText
+        <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/et_cpf_cadastro_artista"
             style="@style/edit_text_cadastro"
             android:background="@drawable/input_shape"
+            android:inputType="number"
+            app:mask="___.___.___-__"
+            app:maskCharacter="_"
+            app:maskStyle="completable"
             />
 
         <TextView

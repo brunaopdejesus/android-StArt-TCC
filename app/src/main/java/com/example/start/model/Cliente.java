@@ -3,19 +3,7 @@ package com.example.start.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.Date;
-
 public class Cliente {
-
-    private String message;
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
     @SerializedName("idCliente")
     @Expose
@@ -27,7 +15,7 @@ public class Cliente {
 
     @SerializedName("dataNascimento")
     @Expose
-    private Date dataNascimento;
+    private String dataNascimento;
 
     @SerializedName("telefoneCelular")
     @Expose
@@ -36,6 +24,22 @@ public class Cliente {
     @SerializedName("cpf_cnpj")
     @Expose
     private String cpf_cnpj;
+
+    @SerializedName("email")
+    @Expose
+    private String email;
+
+    @SerializedName("senha")
+    @Expose
+    private String senha;
+
+    @SerializedName("contaEstaAtiva")
+    @Expose
+    private int contaEstaAtiva;
+
+    @SerializedName("idCidade")
+    @Expose
+    private int idCidade;
 
     @SerializedName("rua")
     @Expose
@@ -57,52 +61,24 @@ public class Cliente {
     @Expose
     private String bairro;
 
-    @SerializedName("cidade")
-    @Expose
-    private String cidade;
-
-    @SerializedName("estado")
-    @Expose
-    private String estado;
-
-    @SerializedName("email")
-    @Expose
-    private String email;
-
-    @SerializedName("senha")
-    @Expose
-    private String senha;
-
-    @SerializedName("contaEstaAtiva")
-    @Expose
-    private int contaEstaAtiva;
-
-    @SerializedName("idEnderecoCliente")
-    @Expose
-    private int idEnderecoCliente;
-
-
     public Cliente() {
     }
 
-    public Cliente(int idCliente, String nomeCompleto, Date dataNascimento, String telefoneCelular, String cpf_cnpj, String rua, String cep, String numero, String complemento, String bairro, String cidade, String estado, String email, String senha, int idCidade) {
+    public Cliente(int idCliente, String nomeCompleto, String dataNascimento, String telefoneCelular, String cpf_cnpj, String email, String senha, int contaEstaAtiva, int idCidade, String rua, String cep, String numero, String complemento, String bairro) {
         this.idCliente = idCliente;
         this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
         this.telefoneCelular = telefoneCelular;
         this.cpf_cnpj = cpf_cnpj;
+        this.email = email;
+        this.senha = senha;
+        this.contaEstaAtiva = contaEstaAtiva;
+        this.idCidade = idCidade;
         this.rua = rua;
         this.cep = cep;
         this.numero = numero;
         this.complemento = complemento;
         this.bairro = bairro;
-        this.cidade = cidade;
-        this.estado = estado;
-        this.email = email;
-        this.senha = senha;
-        this.contaEstaAtiva = contaEstaAtiva;
-        this.idEnderecoCliente = idEnderecoCliente;
-//        this.idCidade = idCidade;
     }
 
     public int getIdCliente() {
@@ -121,13 +97,16 @@ public class Cliente {
         this.nomeCompleto = nomeCompleto;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+//    public void setDataNascimento(String dataNascimento) {
+//    }
 
     public String getTelefoneCelular() {
         return telefoneCelular;
@@ -143,6 +122,38 @@ public class Cliente {
 
     public void setCpf_cnpj(String cpf_cnpj) {
         this.cpf_cnpj = cpf_cnpj;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public int getContaEstaAtiva() {
+        return contaEstaAtiva;
+    }
+
+    public void setContaEstaAtiva(int contaEstaAtiva) {
+        this.contaEstaAtiva = contaEstaAtiva;
+    }
+
+    public int getIdCidade() {
+        return idCidade;
+    }
+
+    public void setIdCidade(int idCidade) {
+        this.idCidade = idCidade;
     }
 
     public String getRua() {
@@ -183,54 +194,6 @@ public class Cliente {
 
     public void setBairro(String bairro) {
         this.bairro = bairro;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public int getContaEstaAtiva() {
-        return contaEstaAtiva;
-    }
-
-    public void setContaEstaAtiva(int contaEstaAtiva) {
-        this.contaEstaAtiva = contaEstaAtiva;
-    }
-
-    public int getIdEnderecoCliente() {
-        return idEnderecoCliente;
-    }
-
-    public void setIdEnderecoCliente(int idEnderecoCliente) {
-        this.idEnderecoCliente = idEnderecoCliente;
     }
 
     //    public int getIdCidade() {
@@ -816,6 +779,16 @@ public class Cliente {
 //        this.senha = senha;
 //    }
 //
-    public void setDataNascimento(String dataNascimento) {
+
+
+    private String message;
+
+    public String getMessage() {
+        return message;
     }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
 }
