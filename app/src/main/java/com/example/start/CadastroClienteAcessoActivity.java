@@ -65,18 +65,18 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
 
             Cliente cliente = new Cliente();
 
-            cliente.setNomeCompleto(sharedPreferences.getString(NOME_COMPLETO_CLIENTE, null));
-            cliente.setDataNascimento(sharedPreferences.getString(DATA_NASCIMENTO_CLIENTE, null));
-            cliente.setTelefoneCelular(sharedPreferences.getString(TELEFONE_CLIENTE, null));
-            cliente.setCpf_cnpj(sharedPreferences.getString(CPF_CNPJ_CLIENTE, null));
+            cliente.setNomeCompleto(sharedPreferences.getString(NOME_COMPLETO_CLIENTE, ""));
+            cliente.setDataNascimento(sharedPreferences.getString(DATA_NASCIMENTO_CLIENTE, ""));
+            cliente.setTelefoneCelular(sharedPreferences.getString(TELEFONE_CLIENTE, ""));
+            cliente.setCpf_cnpj(sharedPreferences.getString(CPF_CNPJ_CLIENTE, ""));
 
-            cliente.setCep(sharedPreferences.getString(CEP, null));
-            cliente.setRua(sharedPreferences.getString(ENDERECO, null));
-            cliente.setNumero(sharedPreferences.getString(NUMERO, null));
-            cliente.setComplemento(sharedPreferences.getString(COMPLEMENTO, null));
-            cliente.setBairro(sharedPreferences.getString(BAIRRO, null));
-            cliente.setEstado(sharedPreferences.getString(ESTADO, null));
-            cliente.setCidade(sharedPreferences.getString(CIDADE, null));
+            cliente.setCep(sharedPreferences.getString(CEP, ""));
+            cliente.setRua(sharedPreferences.getString(ENDERECO, ""));
+            cliente.setNumero(sharedPreferences.getString(NUMERO, ""));
+            cliente.setComplemento(sharedPreferences.getString(COMPLEMENTO, ""));
+            cliente.setBairro(sharedPreferences.getString(BAIRRO, ""));
+            cliente.setEstado(sharedPreferences.getString(ESTADO, ""));
+            cliente.setCidade(sharedPreferences.getString(CIDADE, ""));
 
             cliente.setEmail(txtEmail.getText().toString());
             cliente.setSenha(txtSenha.getText().toString());

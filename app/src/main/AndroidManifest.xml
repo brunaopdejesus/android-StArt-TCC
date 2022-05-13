@@ -84,7 +84,6 @@
         <activity
             android:name=".CadastroArtistaPessoalActivity"
             android:exported="true">
-
         </activity>
         <activity
             android:name=".CadastroClienteAcessoActivity"

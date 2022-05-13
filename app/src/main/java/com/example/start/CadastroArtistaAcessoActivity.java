@@ -64,7 +64,7 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
             artista.setSenha(etSenha.getText().toString());
 
             artista.setContaEstaAtiva(1);
-            artista.seteDestacado(1);
+            artista.seteDestacado(0);
             artista.setIdEspecialidadeArtista(2);
             artista.setIdEspecialidade(2);
 
