@@ -45,10 +45,7 @@ public class LoginActivity extends AppCompatActivity {
             String email = txtEmail.getText().toString();
             String senha = txtSenha.getText().toString();
 
-            if(validateLogin(email, senha) == true){
-                //do login
-                doLogin(email, senha);
-            }
+            doLogin(email, senha);
 
         });
 
