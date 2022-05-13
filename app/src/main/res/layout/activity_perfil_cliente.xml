@@ -345,12 +345,173 @@
 
                     </RelativeLayout>
 
+
                 </androidx.cardview.widget.CardView>
 
 
 
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/avaliacao_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Avaliações"
+                    android:layout_marginTop="20dp"
+                    style="@style/subtitulo_perfil_cliente"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_mini_line_perfil_cliente"
+                    android:layout_below="@id/avaliacao_cliente"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                  />
+
 
             </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                >
+
+              <ImageView
+                  android:layout_width="60dp"
+                  android:layout_height="60dp"
+                  android:paddingStart="10dp"
+                  android:src="@drawable/img_michelangelo"
+                  />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="5.0"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ótimo Cliente, paciente e profissional"
+                    android:paddingStart="70dp"
+                    android:paddingTop="30dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingStart="10dp"
+                    android:src="@drawable/img_michelangelo"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    style="@style/titulo_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="5.0"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ótimo Cliente, paciente e profissional"
+                    android:paddingStart="70dp"
+                    android:paddingTop="30dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
 
 
 
