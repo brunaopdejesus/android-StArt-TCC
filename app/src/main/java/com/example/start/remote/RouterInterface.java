@@ -25,12 +25,14 @@ public interface RouterInterface {
         Call<String> getDistrict(@Path("id") int id);
 
     // LOGIN CLIENTE
-    @GET("/middleware/loginCliente")
-    Call<Cliente> loginCliente(@Path("email") String email, @Path("hash") String senha);
+    @POST("/cliente/loginCliente")
+    Call<Cliente> loginCliente(@Path("emailLogin") String email, @Path("senhaLogin") String senha);
 
-    /** ARTISTA **/
-    @POST("/artista/cadastro")
-    Call<Artista> addArtista(@Body Artista artista);
+
+//
+//    /** ARTISTA **/
+//    @POST("/artista/cadastro")
+//    Call<Artista> addArtista(@Body Artista artista);
 
 }
 
