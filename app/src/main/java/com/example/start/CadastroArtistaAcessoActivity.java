@@ -2,6 +2,7 @@ package com.example.start;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -78,6 +79,8 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
             artista.setEmail(etEmail.getText().toString());
             artista.setSenha(etSenha.getText().toString());
 
+            artista.setUserType(1);
+
             artista.setContaEstaAtiva(1);
             artista.seteDestacado(0);
             artista.setIdEspecialidadeArtista(2);
@@ -85,6 +88,8 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
 
             routerInterface = APIUtil.getUsuarioInterface();
             addArtista(artista);
+
+            startActivity(new Intent(CadastroArtistaAcessoActivity.this, HomeClienteActivity.class));
 
         });
 

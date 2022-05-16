@@ -99,12 +99,15 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             cliente.setSenha(txtSenha.getText().toString());
 
             cliente.setUserType(0);
+
             cliente.setContaEstaAtiva(1);
-            cliente.setIdCidade(4770);
+            cliente.setIdCidade(4771);
 //            cliente.setIdEnderecoCliente(9);
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);
+
+            startActivity(new Intent(CadastroClienteAcessoActivity.this, HomeClienteActivity.class));
 
         });
 

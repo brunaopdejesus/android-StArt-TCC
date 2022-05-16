@@ -5,6 +5,7 @@ import com.example.start.model.Cliente;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.Field;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
@@ -12,7 +13,7 @@ import retrofit2.http.Path;
 public interface RouterInterface {
 
     /** CLIENTE **/
-    // CADASTRAR CLIENTE
+    // CADASTRO CLIENTE
     @POST("/cliente/cadastro")
     Call<Cliente> addCliente(@Body Cliente cliente);
 
@@ -26,10 +27,11 @@ public interface RouterInterface {
 
     // LOGIN CLIENTE
     @POST("/cliente/login")
-    Call<Cliente> loginCliente(@Path("emailLogin") String email, @Path("senhaLogin") String senha);
+    Call<Cliente> loginCliente();
 
 
     /** ARTISTA **/
+    // CADASTRO ARTISTA
     @POST("/artista/cadastro")
     Call<Artista> addArtista(@Body Artista artista);
 
@@ -39,15 +41,6 @@ public interface RouterInterface {
 
 }
 
-// LOGIN CLIENTE E ARTISTA
-//    @POST("/cliente/login")
-//    Call loginCliente(@Path("email") String email, @Path("senha") String senha);
 
-// LOGIN
-//    @POST("/login")
-//    Call<Cliente> loginCliente(@Body Cliente loginCliente);
 
-//
-//    @GET("login/{username}/{password}")
-//    Call login(@Path("username") String username, @Path("password") String password);
 
