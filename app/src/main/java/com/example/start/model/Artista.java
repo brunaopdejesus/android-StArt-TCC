@@ -11,6 +11,10 @@ public class Artista {
     @Expose
     private int idArtista;
 
+    @SerializedName("userType")
+    @Expose
+    private int userType;
+
     @SerializedName("nomeCompleto")
     @Expose
     private String nomeCompleto;
@@ -75,7 +79,8 @@ public class Artista {
                    int contaEstaAtiva,
                    int eDestacado,
                    int idEspecialidadeArtista,
-                   int idEspecialidade) {
+                   int idEspecialidade,
+                   int userType) {
         this.idArtista = idArtista;
         this.nomeCompleto = nomeCompleto;
         this.nomeArtistico = nomeArtistico;
@@ -89,6 +94,7 @@ public class Artista {
         this.eDestacado = eDestacado;
         this.idEspecialidadeArtista = idEspecialidadeArtista;
         this.idEspecialidade = idEspecialidade;
+        this.userType = userType;
     }
 
     public int getIdArtista() {
@@ -193,5 +199,13 @@ public class Artista {
 
     public void setIdEspecialidade(int idEspecialidade) {
         this.idEspecialidade = idEspecialidade;
+    }
+
+    public int getUserType() {
+        return userType;
+    }
+
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 }

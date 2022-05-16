@@ -92,15 +92,15 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
 
     public void addArtista(Artista artista) {
 
-        Log.d("TESTE-", "TESTE CADASTRO ARTISTA");
+//        Log.d("TESTE-", "TESTE CADASTRO ARTISTA");
 
         Call<Artista> call = routerInterface.addArtista(artista);
 
         call.enqueue(new Callback<Artista>() {
             @Override
             public void onResponse(Call<Artista> call, Response<Artista> response) {
-                Log.d("TESTE-", "TESTE2 CADASTRO ARTISTA");
-                Log.d("TESTE-", String.valueOf(response.isSuccessful()));
+//                Log.d("TESTE-", "TESTE2 CADASTRO ARTISTA");
+//                Log.d("TESTE-", String.valueOf(response.isSuccessful()));
                 Toast.makeText(CadastroArtistaAcessoActivity.this, "Artista cadastrado com sucesso",
                         Toast.LENGTH_SHORT).show();
             }
@@ -110,8 +110,8 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
                 Log.d("TESTE-", "TESTE3");
                 Log.d("Erro-API", t.getMessage());
             }
-        });
 
+        });
     }
 
 }

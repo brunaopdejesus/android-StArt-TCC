@@ -98,6 +98,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             cliente.setEmail(txtEmail.getText().toString());
             cliente.setSenha(txtSenha.getText().toString());
 
+            cliente.setUserType(0);
             cliente.setContaEstaAtiva(1);
             cliente.setIdCidade(4770);
 //            cliente.setIdEnderecoCliente(9);

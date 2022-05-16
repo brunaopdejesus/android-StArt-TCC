@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.start.model.Artista;
 import com.example.start.model.Cliente;
 import com.example.start.remote.APIUtil;
 import com.example.start.remote.RouterInterface;
@@ -19,7 +20,12 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
 public class LoginActivity extends AppCompatActivity {
+
+    RouterInterface routerInterface;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +49,20 @@ public class LoginActivity extends AppCompatActivity {
         btnEntrar.setOnClickListener(view -> {
 
             String email = txtEmail.getText().toString();
-            String senha = txtSenha.getText().toString();
+            if (email == null || email.trim().length() == 0) {
+                Toast.makeText(LoginActivity.this, "Insira seu e-mail", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-            if (email, senha == )
+            String senha = txtSenha.getText().toString();
+            if (senha == null || senha.trim().length() == 0) {
+                Toast.makeText(LoginActivity.this, "Insira sua senha", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            routerInterface = APIUtil.getUsuarioInterface();
+
+//            doLogin(email, senha, userType);
+//            doLogin(email, senha);
 
         });
 
@@ -63,71 +80,23 @@ public class LoginActivity extends AppCompatActivity {
         return true;
     }
 
+    private void doLogin(String email, String senha, int userType) {
 
-    private void doLogin(final String email,final String senha){
+        routerInterface = APIUtil.getUsuarioInterface();
 
-        RouterInterface routerInterface = APIUtil.getUsuarioInterface();
+        if (userType == 0) {
 
-        Call<Cliente> call = routerInterface.loginCliente(email, senha);
+//            if (email)
+//            Call<Cliente> loginCliente = routerInterface.loginCliente(email, senha);
 
-        // retorno da chamada de call
-        call.enqueue(new Callback<Cliente>() {
-            @Override
-            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
+            startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
 
-                if(response.isSuccessful()){
-                    Cliente resObj = response.body();
-                    if(resObj.getMessage().equals("true")){
-
-                        Intent intent = new Intent(LoginActivity.this, HomeClienteActivity.class);
-                        intent.putExtra("email", email);
-                        startActivity(intent);
-
-                    } else {
-                        Toast.makeText(LoginActivity.this, "Os dados estão incorretos, insira-os novamente!", Toast.LENGTH_SHORT).show();
-                    }
-                } else {
-                    Toast.makeText(LoginActivity.this, "Erro! Tente novamente", Toast.LENGTH_SHORT).show();
-                }
-
-                Toast.makeText(LoginActivity.this, "Login realizado com sucesso! 🥳", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
-            }
-
-            @Override
-            public void onFailure(Call<Cliente> call, Throwable t) {
-                Toast.makeText(LoginActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-//        RouterInterface.loginCliente(email, senha);
-
-
-
-
-        //        call.enqueue(new Callback() {
-//            @Override
-//            public void onResponse(Call call, Response response) {
-//                if(response.isSuccessful()){
-//                    ResObj resObj = response.body();
-//                    if(resObj.getMessage().equals("true")){
-//                        //login start main activity
-//                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//                        intent.putExtra("username", username);
-//                        startActivity(intent);
-//
-//                    } else {
-//                        Toast.makeText(LoginActivity.this, "The username or password is incorrect", Toast.LENGTH_SHORT).show();
-//                    }
-//                } else {
-//                    Toast.makeText(LoginActivity.this, "Error! Please try again!", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call call, Throwable t) {
-//                Toast.makeText(LoginActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        } else if (userType == 1) {
+            Call<Artista> loginArtista = routerInterface.loginArtista(email, senha);
+            startActivity(new Intent(LoginActivity.this, HomeArtistaActivity.class));
+        } else {
+            Toast.makeText(this, "Não foi possível realizar o login", Toast.LENGTH_SHORT).show();
+        }
 
     }
 

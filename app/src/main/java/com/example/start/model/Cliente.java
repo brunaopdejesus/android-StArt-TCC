@@ -9,6 +9,10 @@ public class Cliente {
     @Expose
     private int idCliente;
 
+    @SerializedName("userType")
+    @Expose
+    private int userType;
+
     @SerializedName("nomeCompleto")
     @Expose
     private String nomeCompleto;
@@ -64,7 +68,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(int idCliente, String nomeCompleto, String dataNascimento, String telefoneCelular, String cpf_cnpj, String email, String senha, int contaEstaAtiva, int idCidade, String rua, String cep, String numero, String complemento, String bairro) {
+    public Cliente(int idCliente, String nomeCompleto, String dataNascimento, String telefoneCelular, String cpf_cnpj, String email, String senha, int contaEstaAtiva, int idCidade, String rua, String cep, String numero, String complemento, String bairro, int userType) {
         this.idCliente = idCliente;
         this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
@@ -79,6 +83,7 @@ public class Cliente {
         this.numero = numero;
         this.complemento = complemento;
         this.bairro = bairro;
+        this.userType = userType;
     }
 
     public int getIdCliente() {
@@ -194,6 +199,14 @@ public class Cliente {
 
     public void setBairro(String bairro) {
         this.bairro = bairro;
+    }
+
+    public int getUserType() {
+        return userType;
+    }
+
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 
     //    public int getIdCidade() {
@@ -779,16 +792,5 @@ public class Cliente {
 //        this.senha = senha;
 //    }
 //
-
-
-    private String message;
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
 }
