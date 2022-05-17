@@ -107,7 +107,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);
 
-            startActivity(new Intent(CadastroClienteAcessoActivity.this, HomeClienteActivity.class));
+            startActivity(new Intent(CadastroClienteAcessoActivity.this, BoasVindasCliente1Activity.class));
 
         });
 

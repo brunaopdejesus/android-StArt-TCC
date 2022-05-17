@@ -15,11 +15,6 @@
         android:padding="24dp"
         android:orientation="vertical">
 
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
 
 <!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
 <!--            android:id="@+id/bottomNavigation"-->
@@ -38,8 +33,9 @@
 
         <TextView
             style="@style/subtitulo_cadastro"
-            android:text="Olá! Seja bem-vindo(a)!"
+            android:text="Olá! Seja bem-vindo(a)\nCintia Art!"
             android:textSize="28sp"
+            android:textAlignment="center"
             android:layout_gravity="center"
             android:layout_marginTop="32dp"
             />
@@ -151,6 +147,5 @@
         </LinearLayout>
 
     </LinearLayout>
-    </ScrollView>
 
 </ScrollView>

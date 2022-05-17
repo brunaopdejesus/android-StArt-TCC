@@ -16,7 +16,8 @@
 
         <TextView
             style="@style/subtitulo_cadastro"
-            android:text="Olá! Seja bem-vindo(a)!"
+            android:text="Olá! Seja bem-vindo(a)\n Lucas Silva!"
+            android:textAlignment="center"
             android:textSize="28sp"
             android:layout_gravity="center"
             android:layout_marginTop="32dp"

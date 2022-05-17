@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
-        android:paddingVertical="100dp"
+        android:paddingVertical="90dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -83,7 +83,7 @@
                 style="@style/btn_continuar_cadastro"
                 android:text="Entrar"
                 android:layout_marginTop="52dp"/>
-uuu
+
         </LinearLayout>
 
     </LinearLayout>

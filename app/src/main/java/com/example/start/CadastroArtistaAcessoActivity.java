@@ -89,7 +89,7 @@ public class CadastroArtistaAcessoActivity extends AppCompatActivity {
             routerInterface = APIUtil.getUsuarioInterface();
             addArtista(artista);
 
-            startActivity(new Intent(CadastroArtistaAcessoActivity.this, HomeClienteActivity.class));
+            startActivity(new Intent(CadastroArtistaAcessoActivity.this, BoasVindasArtista1Activity.class));
 
         });
 

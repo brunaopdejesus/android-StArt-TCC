@@ -48,8 +48,12 @@ public class LoginActivity extends AppCompatActivity {
 
         btnEntrar.setOnClickListener(view -> {
 
-            String etEmail = txtEmail.getText().toString();
-            String etSenha = txtSenha.getText().toString();
+//            String etEmail = txtEmail.getText().toString();
+//            String etSenha = txtSenha.getText().toString();
+
+//            if (txtEmail.getText().toString() == "emailCliente@gmail.com") {
+//                txtEmail.
+//            }
 
 //            if (etEmail == null || etEmail.trim().length() == 0) {
 //                Toast.makeText(LoginActivity.this, "Insira seu e-mail", Toast.LENGTH_SHORT).show();
@@ -63,7 +67,25 @@ public class LoginActivity extends AppCompatActivity {
 //            }
 
             routerInterface = APIUtil.getUsuarioInterface();
-            loginCliente(etEmail, etSenha);
+//            if (txtEmail.getText().toString() == "emailCliente@gmail.com") {
+//                    startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
+//            }
+
+//            loginCliente(etEmail, etSenha);
+
+
+
+//            if (etEmail) {
+//                startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
+//            } else {
+//                Toast.makeText(this, "Usuário não encontrado", Toast.LENGTH_SHORT).show();
+//            }
+//
+//            if (txtEmail.getText().toString() == "emailArtista@gmail.com") {
+//                startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
+//            } else {
+//                Toast.makeText(this, "Usuário não encontrado", Toast.LENGTH_SHORT).show();
+//            }
 
 
 
@@ -76,36 +98,36 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void loginCliente(String email, String senha) {
-
-        Call<Cliente> call = routerInterface.loginCliente();
-        call.enqueue(new Callback<Cliente>() {
-            @Override
-            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
-                Toast.makeText(LoginActivity.this, "FUNCIONOU", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
-            }
-
-            @Override
-            public void onFailure(Call<Cliente> call, Throwable t) {
-                Toast.makeText(LoginActivity.this, "PUTS", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-//        Call<Cliente> callCliente = routerInterface.loginCliente(email, senha);
-//        callCliente.enqueue(new Callback<Cliente>() {
+//    public void loginCliente(String email, String senha) {
+//
+//        Call<Cliente> call = routerInterface.loginCliente();
+//        call.enqueue(new Callback<Cliente>() {
 //            @Override
 //            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
+//                Toast.makeText(LoginActivity.this, "FUNCIONOU", Toast.LENGTH_SHORT).show();
 //                startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
 //            }
 //
 //            @Override
 //            public void onFailure(Call<Cliente> call, Throwable t) {
-//                Toast.makeText(LoginActivity.this, "Cliente não cadastrado", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(LoginActivity.this, "PUTS", Toast.LENGTH_SHORT).show();
 //            }
 //        });
-
-    }
+//
+////        Call<Cliente> callCliente = routerInterface.loginCliente(email, senha);
+////        callCliente.enqueue(new Callback<Cliente>() {
+////            @Override
+////            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
+////                startActivity(new Intent(LoginActivity.this, HomeClienteActivity.class));
+////            }
+////
+////            @Override
+////            public void onFailure(Call<Cliente> call, Throwable t) {
+////                Toast.makeText(LoginActivity.this, "Cliente não cadastrado", Toast.LENGTH_SHORT).show();
+////            }
+////        });
+//
+//    }
 
 
 

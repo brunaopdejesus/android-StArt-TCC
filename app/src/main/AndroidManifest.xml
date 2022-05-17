@@ -10,14 +10,23 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StArt">
+        android:theme="@style/Theme.StArt"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".AdicionarObraActivity"
             android:exported="true" />
@@ -29,11 +38,10 @@
             android:exported="false" />
         <activity
             android:name=".HomeArtistaActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".PerfilArtistaActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".BoasVindasArtista4Activity"
             android:exported="true" />
@@ -64,11 +72,6 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".EsqueceuSuaSenhaActivity"
@@ -76,6 +79,7 @@
         <activity
             android:name=".CadastroArtistaPagamentoTransferenciaActivity"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".CadastroArtistaPagamentoPixActivity"
@@ -92,18 +96,13 @@
         </activity>
         <activity
             android:name=".CadastroClienteAcessoActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".CadastroClienteEnderecoActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".CadastroClientePessoalActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".TipoCadastroActivity"
             android:exported="true" />

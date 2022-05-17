@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<!--    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">-->
-<!--        <item name="windowActionBar">false</item>-->
-<!--        <item name="android:windowNoTitle">true</item>-->
-<!--    </style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 
     <style name="icon_back">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/turquesa</item>
         <item name="android:src">@drawable/ic_back</item>
         <item name="android:layout_marginBottom">8dp</item>
         <item name="android:color">@color/black</item>
@@ -158,6 +162,8 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/turquesa</item>
+
         <item name="android:textColor">@color/black</item>
         <item name="fontFamily">@font/raleway</item>
         <item name="android:textSize">16sp</item>
