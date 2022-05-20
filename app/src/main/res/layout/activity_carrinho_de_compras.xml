@@ -44,8 +44,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/img_carrinho_compras"
-                    />
+                    android:src="@drawable/img_carrinho_compras" />
 
                 <TextView
                     android:id="@+id/txt_nome_obra_carrinho"
@@ -69,7 +68,38 @@
                     android:fontFamily="sans-serif-light"
                     android:textSize="15sp" />
 
+                <ImageButton
+                    android:id="@+id/cart_remover"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho"
+                    android:src="@drawable/img_remover"
+                    android:background="@drawable/button_adicionar_remover"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_toRightOf="@+id/cart_remover"
+                    android:layout_marginTop="82dp"
+                    android:paddingStart="10dp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/cart_adicionar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho"
+                    android:layout_marginTop="84dp"
+                    android:layout_marginStart="50dp"
+                    android:src="@drawable/img_adicionar"
+                    android:background="@drawable/button_adicionar_remover"/>
+
             </RelativeLayout>
+
+
 
 
         </androidx.cardview.widget.CardView>
@@ -116,6 +146,35 @@
                     android:fontFamily="sans-serif-light"
                     android:textSize="15sp" />
 
+                <ImageButton
+                    android:id="@+id/cart_remover2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho2"
+                    android:src="@drawable/img_remover"
+                    android:background="@drawable/button_adicionar_remover"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_toRightOf="@+id/cart_remover2"
+                    android:layout_marginTop="82dp"
+                    android:paddingStart="10dp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/cart_adicionar2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho2"
+                    android:layout_marginTop="84dp"
+                    android:layout_marginStart="50dp"
+                    android:src="@drawable/img_adicionar"
+                    android:background="@drawable/button_adicionar_remover"/>
+
             </RelativeLayout>
 
 
@@ -138,8 +197,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/img_carrinho_compras"
-                    />
+                    android:src="@drawable/img_carrinho_compras" />
 
                 <TextView
                     android:id="@+id/txt_nome_obra_carrinho3"
@@ -163,6 +221,35 @@
                     android:fontFamily="sans-serif-light"
                     android:textSize="15sp" />
 
+                <ImageButton
+                    android:id="@+id/cart_remover3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho3"
+                    android:src="@drawable/img_remover"
+                    android:background="@drawable/button_adicionar_remover"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_toRightOf="@+id/cart_remover3"
+                    android:layout_marginTop="82dp"
+                    android:paddingStart="10dp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/cart_adicionar3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho3"
+                    android:layout_marginTop="84dp"
+                    android:layout_marginStart="50dp"
+                    android:src="@drawable/img_adicionar"
+                    android:background="@drawable/button_adicionar_remover"/>
+
             </RelativeLayout>
 
 
@@ -185,8 +272,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/img_carrinho_compras"
-                    />
+                    android:src="@drawable/img_carrinho_compras" />
 
                 <TextView
                     android:id="@+id/txt_nome_obra_carrinho4"
@@ -210,33 +296,50 @@
                     android:fontFamily="sans-serif-light"
                     android:textSize="15sp" />
 
-                <Button
-                    android:id="@+id/cart_adicionar"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/cart_remover4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="84dp"
                     android:layout_toRightOf="@+id/img_obra_vincent_carrinho4"
-                    android:layout_marginTop="80dp"
-                    />
+                    android:background="@drawable/button_adicionar_remover"
+                    android:src="@drawable/img_remover" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
-                    android:layout_toRightOf="@+id/cart_adicionar"
+                    android:layout_toRightOf="@+id/cart_remover4"
                     android:layout_marginTop="82dp"
-                    android:paddingStart="8dp"
+                    android:paddingStart="10dp"
 
                     />
 
-                <Button
-                    android:id="@+id/cart_remover"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho4"
-                    android:layout_marginTop="80dp"
+<!--                <Button-->
+<!--                    android:id="@+id/cart_remover4"-->
+<!--                    android:layout_width="18dp"-->
+<!--                    android:layout_height="28dp"-->
+<!--                    android:layout_marginStart="50dp"-->
+<!--                    android:layout_marginTop="80dp"-->
+<!--                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho4"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:text="@string/conta_prompt"-->
+<!--                    android:textColor="@color/black"-->
+
+<!--                    />-->
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginStart="50dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_toRightOf="@+id/img_obra_vincent_carrinho4"
+                    android:src="@drawable/img_adicionar"
+                    android:background="@drawable/button_adicionar_remover"
 
                     />
+
+
 
             </RelativeLayout>
 
@@ -268,6 +371,16 @@
             android:text="R$1.911,6"
             android:textColor="@color/black"
             android:textSize="20dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Continuar"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
             />
 
 
