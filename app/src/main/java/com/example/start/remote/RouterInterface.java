@@ -3,9 +3,12 @@ package com.example.start.remote;
 import com.example.start.model.Artista;
 import com.example.start.model.Cliente;
 
+import java.util.Observable;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
@@ -26,8 +29,12 @@ public interface RouterInterface {
         Call<String> getDistrict(@Path("id") int id);
 
     // LOGIN CLIENTE
-    @POST("/cliente/login")
-    Call<Cliente> loginCliente();
+//    @POST("/cliente/login")
+//    Call<Cliente> loginCliente();
+
+    @POST("cliente/login")
+    @FormUrlEncoded
+    Call<String> loginCliente(@Field("emailLogin") String emailLogin, @Field("senhaLogin") String senhaLogin);
 
 
     /** ARTISTA **/
