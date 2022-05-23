@@ -29,12 +29,12 @@ public interface RouterInterface {
         Call<String> getDistrict(@Path("id") int id);
 
     // LOGIN CLIENTE
-//    @POST("/cliente/login")
-//    Call<Cliente> loginCliente();
+    @POST("/cliente/login")
+    Call<Cliente> loginCliente();
 
-    @POST("cliente/login")
-    @FormUrlEncoded
-    Call<String> loginCliente(@Field("emailLogin") String emailLogin, @Field("senhaLogin") String senhaLogin);
+//    @POST("cliente/login")
+//    @FormUrlEncoded
+//    Observable<String> loginCliente(@Field("emailLogin") String emailLogin, @Field("senhaLogin") String senhaLogin);
 
 
     /** ARTISTA **/
