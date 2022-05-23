@@ -197,7 +197,7 @@
         <item name="android:letterSpacing">0.05</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:borderlessButtonStyle">@color/black</item>
-    </style>
+    </style>    .
 
     <style name="iv_card_view">
         <item name="android:layout_width">180dp</item>
