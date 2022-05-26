@@ -25,9 +25,8 @@ public class BoasVindasArtista4Activity extends AppCompatActivity {
             startActivity(new Intent(BoasVindasArtista4Activity.this, BoasVindasArtista3Activity.class));
         });
 
-
         arrowSeguinte.setOnClickListener(view -> {
-            startActivity(new Intent(BoasVindasArtista4Activity.this, HomeArtistaActivity.class));
+            startActivity(new Intent(BoasVindasArtista4Activity.this, PerfilArtistaActivity.class));
         });
 
     }

@@ -103,7 +103,9 @@
             android:exported="true"></activity>
         <activity
             android:name=".CadastroClientePessoalActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".TipoCadastroActivity"
             android:exported="true" />
