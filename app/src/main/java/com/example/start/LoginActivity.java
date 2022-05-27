@@ -109,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
 
         new AlertDialog.Builder(this)
                 .setTitle("Falha")
-                .setIcon(R.drawable.ic_baseline_star_24)
+                .setIcon(R.drawable.ic_baseline_warning_24)
                 .setMessage(s)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
