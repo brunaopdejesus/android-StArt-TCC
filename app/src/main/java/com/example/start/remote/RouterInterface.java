@@ -44,7 +44,7 @@ public interface RouterInterface {
 
     // LOGIN ARTISTA
     @POST("/artista/login")
-    Call<Artista> loginArtista(@Path("emailLogin") String email, @Path("senhaLogin") String senha);
+    Call<Artista> loginArtista();
 
 }
 
