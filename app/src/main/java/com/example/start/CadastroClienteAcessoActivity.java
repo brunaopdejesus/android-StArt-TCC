@@ -102,7 +102,7 @@ public class CadastroClienteAcessoActivity extends AppCompatActivity {
 
             cliente.setContaEstaAtiva(1);
             cliente.setIdCidade(4771);
-//            cliente.setIdEnderecoCliente(9);
+//            cliente.setIdEnderecoCliente(2);
 
             routerInterface = APIUtil.getUsuarioInterface();
             addCliente(cliente);

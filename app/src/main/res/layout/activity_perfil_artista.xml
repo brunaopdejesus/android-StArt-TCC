@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PerfilArtistaActivity">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +23,7 @@
                 style="@style/icon_back" />
 
             <ImageView
+                android:id="@+id/img_foto_perfil_artista"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -53,7 +50,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Vincent Van Gogh" />
+                android:text="Nome de artista" />
 
             <ImageView
                 android:id="@+id/avaliacao_artista"
@@ -70,7 +67,7 @@
                 android:layout_marginTop="44dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="“Amar muitas coisas, por aí que reside a verdadeira força, e quem ama muito executa muito, e pode realizar muito mais, e aquilo que é feito com amor é bem feito.”"/>
+                android:text="Adicionar biografia..."/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -100,7 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/subtitulo_perfil_cliente"
-                    android:text="Vincent Willem van Gogh"
+                    android:text="Nome completo do artista"
                     android:textColor="#5C5B5B"
                     />
 
@@ -125,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/subtitulo_perfil_cliente"
-                    android:text="Pintor"
+                    android:text="Especialidade do artista"
                     android:textColor="#5C5B5B"
                     />
 
@@ -149,7 +146,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/subtitulo_perfil_cliente"
-                    android:text="Holandês"
+                    android:text="Nacionalidade do artista"
                     android:textColor="#5C5B5B"
                     />
 
@@ -174,7 +171,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/subtitulo_perfil_cliente"
-                    android:text="Holanda"
+                    android:text="País do artista"
                     android:textColor="#5C5B5B"
                     />
 
@@ -225,14 +222,14 @@
                 <ImageView
                     android:id="@+id/obra_perfil_artista"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="150dp"
                     android:layout_weight=".50"
-                    android:src="@drawable/obra1"
+                    android:src="@drawable/ic_baseline_add_24"
                     />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="150dp"
                     android:layout_weight=".50"
                     android:src="@drawable/obra2"
                     />
@@ -246,5 +243,4 @@
 
     </ScrollView>
 
-</FrameLayout>
 

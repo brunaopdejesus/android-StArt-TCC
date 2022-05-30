@@ -60,66 +60,68 @@ public class LoginActivity extends AppCompatActivity {
 
         btnEntrar.setOnClickListener(view -> {
 
+            startActivity(new Intent(LoginActivity.this, HomeArtistaActivity.class));
+
 //            String emailLogin = txtEmail.getText().toString();
 //            String senhaLogin = txtEmail.getText().toString();
 
-            routerInterface = APIUtil.getUsuarioInterface();
+//            routerInterface = APIUtil.getUsuarioInterface();
 //            loginArtista(emailLogin, senhaLogin);
-            validateLogin();
+//            validateLogin();
 
         });
 
     }
+//
+//    private void validateLogin() {
+//        String email = etEmail.getText().toString();
+//        String senha = etSenha.getText().toString();
+//        if (email.isEmpty() || senha.isEmpty()) {
+//            alertFail("Email e senha são obrigatórios!");
+//        } else {
+//            loginArtista();
+//        }
+//    }
+//
+//    private void loginArtista() {
+//
+//        Call<Artista> call = routerInterface.loginArtista();
+//
+//        call.enqueue(new Callback<Artista>() {
+//            @Override
+//            public void onResponse(Call<Artista> call, Response<Artista> response) {
+//                Log.d("TESTE-", "TESTE2");
+//                Log.d("TESTE-", String.valueOf(response.isSuccessful()));
+//
+//                if(response.isSuccessful()) {
+//                    Toast.makeText(LoginActivity.this, "Usuário logado com sucesso",
+//                            Toast.LENGTH_SHORT).show();
+//                    startActivity(new Intent(LoginActivity.this, BoasVindasArtista1Activity.class));
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<Artista> call, Throwable t) {
+//                Toast.makeText(LoginActivity.this, "Pois é, gatinha", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//    }
 
-    private void validateLogin() {
-        String email = etEmail.getText().toString();
-        String senha = etSenha.getText().toString();
-        if (email.isEmpty() || senha.isEmpty()) {
-            alertFail("Email e senha são obrigatórios!");
-        } else {
-            loginArtista();
-        }
-    }
-
-    private void loginArtista() {
-
-        Call<Artista> call = routerInterface.loginArtista();
-
-        call.enqueue(new Callback<Artista>() {
-            @Override
-            public void onResponse(Call<Artista> call, Response<Artista> response) {
-                Log.d("TESTE-", "TESTE2");
-                Log.d("TESTE-", String.valueOf(response.isSuccessful()));
-
-                if(response.isSuccessful()) {
-                    Toast.makeText(LoginActivity.this, "Usuário logado com sucesso",
-                            Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LoginActivity.this, BoasVindasArtista1Activity.class));
-                }
-            }
-
-            @Override
-            public void onFailure(Call<Artista> call, Throwable t) {
-                Toast.makeText(LoginActivity.this, "Pois é, gatinha", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-    private void alertFail(String s) {
-
-        new AlertDialog.Builder(this)
-                .setTitle("Falha")
-                .setIcon(R.drawable.ic_baseline_warning_24)
-                .setMessage(s)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                })
-                .show();
-
-    }
+//    private void alertFail(String s) {
+//
+//        new AlertDialog.Builder(this)
+//                .setTitle("Falha")
+//                .setIcon(R.drawable.ic_baseline_warning_24)
+//                .setMessage(s)
+//                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//                        dialogInterface.dismiss();
+//                    }
+//                })
+//                .show();
+//
+//    }
 
 
     //49:24
