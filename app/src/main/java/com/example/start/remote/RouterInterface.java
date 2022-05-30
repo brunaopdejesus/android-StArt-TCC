@@ -2,6 +2,7 @@ package com.example.start.remote;
 
 import com.example.start.model.Artista;
 import com.example.start.model.Cliente;
+import com.example.start.model.Obra;
 
 import java.util.Observable;
 
@@ -27,6 +28,10 @@ public interface RouterInterface {
     // CADASTRO ARTISTA
     @POST("/artista/cadastro")
     Call<Artista> addArtista(@Body Artista artista);
+
+    // ADICIONAR OBRA
+    @POST("obraPronta/inserirObra")
+    Call<Obra> addObra(@Body Obra obra);
 
     // INFORMAÇÕES PERFIL
     @PUT("/artista/perfil")
