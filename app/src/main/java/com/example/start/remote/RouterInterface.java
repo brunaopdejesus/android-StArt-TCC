@@ -30,7 +30,7 @@ public interface RouterInterface {
     Call<Artista> addArtista(@Body Artista artista);
 
     // ADICIONAR OBRA
-    @POST("obraPronta/inserirObra")
+    @POST("/obraPronta/inserirObra")
     Call<Obra> addObra(@Body Obra obra);
 
     // INFORMAÇÕES PERFIL

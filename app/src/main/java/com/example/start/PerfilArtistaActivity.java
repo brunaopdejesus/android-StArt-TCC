@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.start.model.Artista;
 import com.example.start.remote.APIUtil;
@@ -36,6 +38,8 @@ public class PerfilArtistaActivity extends AppCompatActivity {
 
         routerInterface = APIUtil.getUsuarioInterface();
 
+
+
 //        int idArtista = 14;
 //
 //        Call<Artista> call = routerInterface.getInformacoesArtista(id);
@@ -62,7 +66,9 @@ public class PerfilArtistaActivity extends AppCompatActivity {
 //        });
 //
         addObra.setOnClickListener(view -> {
+
             startActivity(new Intent(PerfilArtistaActivity.this, AdicionarObraActivity.class));
+
         });
 //
 //        obraArtista.setOnClickListener(view -> {
@@ -73,7 +79,22 @@ public class PerfilArtistaActivity extends AppCompatActivity {
 
     private void preencherInformacoesPerfilArtista(Artista artista) {
 
+        Call<Artista> call = routerInterface.getInformacoesArtista(artista);
 
+        call.enqueue(new Callback<Artista>() {
+            @Override
+            public void onResponse(Call<Artista> call, Response<Artista> response) {
+                Log.d("TESTE-", "TESTE RECEBER DATA");
+                Log.d("TESTE-", String.valueOf(response.isSuccessful()));
+                Toast.makeText(PerfilArtistaActivity.this, "Dados recebidos com sucesso", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<Artista> call, Throwable t) {
+                Log.d("TESTE-", "TESTE3");
+                Log.d("Erro-API", t.getMessage());
+            }
+        });
 
     }
 
