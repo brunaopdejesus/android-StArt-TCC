@@ -45,10 +45,24 @@ public class Obra {
     @Expose
     private int idEspecialidade;
 
+    @SerializedName("imagem1obrigatoria")
+    @Expose
+    private String imagem1obrigatoria;
+
     public Obra() {
     }
 
-    public Obra(int idObra, String nomeObra, float preco, int quantidade, String tecnica, float desconto, int eExclusiva, String descricao, int idArtista, int idEspecialidade) {
+    public Obra(int idObra,
+                String nomeObra,
+                float preco,
+                int quantidade,
+                String tecnica,
+                float desconto,
+                int eExclusiva,
+                String descricao,
+                int idArtista,
+                int idEspecialidade,
+                String imagem1obrigatoria) {
         this.idObra = idObra;
         this.nomeObra = nomeObra;
         this.preco = preco;
@@ -59,6 +73,7 @@ public class Obra {
         this.descricao = descricao;
         this.idArtista = idArtista;
         this.idEspecialidade = idEspecialidade;
+        this.imagem1obrigatoria = imagem1obrigatoria;
     }
 
     public int getIdObra() {
@@ -139,5 +154,13 @@ public class Obra {
 
     public void setIdEspecialidade(int idEspecialidade) {
         this.idEspecialidade = idEspecialidade;
+    }
+
+    public String getImagem1obrigatoria() {
+        return imagem1obrigatoria;
+    }
+
+    public void setImagem1obrigatoria(String imagem1obrigatoria) {
+        this.imagem1obrigatoria = imagem1obrigatoria;
     }
 }
