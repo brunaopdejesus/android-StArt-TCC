@@ -53,16 +53,27 @@ public class AdicionarObraActivity extends AppCompatActivity {
 //            obra.setIdEspecialidade(.getText().toString());
 //            obra.setImagem1obrigatoria(.getText().toString());
 
-            obra.setPreco(2);
+            obra.setPreco(0.2F);
             obra.setQuantidade(5);
-            obra.setDesconto(0.5F);
-            obra.seteExclusiva(0);
+            obra.setDesconto(3.5F);
+            obra.seteExclusiva(1);
             obra.setIdArtista(14);
             obra.setIdEspecialidade(2);
-            obra.setImagem1obrigatoria("imagem");
+            obra.setImagem1obrigatoria("imagem.png");
 
             routerInterface = APIUtil.getUsuarioInterface();
             addObra(obra);
+
+            Log.d("CHECK", obra.getNomeObra());
+            Log.d("CHECK", String.valueOf(obra.getPreco()));
+            Log.d("CHECK", String.valueOf(obra.getQuantidade()));
+            Log.d("CHECK", obra.getTecnica());
+            Log.d("CHECK", String.valueOf(obra.getDesconto()));
+            Log.d("CHECK", String.valueOf(obra.geteExclusiva()));
+            Log.d("CHECK", obra.getDescricao());
+            Log.d("CHECK", String.valueOf(obra.getIdArtista()));
+            Log.d("CHECK", String.valueOf(obra.getIdEspecialidade()));
+            Log.d("CHECK", String.valueOf(obra.getImagem1obrigatoria()));
 
         });
 
@@ -75,7 +86,7 @@ public class AdicionarObraActivity extends AppCompatActivity {
         call.enqueue(new Callback<Obra>() {
             @Override
             public void onResponse(Call<Obra> call, Response<Obra> response) {
-                Log.d("TESTE-", "TESTE2 CADASTRO ARTISTA");
+                Log.d("TESTE-", "TESTE2 CADASTRO OBRA");
                 Log.d("TESTE-", String.valueOf(response.isSuccessful()));
                 Toast.makeText(AdicionarObraActivity.this, "Obra cadastrada com sucesso", Toast.LENGTH_SHORT).show();
             }
