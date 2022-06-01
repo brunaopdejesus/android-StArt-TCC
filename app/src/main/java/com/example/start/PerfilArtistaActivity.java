@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.start.model.Artista;
@@ -26,6 +27,17 @@ public class PerfilArtistaActivity extends AppCompatActivity {
     private ImageView addObra;
     private ImageView obraArtista;
 
+    // textviews que receberão dados
+    private TextView tv_nome_principal;
+    private TextView tv_nome_completo;
+    private TextView tv_especialidade;
+    private TextView tv_nacionalidade;
+    private TextView tv_pais;
+
+    private final int idArtista = 14;
+
+    Artista artista;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,48 +48,34 @@ public class PerfilArtistaActivity extends AppCompatActivity {
         addObra = findViewById(R.id.ic_adicionar_obra_perfil_artista);
         obraArtista = findViewById(R.id.obra_perfil_artista);
 
+        tv_nome_principal = findViewById(R.id.perfil_artista_nome);
+
         routerInterface = APIUtil.getUsuarioInterface();
+        Call<Artista> callingArtist = routerInterface.getInformacoesArtista(artista);
+        callingArtist.enqueue(new Callback<Artista>() {
+            @Override
+            public void onResponse(Call<Artista> call, Response<Artista> response) {
+                if (response.isSuccessful()) {
+                    tv_nome_principal.setText(artista.getNomeCompleto());
+                }
+            }
 
-
-
-//        int idArtista = 14;
-//
-//        Call<Artista> call = routerInterface.getInformacoesArtista(id);
-//        call.enqueue(new Callback<Artista>() {
-//            @Override
-//            public void onResponse(Call<Artista> call, Response<Artista> response) {
-//
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Artista> call, Throwable t) {
-//
-//            }
-//        });
-
-
-
-//        arrowBack.setOnClickListener(view -> {
-//            startActivity(new Intent(PerfilArtistaActivity.this, HomeArtistaActivity.class));
-//        });
-//
-//        settings.setOnClickListener(view -> {
-//            startActivity(new Intent(PerfilArtistaActivity.this, ConfiguracoesArtistaActivity.class));
-//        });
-//
-        addObra.setOnClickListener(view -> {
-
-            startActivity(new Intent(PerfilArtistaActivity.this, AdicionarObraActivity.class));
-
+            @Override
+            public void onFailure(Call<Artista> call, Throwable t) {
+                Log.d("TESTE-", "TESTE4");
+                Log.d("Erro-API", t.getMessage() + "onFailure callingArtist");
+            }
         });
-//
-//        obraArtista.setOnClickListener(view -> {
-//            startActivity(new Intent(PerfilArtistaActivity.this, PerfilArtistaModalActivity.class));
-//        });
+
+        preencherInformacoesPerfilArtista(artista, idArtista);
+
+        addObra.setOnClickListener(view -> {
+            startActivity(new Intent(PerfilArtistaActivity.this, AdicionarObraActivity.class));
+        });
 
 }
 
-    private void preencherInformacoesPerfilArtista(Artista artista) {
+    private void preencherInformacoesPerfilArtista(Artista artista, int idArtista) {
 
         Call<Artista> call = routerInterface.getInformacoesArtista(artista);
 
@@ -92,7 +90,7 @@ public class PerfilArtistaActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<Artista> call, Throwable t) {
                 Log.d("TESTE-", "TESTE3");
-                Log.d("Erro-API", t.getMessage());
+                Log.d("Erro-API", t.getMessage() + "onFailure call preencherInformacoesArtista");
             }
         });
 
