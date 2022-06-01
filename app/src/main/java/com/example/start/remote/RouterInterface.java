@@ -33,7 +33,9 @@ public interface RouterInterface {
     @POST("/obraPronta/inserirObra")
     Call<Obra> addObra(@Body Obra obra);
 
-
+    // LISTAR OBRAS
+    @GET("/obraPronta/Obras")
+    Call<Obra> listObra(@Body Obra obra);
 
     // INFORMAÇÕES PERFIL
     @PUT("/artista/dadosPessoais")

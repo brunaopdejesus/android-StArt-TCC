@@ -59,7 +59,7 @@ public class AdicionarObraActivity extends AppCompatActivity {
             obra.seteExclusiva(1);
             obra.setIdArtista(14);
             obra.setIdEspecialidade(2);
-            obra.setImagem1obrigatoria("imagem.png");
+            obra.setImagem1obrigatoria("imagem");
 
             routerInterface = APIUtil.getUsuarioInterface();
             addObra(obra);
