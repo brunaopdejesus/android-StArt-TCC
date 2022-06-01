@@ -4,6 +4,7 @@ import com.example.start.model.Artista;
 import com.example.start.model.Cliente;
 import com.example.start.model.Obra;
 
+import java.util.List;
 import java.util.Observable;
 
 import retrofit2.Call;
@@ -35,7 +36,7 @@ public interface RouterInterface {
 
     // LISTAR OBRAS
     @GET("/obraPronta/Obras")
-    Call<Obra> listObra(@Body Obra obra);
+    Call<List<Obra>> getObras();
 
     // INFORMAÇÕES PERFIL
     @PUT("/artista/dadosPessoais")
