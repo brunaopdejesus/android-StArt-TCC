@@ -7,7 +7,7 @@
     <item
         android:id="@+id/page_add_obra"
         android:icon="@drawable/menu_add_unselected"
-        android:title="Adicionar obra"/>
+        android:title="Adicionar"/>
     <item
         android:id="@+id/page_profile"
         android:icon="@drawable/menu_person_unselected"

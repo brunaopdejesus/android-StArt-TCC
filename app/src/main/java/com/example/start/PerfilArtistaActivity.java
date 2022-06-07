@@ -1,10 +1,12 @@
 package com.example.start;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,6 +14,7 @@ import android.widget.Toast;
 import com.example.start.model.Artista;
 import com.example.start.remote.APIUtil;
 import com.example.start.remote.RouterInterface;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;
 
@@ -47,6 +50,30 @@ public class PerfilArtistaActivity extends AppCompatActivity {
         settings = findViewById(R.id.icon_setting_artista);
         addObra = findViewById(R.id.ic_adicionar_obra_perfil_artista);
         obraArtista = findViewById(R.id.obra_perfil_artista);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.page_home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.page_add_obra:
+                        startActivity(new Intent(getApplicationContext(), AdicionarObraActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.page_home:
+                        startActivity(new Intent(getApplicationContext(), HomeArtistaActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.page_profile:
+                        startActivity(new Intent(getApplicationContext(), PerfilArtistaActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
 
         tv_nome_principal = findViewById(R.id.perfil_artista_nome);
 

@@ -37,7 +37,7 @@
             style="@style/tv_descricao_boas_vindas"
             android:text="Não se preocupe!\nGuardaremos muito bem seus dados!"
             android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="30dp"
             />
 
         <LinearLayout
@@ -51,7 +51,6 @@
                 android:id="@+id/arrow_voltar_boasvindas_cliente2"
                 style="@style/arrow_left_boasvindas"
                 />
-
 
             <ImageView
                 style="@style/circulo_preto_boasvindas"

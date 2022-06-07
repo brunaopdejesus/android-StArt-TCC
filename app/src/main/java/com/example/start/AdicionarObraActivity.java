@@ -1,9 +1,12 @@
 package com.example.start;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -12,6 +15,7 @@ import com.example.start.R;
 import com.example.start.model.Obra;
 import com.example.start.remote.APIUtil;
 import com.example.start.remote.RouterInterface;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -37,6 +41,30 @@ public class AdicionarObraActivity extends AppCompatActivity {
         final EditText et_categoria = findViewById(R.id.et_categoria_adicionar_obra);
         final EditText et_subcategoria = findViewById(R.id.et_subcategoria_adicionar_obra);
         final Button btnCadastrarObra = findViewById(R.id.btn_adicionar_obra);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.page_home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.page_add_obra:
+                        startActivity(new Intent(getApplicationContext(), AdicionarObraActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.page_home:
+                        startActivity(new Intent(getApplicationContext(), HomeArtistaActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.page_profile:
+                        startActivity(new Intent(getApplicationContext(), PerfilArtistaActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
 
         btnCadastrarObra.setOnClickListener(view -> {
 
