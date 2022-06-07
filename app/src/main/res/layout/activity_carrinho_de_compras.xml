@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListagemDeObrasClienteActivity">
+    tools:context=".CarrinhoDeComprasActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation_cliente"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bottom_navigation_menu_cliente"
+        android:layout_alignParentBottom="true"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -428,4 +437,6 @@
 
     </LinearLayout>
 
-</ScrollView>
+
+
+</RelativeLayout>

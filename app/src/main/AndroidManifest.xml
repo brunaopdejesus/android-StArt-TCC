@@ -19,11 +19,6 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity
-            android:name=".AdicionarObraActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,13 +26,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AdicionarObraActivity"
+            android:exported="true">
+
+        </activity>
 
         <activity
             android:name=".HomeClienteActivity"
-            android:exported="false" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".PerfilArtistaModalActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".HomeArtistaActivity"
             android:exported="true">
@@ -115,8 +117,27 @@
             android:exported="true">
         </activity>
         <activity
+            android:name=".CadastroClienteEnderecoActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CadastroClienteAcessoActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".TipoCadastroActivity"
             android:exported="true" />
+        <activity
+            android:name=".PerfilClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PerfilClienteObrasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CarrinhoDeComprasActivity"
+            android:exported="true" />
+
+
     </application>
 
 </manifest>

@@ -65,6 +65,7 @@
                 style="@style/titulo_nome_perfil"
                 android:layout_marginTop="12dp"
                 android:layout_gravity="center"
+                android:text="Cintia Art"
                 android:gravity="center"/>
 
             <ImageView
@@ -112,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/subtitulo_perfil_cliente"
-                    android:text="Nome completo do artista"
+                    android:text="Cintia Gomes"
                     android:textColor="#5C5B5B"
                     />
 
@@ -136,7 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/subtitulo_perfil_cliente"
-                    android:text="Especialidade do artista"
+                    android:text="Não informada"
                     android:textColor="#5C5B5B"
                     />
 
@@ -241,12 +242,12 @@
                     android:src="@drawable/ic_baseline_add_24"
                     />
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="150dp"
-                    android:layout_weight=".50"
-                    android:src="@drawable/obra2"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:layout_weight=".50"-->
+<!--                    android:src="@drawable/obra2"-->
+<!--                    />-->
 
 
             </LinearLayout>
