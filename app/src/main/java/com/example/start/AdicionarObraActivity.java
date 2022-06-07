@@ -25,7 +25,6 @@ public class AdicionarObraActivity extends AppCompatActivity {
 
     RouterInterface routerInterface;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,27 +42,24 @@ public class AdicionarObraActivity extends AppCompatActivity {
         final Button btnCadastrarObra = findViewById(R.id.btn_adicionar_obra);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.page_home);
+        bottomNavigationView.setSelectedItemId(R.id.page_add_obra);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.page_add_obra:
-                        startActivity(new Intent(getApplicationContext(), AdicionarObraActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.page_home:
-                        startActivity(new Intent(getApplicationContext(), HomeArtistaActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.page_profile:
-                        startActivity(new Intent(getApplicationContext(), PerfilArtistaActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                }
-                return false;
+        bottomNavigationView.setOnNavigationItemSelectedListener(menuItem -> {
+            switch (menuItem.getItemId()) {
+                case R.id.page_add_obra:
+                    startActivity(new Intent(getApplicationContext(), AdicionarObraActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.page_home:
+                    startActivity(new Intent(getApplicationContext(), HomeArtistaActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.page_profile:
+                    startActivity(new Intent(getApplicationContext(), PerfilArtistaActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
             }
+            return false;
         });
 
         btnCadastrarObra.setOnClickListener(view -> {
