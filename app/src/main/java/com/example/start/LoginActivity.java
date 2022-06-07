@@ -22,10 +22,6 @@ import com.example.start.remote.RouterInterface;
 
 import java.util.concurrent.ConcurrentLinkedDeque;
 
-import io.reactivex.Scheduler;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.schedulers.Schedulers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
