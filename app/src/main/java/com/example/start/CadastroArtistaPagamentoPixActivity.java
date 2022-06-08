@@ -42,6 +42,10 @@ public class CadastroArtistaPagamentoPixActivity extends AppCompatActivity {
             super.onBackPressed();
         });
 
+        tvTransferencia.setOnClickListener(view -> {
+            startActivity(new Intent(CadastroArtistaPagamentoPixActivity.this, CadastroArtistaPagamentoTransferenciaActivity.class));
+        });
+
         btnContinuar.setOnClickListener(view -> {
 
             if (TextUtils.isEmpty(etOpcaoPix.getText().toString())) {

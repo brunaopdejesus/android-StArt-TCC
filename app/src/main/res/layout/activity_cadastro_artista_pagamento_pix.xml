@@ -27,7 +27,7 @@
 
         <TextView
             style="@style/subtitulo_cadastro"
-            android:text="Dados de pagamento"
+            android:text="Dados de recebimento"
             />
 
         <RelativeLayout
