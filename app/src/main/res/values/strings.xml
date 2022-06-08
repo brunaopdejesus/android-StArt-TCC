@@ -27,11 +27,28 @@
 
     <string name="city_prompt">Cidade</string>
     <string-array name="cities">
-        <item>"Selecione"</item>
-        <item>"Jandira"</item>
-        <item>"Barueri"</item>
-        <item>"Itapevi"</item>
-        <item>"Osasco"</item>
+        <item>"Acrelândia"</item>
+        <item>"Assis Brasil"</item>
+        <item>"Brasiléia"</item>
+        <item>"Bujari"</item>
+        <item>"Capixaba"</item>
+        <item>"Cruzeiro do Sul"</item>
+        <item>"Epitaciolândia"</item>
+        <item>"Feijó"</item>
+        <item>"Jordão"</item>
+        <item>"Mâncio Lima"</item>
+        <item>"Manoel Urbano"</item>
+        <item>"Marechal Thaumaturgo"</item>
+        <item>"Plácido de Castro"</item>
+        <item>"Porto Acre"</item>
+        <item>"Porto Walter"</item>
+        <item>"Rio Branco"</item>
+        <item>"Rodrigues Alves"</item>
+        <item>"Santa Rosa do Purus"</item>
+        <item>"Sena Madureira"</item>
+        <item>"Senador Guiomard"</item>
+        <item>"Tarauacá"</item>
+        <item>"Xapuri"</item>
     </string-array>
 
     <string name="state_prompt">Estado</string>
