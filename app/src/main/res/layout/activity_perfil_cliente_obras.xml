@@ -60,7 +60,7 @@
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="@string/titulo_nome_cliente" />
+            android:text="Gabriel Oliveira" />
 
         <RelativeLayout
             android:layout_width="wrap_content"

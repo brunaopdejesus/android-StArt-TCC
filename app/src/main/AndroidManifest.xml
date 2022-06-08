@@ -20,7 +20,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".AdicionarObraActivity"
@@ -136,8 +140,10 @@
             android:name=".PerfilClienteObrasActivity"
             android:exported="true" />
         <activity
-            android:name=".CarrinhoDeComprasActivity"
-            android:exported="true" />
+            android:name=".CarrinhoDeComprasActivity"/>
+
+
+
 
 
     </application>
